@@ -12,6 +12,7 @@
 
 a {
     text-decoration: none;
+    color:var(--main-text-color);
 }
 
 ul,
@@ -35,9 +36,12 @@ h1 {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: 'GFS Didot', serif;
     font-weight: 700;
+    color: var(--main-text-color);
 }
 
 h2 {
@@ -45,32 +49,51 @@ h2 {
     line-height: 5.2rem;
 }
 
+h3{
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+}
+
+h4{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+
+
 body {
     font-size: 1.6rem;
     font-style: normal;
+    font-weight: 400;
     background-color: var(--main-background-color);
     color: var(--main-text-color);
-
+    font-family: var(--main-text-family);
 }
 
-::root {
+:root {
     --main-text-color: #2D2D2B;
     --main-text-family: 'Raleway', sans-serif;
     --second-text-family: 'GFS Didot', serif;
-    --main-background-color: #EAE6DF;
-}
-
-.isActive {
-    background-color: white;
-}
-
-
-.isActive a {
-    color: black !important;
+    --main-background-color: #EAE6DF;   
+    --main-button-text-color:#EAE6DF;
+    --normal-button-background-color: #B8926A;
+    --hover-button-background-color:#A5825D;
+    --disabled-button-background-color:#B0B0B0;
+    --secondary-button-normal-border-color:#B8926A;
+    --secondary-button-hover-borser-color:#A5825D;
+    --secondary-button-disabled-border-color:#B0B0B0;
+    --secondary-button-normal-color:#B8926A;
+    --secondary-button-hover-color:#A5825D;
+    --scondary-button-disabled-color:#B0B0B0;
+    --main-input-background-color:#EAE6DF;
+    --main-input-text-color:#2D2D2B;
+    --main-input-border-color:#D4C8BE;
+    --dropdown-text-color:#B8926A;
+    --dropdown-background-color:#EAE6DF;
+    --dropdown-border-color:#B8926A;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 138rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
 }
