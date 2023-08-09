@@ -1,0 +1,17 @@
+.main-header {
+    .main-header__right {
+        width: 83rem;
+
+        .main-header__right--title {
+            line-height: 8.6rem;
+            font-size: 7.2rem;
+            margin: 12.4rem 0 5rem;
+        }
+
+        .main-header__right--description {
+            width: 44.7rem;
+            margin-bottom: 4rem;
+            line-height: 2.4rem;
+        }
+    }
+}

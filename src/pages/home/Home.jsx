@@ -1,13 +1,9 @@
-import React from 'react'
-import Header from '../../layout/header/Header';
-import Navbar from '../../layout/navbar/Navbar';
+import React from 'react';
+import MainHeader from '../../components/mainheader/MainHeader';
 
 const Home = () => {
     return (
-        <>
-            <Header />
-            <Navbar />
-        </>
+       <MainHeader />
     )
 }
 
