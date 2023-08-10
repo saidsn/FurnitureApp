@@ -3,7 +3,7 @@ import './Collections.scss';
 
 const Collections = () => {
   return (
-    <div>Collections</div>
+    <div className='container'>Collections</div>
   )
 }
 
