@@ -1,17 +1,42 @@
 .main-header {
-    .main-header__right {
-        width: 83rem;
+    margin-top: 1.5rem;
+    display: flex;
+    position: relative;
+    justify-content: end;
 
-        .main-header__right--title {
+    .main-header__left {
+        width: 83rem;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+
+        .main-header__left--title {
             line-height: 8.6rem;
             font-size: 7.2rem;
             margin: 12.4rem 0 5rem;
         }
 
-        .main-header__right--description {
+        .main-header__left--description {
             width: 44.7rem;
             margin-bottom: 4rem;
             line-height: 2.4rem;
+        }
+    }
+
+    .main-header__right {
+        width: 91.3rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(5.5px);
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 30%;
+            height: 100%;
+            border-radius: 1rem;
         }
     }
 }
