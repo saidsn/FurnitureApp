@@ -1,0 +1,16 @@
+.btn{
+    width: 33rem;
+    height: 5.3rem;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-transform: uppercase;
+    color: var(--main-button-text-color);
+    background: var(--normal-button-background-color);
+    &:hover{
+        background: var(--hover-button-background-color);
+    }
+}

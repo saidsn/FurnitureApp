@@ -1,0 +1,25 @@
+.about__title {
+  padding: 12.8rem 0 5rem 0;
+}
+.about__content{
+    display: flex;
+    &--left{
+        width: 50%;
+        .about__content--image{
+            width:68rem;
+            height: 41.2rem;
+            img{
+                border-radius: 300px 5px 5px 5px;
+            }
+        }
+    }
+    &--right{
+        .about__content--text{
+            padding: 4rem 8rem;
+            opacity: 0.8;
+            p{
+                line-height: 2.4rem;
+            }
+        }
+    }
+}
