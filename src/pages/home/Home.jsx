@@ -6,8 +6,8 @@ import About from '../../components/about/About';
 const Home = () => {
     return (
         <>
-            <MainHeader />
-            <Slider />
+            {/* <MainHeader />
+            <Slider /> */}
             <About />
         </>
     )
