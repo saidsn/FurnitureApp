@@ -1,0 +1,37 @@
+.slider {
+    margin: 6rem 0 0 0;
+
+    .slick-list{
+        justify-content: space-evenly;
+    }
+  
+
+
+    .category__slider--item {
+        width: 33rem !important;
+        height: 19.3rem;
+        position: relative;
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20%;
+            backdrop-filter: blur(5.5px);
+            border-radius: 1rem;
+        }
+
+        img {
+            border-radius: 1rem;
+        }
+
+        p {
+            position: absolute;
+            z-index: 1;
+            bottom: 1rem;
+        }
+    }
+}

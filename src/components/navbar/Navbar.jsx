@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className='container'>
       <div className="navbar">
         <ul className='navbar__list'>
-        <li className={`navbar__list--item ${activeLink === 'home' ? 'active' : ''}`}>
+          <li className={`navbar__list--item ${activeLink === 'home' ? 'active' : ''}`}>
             <Link onClick={() => handleLinkClick('home')} to='/'>Home</Link>
           </li>
           <li className={`navbar__list--item ${activeLink === 'about' ? 'active' : ''}`}>

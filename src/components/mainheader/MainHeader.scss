@@ -27,16 +27,16 @@
         width: 91.3rem;
         position: relative;
 
-        &::after {
-            content: "";
-            background: rgba(255, 255, 255, 0.10);
-            backdrop-filter: blur(5.5px);
-            position: absolute;
-            top: 0; 
-            left: 0;
-            width: 30%;
-            height: 100%;
-            border-radius: 1rem;
+        .main-header__right--image {
+            &::after {
+                content: "";
+                backdrop-filter: blur(5.5px);
+                position: absolute;
+                top: 0; 
+                left: 0;
+                width: 30%;
+                height: 100%;
+            }
         }
     }
 }
