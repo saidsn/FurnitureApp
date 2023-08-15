@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.scss';
+import SecondaryButton from '../../utils/buttons/secondarybutton/SecondaryButton';
 
 const About = () => {
     return (
@@ -14,15 +15,15 @@ const About = () => {
                 <div className="about__content--right">
                     <div className="about__content--text">
                         <p>
-                            Et harum quidem rerum facilis est et expedita distinctio. 
+                            Et harum quidem rerum facilis est et expedita distinctio.
                             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
                             Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
                             Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
                         </p>
                     </div>
                     <div className="about__content--button">
-
+                        <SecondaryButton />
                     </div>
                 </div>
             </div>

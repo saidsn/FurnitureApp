@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../utils/button/Button';
+import IconButton from '../../utils/buttons/iconbutton/IconButton';
 import './MainHeader.scss';
 
 const MainHeader = () => {
@@ -9,7 +9,7 @@ const MainHeader = () => {
                 <div className="main-header__left">
                     <h1 className='main-header__left--title'>THE FURNITURE THAT DEFINES YOU</h1>
                     <p className='main-header__left--description'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-                    <Button />
+                    <IconButton />
                 </div>
                 <div className="main-header__right">
                     <div className="main-header__right--image">

@@ -5,7 +5,7 @@
     justify-content: end;
 
     .main-header__left {
-        width: 83rem;
+        max-width: 83rem;
         position: absolute;
         left: 0;
         z-index: 1;

@@ -1,0 +1,19 @@
+.icon__button {
+    width: 33rem;
+    height: 5.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--button-text-color);
+    background: var(--button-background-color);
+
+    &:hover {
+        background: var(--button-hover-background-color);
+    }
+}
