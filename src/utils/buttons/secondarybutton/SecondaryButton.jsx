@@ -4,7 +4,7 @@ import './SecondaryButton.scss';
 const SecondaryButton = () => {
     return (
         <div>
-            <button className='button'>Learn More</button>
+            <button className='button btn'>Learn More</button>
         </div>
     )
 }
