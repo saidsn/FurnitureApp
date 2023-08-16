@@ -5,7 +5,7 @@ import SecondaryButton from '../../utils/buttons/secondarybutton/SecondaryButton
 const About = () => {
     return (
         <div className='container'>
-            <h3 className='about__title'>ABOUT US</h3>
+            <h3 className='title'>ABOUT US</h3>
             <div className="about__content">
                 <div className="about__content--left">
                     <div className="about__content--image">

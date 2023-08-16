@@ -1,5 +1,5 @@
 import React from 'react';
-import './Slider.scss';
+import './CategorySlider.scss';
 import Slider from "react-slick";
 
 const MySlider = () => {
