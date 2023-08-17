@@ -78,8 +78,6 @@ const Product = () => {
           <p className='product__title'>Grayson Premium Grey Wash Nest of Tables</p>
           <span className='product__price'>140$</span>
         </div>
-
-
       </div>
     </div>
   )

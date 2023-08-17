@@ -1,13 +1,11 @@
 .product__content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
- 
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
 
     &--item {
-        width: 33rem;
+        max-width: 33rem;
         position: relative;
-
 
         .product__image {
             border-radius: 1rem;
@@ -43,6 +41,31 @@
         .product__price {
             font-weight: 700;
             color: var(--primary, #B8926A);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product__content {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        &--item {
+            .product__image {
+                .product__wishlist {
+                    width: 3rem;
+                    height: 2.5rem;
+                    top: 1rem;
+                    right: 1rem;
+                    svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+            .product__title,
+            .product__price {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
         }
     }
 }
