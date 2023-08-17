@@ -1,17 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './CategorySlider.scss';
 import Slider from "react-slick";
 
 const MySlider = () => {
 
+    const [slidesToShow, setSlidesToShow] = useState(4);
+
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: slidesToShow,
         slidesToScroll: 1,
         autoplay: true,
         rules: true,
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 576) {
+                setSlidesToShow(1);
+            }
+            else if (window.innerWidth <= 768) {
+                setSlidesToShow(2);
+            }
+            else {
+                setSlidesToShow(4);
+            }
+        }
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
+
+
     return (
         <div className="container">
             <Slider className='slider' {...settings}>

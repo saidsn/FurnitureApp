@@ -59,8 +59,6 @@ h4{
     line-height: 3.2rem;
 }
 
-
-
 body {
     font-size: 1.6rem;
     font-style: normal;
@@ -98,7 +96,7 @@ body {
 .btn{
     width: 33rem;
     height: 5.3rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -107,6 +105,16 @@ body {
     text-transform: uppercase;
     font-weight: 500;
 }
+@media (max-width: 768px) {
+    .btn{
+        max-width: 25rem;
+        height: 4.8rem;
+        gap: 1.6rem;
+        font-weight: 400;
+        border-radius: .5rem;
+    }
+}
+
 
 .title{
     padding: 12.8rem 0 5rem 0;
@@ -115,4 +123,13 @@ body {
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 5.2rem;
+}
+
+@media (max-width: 768px) {
+   .title{
+         padding: 8rem 0 5rem 0;
+         font-size: 3.2rem;
+         line-height: 3.6rem;
+         font-weight: 400;
+   }
 }
