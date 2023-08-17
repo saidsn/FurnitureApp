@@ -1,6 +1,6 @@
 import React from 'react';
 import IconButton from '../../utils/buttons/iconbutton/IconButton';
-import './MainHeader.scss';
+import styles from './MainHeader.module.scss';
 
 const MainHeader = () => {
     return (

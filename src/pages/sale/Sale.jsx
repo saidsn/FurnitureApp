@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sale.scss';
+import styles from './Sale.module.scss';
 
 const Sale = () => {
   return (

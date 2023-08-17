@@ -1,5 +1,5 @@
 import React from 'react';
-import './Collections.scss';
+import styles from './Collections.module.scss';
 
 const Collections = () => {
   return (

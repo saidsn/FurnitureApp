@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './CategorySlider.scss';
+import styles from './CategorySlider.module.scss';
 import Slider from "react-slick";
 
 const MySlider = () => {

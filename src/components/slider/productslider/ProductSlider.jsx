@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProductSlider.scss';
+import styles from './ProductSlider.module.scss';
 
 const ProductSlider = () => {
   return (

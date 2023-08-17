@@ -1,5 +1,5 @@
 import React from 'react';
-import './CollectionSlider.scss';
+import styles from './CollectionSlider.module.scss';
 
 const CollectionSlider = () => {
   return (
