@@ -1,3 +1,11 @@
 .link{
-    color:red;
+
+    &.active::before{
+        content: "|";
+        margin: 0 1rem;
+    }
+
+    &:not(.active){
+        opacity: 0.5;
+    }
 }

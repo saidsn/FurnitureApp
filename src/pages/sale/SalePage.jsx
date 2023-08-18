@@ -1,7 +1,7 @@
 import React from 'react';
 import BredCrumbs from '../../components/bredcrumbs/BredCrumbs';
 
-const Sale = () => {
+const SalePage = () => {
   return (
     <div className='container'>
       <BredCrumbs />
@@ -9,4 +9,4 @@ const Sale = () => {
   )
 }
 
-export default Sale;
+export default SalePage;

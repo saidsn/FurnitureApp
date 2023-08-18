@@ -1,20 +1,22 @@
 import React from 'react';
 import MainHeader from '../../components/mainheader/MainHeader';
-import Slider from '../../components/slider/categoryslider/CategorySlider';
+import CategorySlider from '../../components/slider/categoryslider/CategorySlider';
 import About from '../../components/about/About';
 import Discount from '../../components/discount/Discount';
 import Product from '../../components/product/Product';
+import ProductSlider from '../../components/slider/productslider/ProductSlider';
 
-const Home = () => {
+const HomePage = () => {
     return (
         <>
             <MainHeader />
-            <Slider />
+            <CategorySlider />
             <About />
             <Discount />
             <Product />
+            <ProductSlider />
         </>
     )
 }
 
-export default Home;
+export default HomePage;

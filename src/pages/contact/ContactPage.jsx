@@ -1,10 +1,12 @@
 import React from 'react';
 import BredCrumbs from '../../components/bredcrumbs/BredCrumbs';
 
-const Contact = () => {
+const ContactPage = () => {
   return (
-    <div className='container'><BredCrumbs /></div>
+    <div className='container'>
+      <BredCrumbs />
+      </div>
   )
 }
 
-export default Contact;
+export default ContactPage;

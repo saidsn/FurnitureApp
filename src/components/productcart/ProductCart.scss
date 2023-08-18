@@ -1,0 +1,38 @@
+.product__content--item {
+    position: relative;
+
+    .product__image {
+        border-radius: 1rem;
+        .product__wishlist {
+            width: 4.6rem;
+            height: 3.8rem;
+            border-radius: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+        img{
+            border-radius: 1rem;
+        }
+    }
+    .product__title,
+    .product__price {
+        font-family: "sans-serif";
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+
+    .product__title {
+        font-weight: 500;
+    }
+
+    .product__price {
+        font-weight: 700;
+        color: var(--primary, #B8926A);
+    }
+}

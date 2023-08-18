@@ -1,10 +1,12 @@
 import React from 'react';
 import BredCrumbs from '../../components/bredcrumbs/BredCrumbs';
 
-const Products = () => {
+const ProductsPage = () => {
   return (
-    <div className='container'><BredCrumbs /></div>
+    <div className='container'>
+      <BredCrumbs />
+      </div>
   )
 }
 
-export default Products;
+export default ProductsPage;

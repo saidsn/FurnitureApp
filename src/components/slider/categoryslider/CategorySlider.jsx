@@ -1,37 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './CategorySlider.scss';
 import Slider from "react-slick";
 
-const MySlider = () => {
+const CategorySlider = () => {
 
     const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        // autoplay: true,
-        rules: true,
+        autoplay: true,
         dots: true,
         responsive: [
             {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-              }
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
             },
             {
-              breakpoint: 576,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 2,
-                infinite: true,
-                arrows: false,
-                dots: true
-              }
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 2,
+                    arrows: false,
+                }
             },
-          ]
+        ]
     };
 
     return (
@@ -58,8 +54,13 @@ const MySlider = () => {
                     <p className='category__name'>SOFAS</p>
                 </div>
             </Slider>
+            {/* <button className='slick-prev ok'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 4L20 12L12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4Z" fill="#EEF0F2" />
+                </svg>
+            </button> */}
         </div>
     )
 }
 
-export default MySlider;
+export default CategorySlider;

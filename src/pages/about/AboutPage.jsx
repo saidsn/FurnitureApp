@@ -1,7 +1,7 @@
 import React from 'react';
 import BredCrumbs from '../../components/bredcrumbs/BredCrumbs';
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div className='container'>
       <BredCrumbs />
@@ -10,4 +10,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default AboutPage;
