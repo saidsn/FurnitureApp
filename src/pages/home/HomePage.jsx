@@ -5,6 +5,7 @@ import About from '../../components/about/About';
 import Discount from '../../components/discount/Discount';
 import Product from '../../components/product/Product';
 import ProductSlider from '../../components/slider/productslider/ProductSlider';
+import Contact from '../../components/contact/Contact';
 
 const HomePage = () => {
     return (
@@ -15,6 +16,8 @@ const HomePage = () => {
             <Discount />
             <Product />
             <ProductSlider />
+            {/* <CategorySlider /> */}
+            <Contact />
         </>
     )
 }
