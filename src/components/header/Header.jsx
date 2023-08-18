@@ -1,32 +1,29 @@
-import React, { useState } from 'react';
-import styles from './Header.module.scss';
+import React,{useState} from 'react';
+import './Header.scss';
 
 const Header = () => {
 
   const [searchOpen, setSearchOpen] = useState(false)
 
-
-
-
   return (
     <div className='container'>
-      <div className={styles.header}>
-        <div className={styles["header__left"]}>
+      <div className="header">
+        <div className="header__left">
           <div className="header__left--lang">
-            <select className={styles['select']}>
+            <select className='select'>
               <option value="en">AZ</option>
               <option value="az">EN</option>
             </select>
           </div>
-          <div className={`${styles['header__left--search']} container ${searchOpen ? 'fixed' : ""}`}>
-            <div onClick={() => setSearchOpen(true)}>
+          <div className={`header__left--search container ${searchOpen ? 'fixed' : ""}`}>
+            <div onClick={()=> setSearchOpen(true)}>
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                 <path fillRule="evenodd" clipRule="evenodd" d="M10.5417 2.52081C6.11192 2.52081 2.52087 6.11186 2.52087 10.5416C2.52087 14.9714 6.11192 18.5625 10.5417 18.5625C14.9715 18.5625 18.5625 14.9714 18.5625 10.5416C18.5625 6.11186 14.9715 2.52081 10.5417 2.52081ZM1.14587 10.5416C1.14587 5.35247 5.35253 1.14581 10.5417 1.14581C15.7309 1.14581 19.9375 5.35247 19.9375 10.5416C19.9375 15.7308 15.7309 19.9375 10.5417 19.9375C5.35253 19.9375 1.14587 15.7308 1.14587 10.5416ZM17.8472 17.8472C18.1157 17.5787 18.551 17.5787 18.8195 17.8472L20.6528 19.6805C20.9213 19.949 20.9213 20.3843 20.6528 20.6528C20.3844 20.9213 19.9491 20.9213 19.6806 20.6528L17.8472 18.8195C17.5788 18.551 17.5788 18.1157 17.8472 17.8472Z" fill="#2D2D2B" />
               </svg>
             </div>
-            <div style={{ display: searchOpen ? "flex" : "none" }} className={`container ${styles['searchInput']}`}>
+            <div style={{display : searchOpen ? "flex" : "none"}} className={`container searchInput`}>
               <input type="text" placeholder='SEARCH OUR STORE' />
-              <div onClick={() => setSearchOpen(false)}>
+              <div onClick={()=> setSearchOpen(false)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M16.8873 15.7377C16.9628 15.8132 17.0227 15.9028 17.0635 16.0014C17.1044 16.1001 17.1254 16.2058 17.1254 16.3125C17.1254 16.4193 17.1044 16.525 17.0635 16.6236C17.0227 16.7223 16.9628 16.8119 16.8873 16.8874C16.8118 16.9629 16.7222 17.0227 16.6236 17.0636C16.5249 17.1045 16.4192 17.1255 16.3125 17.1255C16.2057 17.1255 16.1 17.1045 16.0014 17.0636C15.9027 17.0227 15.8131 16.9629 15.7376 16.8874L8.99996 10.1487L2.26231 16.8874C2.10985 17.0398 1.90307 17.1255 1.68746 17.1255C1.47186 17.1255 1.26508 17.0398 1.11262 16.8874C0.960162 16.7349 0.874512 16.5281 0.874512 16.3125C0.874512 16.0969 0.960162 15.8901 1.11262 15.7377L7.85129 9.00002L1.11262 2.26237C0.960162 2.10991 0.874512 1.90313 0.874512 1.68752C0.874512 1.47192 0.960162 1.26514 1.11262 1.11268C1.26508 0.960223 1.47186 0.874573 1.68746 0.874573C1.90307 0.874573 2.10985 0.960223 2.26231 1.11268L8.99996 7.85135L15.7376 1.11268C15.8901 0.960223 16.0969 0.874573 16.3125 0.874573C16.5281 0.874573 16.7349 0.960223 16.8873 1.11268C17.0398 1.26514 17.1254 1.47192 17.1254 1.68752C17.1254 1.90313 17.0398 2.10991 16.8873 2.26237L10.1486 9.00002L16.8873 15.7377Z" fill="#2D2D2B" />
                 </svg>
@@ -35,11 +32,11 @@ const Header = () => {
           </div>
         </div>
 
-        <div className={styles["header__center"]}>
+        <div className="header__center">
           <p>HomeDecor</p>
         </div>
 
-        <div className={styles["header__right"]}>
+        <div className="header__right">
           <div className="header__right--basket">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z" stroke="#2D2D2B" strokeWidth="1.5" />

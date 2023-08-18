@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SecondaryButton.module.scss';
+import './SecondaryButton.scss';
 
 const SecondaryButton = () => {
     return (

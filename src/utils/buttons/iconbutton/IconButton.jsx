@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './IconButton.module.scss';
+import './IconButton.scss';
 
 const IconButton = () => {
     return (

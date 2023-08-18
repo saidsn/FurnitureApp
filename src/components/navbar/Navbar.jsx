@@ -1,36 +1,30 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
-import styles from './Navbar.module.scss';
+import React from 'react';
+import { NavLink } from 'react-router-dom'
+import './Navbar.scss';
 
 
 const Navbar = () => {
-
-  const [activeLink, setActiveLink] = useState('home');
-
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
   return (
     <div className='container'>
       <div className="navbar">
         <ul className='navbar__list'>
-          <li className={`navbar__list--item ${activeLink === 'home' ? 'active' : ''}`}>
-            <Link onClick={() => handleLinkClick('home')} to='/'>Home</Link>
+          <li className='navbar__list--item'>
+            <NavLink to='/'>Home</NavLink>
           </li>
-          <li className={`navbar__list--item ${activeLink === 'about' ? 'active' : ''}`}>
-            <Link onClick={() => handleLinkClick('about')} to='/about'>About</Link>
+          <li className='navbar__list--item'>
+            <NavLink to='/about'>About</NavLink>
           </li>
-          <li className={`navbar__list--item ${activeLink === 'products' ? 'active' : ''}`}>
-            <Link onClick={() => handleLinkClick('products')} to='/products'>Products</Link>
+          <li className='navbar__list--item'>
+            <NavLink to='/products'>Products</NavLink>
           </li>
-          <li className={`navbar__list--item ${activeLink === 'collections' ? 'active' : ''}`}>
-            <Link onClick={() => handleLinkClick('collections')} to='/collections'>Collections</Link>
+          <li className='navbar__list--item'>
+            <NavLink to='/collections'>Collections</NavLink>
           </li>
-          <li className={`navbar__list--item ${activeLink === 'sale' ? 'active' : ''}`}>
-            <Link onClick={() => handleLinkClick('sale')} to='/sale'>Sale</Link>
+          <li className='navbar__list--item'>
+            <NavLink to='/sale'>Sale</NavLink>
           </li>
-          <li className={`navbar__list--item ${activeLink === 'contact' ? 'active' : ''}`}>
-            <Link onClick={() => handleLinkClick('contact')} to='/contact'>Contact</Link>
+          <li className='navbar__list--item'>
+            <NavLink to='/contact'>Contact</NavLink>
           </li>
         </ul>
       </div>

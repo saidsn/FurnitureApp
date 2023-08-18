@@ -20,7 +20,8 @@
         }
 
         &--text {
-            width: 44.5rem;
+            max-width: 44.5rem;
+            width: 100%;
             color: #FFF;
             font-weight: 400;
             line-height: 2.4rem;

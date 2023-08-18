@@ -2,9 +2,13 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
 
     &--left {
-        width: 69rem;
+        max-width: 69rem;
+        width: 100%;
 
         .about__content--image {
             width: 100%;
@@ -17,8 +21,7 @@
     }
 
     &--right {
-        max-width: 69rem;
-        padding: 4rem 8rem;
+        max-width: 56rem;
 
         .about__content--text {
             margin-bottom: 4.4rem;

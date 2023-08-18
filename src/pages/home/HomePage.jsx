@@ -8,11 +8,11 @@ import Product from '../../components/product/Product';
 const Home = () => {
     return (
         <>
-            {/* <MainHeader /> */}
-            {/* <Slider /> */}
+            <MainHeader />
+            <Slider />
             <About />
             <Discount />
-            {/* <Product /> */}
+            <Product />
         </>
     )
 }

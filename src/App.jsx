@@ -1,9 +1,9 @@
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import Products from "./pages/products/Products";
-import Collections from "./pages/collections/Collections";
-import Sale from "./pages/sale/Sale";
-import Contact from "./pages/contact/Contact";
+import Home from "./pages/home/HomePage";
+import About from "./pages/about/AboutPage";
+import Products from "./pages/products/ProductsPage";
+import Collections from "./pages/collections/CollectionsPage";
+import Sale from "./pages/sale/SalePage";
+import Contact from "./pages/contact/ContactPage";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "./layout/Layout";
 
