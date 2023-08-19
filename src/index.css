@@ -106,13 +106,5 @@ body {
     text-transform: uppercase;
     font-weight: 500;
 }
-@media (max-width: 768px) {
-    .btn{
-        max-width: 25rem;
-        height: 4.8rem;
-        gap: 1.6rem;
-        font-weight: 400;
-        border-radius: .5rem;
-    }
-}
+
 

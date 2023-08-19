@@ -1,4 +1,4 @@
-.main__button{
+.main__button {
     width: 100%;
     border: none;
     color: var(--main-button-text-color);
@@ -7,7 +7,8 @@
     &:hover {
         background: var(--main-button-hover-background-color);
     }
-    &:disabled{
-        background:var(--main-button-disabled-background-color);
+
+    &:disabled {
+        background: var(--main-button-disabled-background-color);
     }
 }
