@@ -4,11 +4,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 14rem;
-
     &--left {
         width: 56rem;
 
         .contact__content--form {
+            margin-bottom: 2rem;
 
             input,
             textarea {
@@ -16,7 +16,6 @@
                 width: 100%;
                 height: 5.4rem;
                 border-radius: 1rem;
-                outline: none;
                 border: 1px solid var(--main-input-border-color);
                 background: var(--main-background-color);
 
@@ -46,7 +45,7 @@
     &--right {
         max-width: 68rem;
         width: 100%;
-        height: 41.7rem;
+        height: 42rem;
 
         img {
             border-radius: 5px 5px 300px 5px;
