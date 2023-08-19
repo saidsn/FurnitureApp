@@ -1,11 +1,11 @@
 import React from 'react';
 import './Product.scss';
-import ProductCart from '../productcart/ProductCart';
+import ProductCart from '../productcart';
+
 
 const Product = () => {
   return (
     <div className='container'>
-      <h3 className='title'>PRODUCTS</h3>
       <div className="product__content">
         <ProductCart />
         <ProductCart />

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductSlider.scss';
 import Slider from "react-slick";
-import ProductCart from '../../productcart/ProductCart';
+import ProductCart from '../../productcart';
 
 const ProductSlider = () => {
 
@@ -36,7 +36,6 @@ const ProductSlider = () => {
   };
   return (
     <div className="container">
-      <h3 className='title'>MOST POPULAR</h3>
       <Slider className='slider' {...settings}>
         <ProductCart />
         <ProductCart />

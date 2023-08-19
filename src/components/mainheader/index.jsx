@@ -1,5 +1,5 @@
 import React from 'react';
-import IconButton from '../../utils/buttons/iconbutton/IconButton';
+import IconButton from '../../utils/buttons/iconbutton';
 import './MainHeader.scss';
 
 const MainHeader = () => {

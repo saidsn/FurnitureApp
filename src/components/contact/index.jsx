@@ -4,7 +4,6 @@ import './Contact.scss';
 const Contact = () => {
   return (
     <div className='container'>
-      <h3 className='title'>CONTACT</h3>
       <div className='contact__content'>
         <div className='contact__content--left'>
           <div className="contact__content--form">

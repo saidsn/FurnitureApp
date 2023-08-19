@@ -2,12 +2,14 @@ import React from 'react';
 import './CategorySlider.scss';
 import Slider from "react-slick";
 
-const CategorySlider = () => {
+const CategorySlider = (props) => {
+
+    const {slidesCount} = props;
 
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: slidesCount,
         slidesToScroll: 1,
         autoplay: true,
         dots: true,
@@ -54,11 +56,6 @@ const CategorySlider = () => {
                     <p className='category__name'>SOFAS</p>
                 </div>
             </Slider>
-            {/* <button className='slick-prev ok'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 4L20 12L12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4Z" fill="#EEF0F2" />
-                </svg>
-            </button> */}
         </div>
     )
 }

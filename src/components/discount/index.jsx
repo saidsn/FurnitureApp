@@ -1,6 +1,6 @@
 import React from 'react';
 import './Discount.scss';
-import IconButton from '../../utils/buttons/iconbutton/IconButton';
+import IconButton from '../../utils/buttons/iconbutton';
 import Background from '../../assets/images/discountsectionbackground.png';
 
 const Discount = () => {

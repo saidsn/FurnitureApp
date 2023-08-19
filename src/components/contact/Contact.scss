@@ -20,11 +20,12 @@
                 border: 1px solid var(--main-input-border-color);
                 background: var(--main-background-color);
 
-                &::placeholder{
+                &::placeholder {
                     color: #B0B0B0;
                     font-weight: 500;
                 }
-                &:focus{
+
+                &:focus {
                     color: var(--main-input-text-color);
                 }
             }
