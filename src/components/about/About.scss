@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 14rem;
 
     &--left {
         max-width: 68rem;
@@ -18,7 +18,7 @@
     }
 
     &--right {
-        max-width: 56rem;
+        width: 56rem;
 
         .about__content--text {
             margin-bottom: 4.4rem;
