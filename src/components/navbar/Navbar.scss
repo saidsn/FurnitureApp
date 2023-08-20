@@ -34,5 +34,11 @@
             }
         }
     }
+
 }
 
+@media (max-width: 768px) {
+    .navbar__list {
+        gap: 3rem !important;
+    }
+}

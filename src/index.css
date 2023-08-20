@@ -92,6 +92,7 @@ body {
 .container {
     max-width: 138rem;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .btn{

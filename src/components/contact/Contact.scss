@@ -2,10 +2,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 14rem;
+    justify-content: space-between;
+    
     &--left {
-        width: 56rem;
+        max-width: 56rem;
+        width: 100%;
 
         .contact__content--form {
             margin-bottom: 2rem;
@@ -50,5 +51,12 @@
         img {
             border-radius: 5px 5px 300px 5px;
         }
+    }
+}
+
+@media (max-width: 1240px) {
+    .contact__content {
+        justify-content: center;
+        gap: 5rem;
     }
 }

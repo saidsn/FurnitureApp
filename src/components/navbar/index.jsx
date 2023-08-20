@@ -6,7 +6,7 @@ import './Navbar.scss';
 const Navbar = () => {
   return (
     <div className='container'>
-      <div className="navbar">
+      <nav className="navbar">
         <ul className='navbar__list'>
           <li className='navbar__list--item'>
             <NavLink to='/'>Home</NavLink>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <NavLink to='/contact'>Contact</NavLink>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   )
 }

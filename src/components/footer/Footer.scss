@@ -1,12 +1,15 @@
 .footer {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    gap: 14rem;
+    justify-content: space-between;
     margin: 15.4rem 0 2rem;
-    padding: 0 1.3rem;
+    
 
     .footer__left {
+        max-width: 56rem;
+        width: 100%;
+
         &--title {
             color: var(--main-text-color);
             font-family: Didot;
@@ -21,11 +24,33 @@
     }
 
     .footer__right {
+        max-width: 78.4rem;
+        width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-
         &--desc {
             max-width: 25rem;
         }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer{
+        display: flex;
+        gap: 5rem;
+    }
+    .footer__left {
+        &--title {
+            font-size: 3.2rem;
+            line-height: 3.6rem;
+        }
+    }
+
+    .footer__right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 }
