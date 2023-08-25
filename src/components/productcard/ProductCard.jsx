@@ -1,7 +1,7 @@
 import React from 'react';
-import './ProductCart.scss';
+import './ProductCard.scss';
 
-const ProductCart = () => {
+const ProductCard = () => {
   return (
     <div className="product__content--item">
       <div className='product__image'>
@@ -18,4 +18,4 @@ const ProductCart = () => {
   )
 }
 
-export default ProductCart;
+export default ProductCard;

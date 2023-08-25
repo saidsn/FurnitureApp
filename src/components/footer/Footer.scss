@@ -32,6 +32,10 @@
         &--desc {
             max-width: 25rem;
         }
+
+        &--phone{
+            font-variant-numeric: lining-nums proportional-nums;
+        }
     }
 }
 

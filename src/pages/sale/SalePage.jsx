@@ -1,5 +1,5 @@
 import React from 'react';
-import BredCrumbs from '../../components/bredcrumbs';
+import BredCrumbs from '../../components/bredcrumbs/BredCrumbs';
 
 const SalePage = () => {
   return (

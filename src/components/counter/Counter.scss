@@ -1,0 +1,20 @@
+.counter {
+  padding: 11.7rem 11.7rem 0 11.7rem;
+  display: flex;
+  justify-content: space-between;
+  .counter__item {
+    .counter__item--title {
+      color: #b8926a;
+      font-family: var(--second-text-family);
+      font-weight: 700;
+    }
+    .counter__item--text {
+        color: var(--main-text-color);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+        margin: 1rem;
+
+    }
+  }
+}
