@@ -9,8 +9,7 @@ const AboutPage = () => {
   return (
     <div className='container'>
       <BredCrumbs />
-      <Title title="ABOUT US" />
-      <About/>
+      <About />
       <Counter />
     </div>
     

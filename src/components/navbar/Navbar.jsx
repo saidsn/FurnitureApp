@@ -24,9 +24,6 @@ const Navbar = () => {
             <NavLink to='/collections'>Collections</NavLink>
           </li>
           <li className='navbar__list--item'>
-            <NavLink to='/sale'>Sale</NavLink>
-          </li>
-          <li className='navbar__list--item'>
             <NavLink to='/contact'>Contact</NavLink>
           </li>
         </ul>

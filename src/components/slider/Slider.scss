@@ -12,6 +12,7 @@
 .slick-disabled {
   opacity: 0.5;
 }
+
 .slick-next {
   right: 1rem;
   background-color: var(--main-button-bg-color);
@@ -21,10 +22,6 @@
   right: 4rem !important;
   left: auto;
   background-color: var(--main-button-bg-color);
-}
-
-.slick-dots {
-  
 }
 
 .slick-track {
