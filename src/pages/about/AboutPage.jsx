@@ -10,7 +10,7 @@ const AboutPage = () => {
     <div className='container'>
       <BredCrumbs />
       <Title title="ABOUT US" />
-      <About />
+      <About/>
       <Counter />
     </div>
     

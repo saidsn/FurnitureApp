@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./About.module.scss";
 import SecondaryButton from "../../utils/buttons/secondarybutton/SecondaryButton";
+import Title from "../title/Title";
 
 const About = ({showButton}) => {
   return (
     <div className="container">
+      <Title title="ABOUT US" />
       <div className={styles["about__content"]}>
         <div className={styles["about__content--left"]}>
           <img
@@ -30,7 +32,7 @@ const About = ({showButton}) => {
             </p>
           </div>
           <div className={styles["about__content--button btn"]}>
-            <SecondaryButton>LEARN MORE</SecondaryButton>
+            {showButton && <SecondaryButton>LEARN MORE</SecondaryButton>}
           </div>
         </div>
       </div>

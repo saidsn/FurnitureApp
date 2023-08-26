@@ -2,37 +2,11 @@ import React from "react";
 import "./Slider.scss";
 import Slider from "react-slick";
 
-const SlickSlider = ({ children, slidesToShow }) => {
-  const settings = {
-    slidesToShow: slidesToShow,
-    infinite: false,
-    speed: 500,
-    slidesToScroll: 1,
-    autoplay: true,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 2,
-          arrows: false,
-          dots: true,
-        },
-      },
-    ],
-  };
+const SlickSlider = ({ children, settings }) => {
+
 
   return (
-    <div className="container">
+    <>
       <Slider
         nextArrow={
           <svg
@@ -66,7 +40,7 @@ const SlickSlider = ({ children, slidesToShow }) => {
       >
         {children}
       </Slider>
-    </div>
+    </>
   );
 };
 

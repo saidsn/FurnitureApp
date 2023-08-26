@@ -4,53 +4,20 @@ import About from "../../components/about/About";
 import Discount from "../../components/discount/Discount";
 import Product from "../../components/product/Product";
 import Contact from "../../components/contact/Contact";
-import Title from "../../components/title/Title";
-import SlickSlider from "../../components/slider/Slider";
-import CategoryCard from "../../components/categorycard/CategoryCard";
-import ProductCard from "../../components/productcard/ProductCard";
+import ProductSlider from "../../components/productslider/ProductSlider";
+import CategorySlider from "../../components/categoryslider/CategorySlider";
+import CollectionSlider from "../../components/collectionslider/CollectionSlider";
+
 const HomePage = () => {
   return (
     <>
       <MainHeader />
-      <SlickSlider slidesToShow={4}>
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-      </SlickSlider>
-      <Title title="ABOUT US" />
-      <About showButton={true}/>
+      <CategorySlider slidesToShow={4} />
+      <About showButton={true} />
       <Discount />
-      <Title title="PRODUCTS" />
       <Product />
-      <Title title="MOST POPULAR" />
-      <SlickSlider slidesToShow={4}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-      </SlickSlider>
-      <Title title="COLLECTION" />
-      <SlickSlider slidesToShow={3}>
-      <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-      </SlickSlider>
-      <Title title="CONTACT" />
+      <ProductSlider slidesToShow={4} />
+      <CollectionSlider slidesToShow={3} />
       <Contact />
     </>
   );

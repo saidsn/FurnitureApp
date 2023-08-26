@@ -1,14 +1,14 @@
 .button{
     background: none;
-    border: 1px solid var(--secondary-button-border-color);
-    color: var(--secondary-button-border-color);
+    border: 1px solid var(--second-button-border-color);
+    color: var(--second-button-border-color);
     &:hover{
-        color: var(--secondary-button-hover-border-color);
-        border-color: var(--secondary-button-hover-border-color);
+        color: var(--second-button-hover-border-color);
+        border-color: var(--second-button-hover-border-color);
     }
     &:disabled{
-        color: var(--secondary-button-disabled-border-color);
-        border-color: var(--secondary-button-disabled-border-color);
+        color: var(--second-button-disabled-border-color);
+        border-color: var(--second-button-disabled-border-color);
     }
 }
 

@@ -63,29 +63,29 @@ body {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  background-color: var(--main-background-color);
+  background-color: var(--main-bg-color);
   color: var(--main-text-color);
   font-family: var(--main-text-family);
 }
 
 :root {
   --main-text-color: #2d2d2b;
+  --main-bg-color: #eae6df;
+  --second-bg-color: #d4c8be;
   --main-text-family: "Raleway", sans-serif;
   --second-text-family: "GFS Didot", serif;
-  --main-background-color: #eae6df;
   --main-button-text-color: #eae6df;
-  --main-button-background-color: #b8926a;
-  --main-button-hover-background-color: #a5825d;
-  --main-button-disabled-background-color: #b0b0b0;
-  --secondary-button-border-color: #b8926a;
-  --secondary-button-hover-border-color: #a5825d;
-  --secondary-button-disabled-border-color: #b0b0b0;
+  --main-button-bg-color: #b8926a;
+  --main-button-hover-bg-color: #a5825d;
+  --main-button-disabled-bg-color: #b0b0b0;
+  --second-button-border-color: #b8926a;
+  --second-button-hover-border-color: #a5825d;
+  --second-button-disabled-border-color: #b0b0b0;
   --main-input-text-color: #2d2d2b;
   --main-input-border-color: #d4c8be;
-  --main-input-background-color: #eae6df;
   --dropdown-text-color: #b8926a;
   --dropdown-border-color: #b8926a;
-  --dropdown-background-color: #eae6df;
+  --dropdown-bg-color: #eae6df;
 }
 
 .container {

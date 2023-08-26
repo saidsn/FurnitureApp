@@ -3,13 +3,13 @@
     max-width: 33rem;
     border: none;
     color: var(--main-button-text-color);
-    background: var(--main-button-background-color);
+    background: var(--main-button-bg-color);
 
     &:hover {
-        background: var(--main-button-hover-background-color);
+        background: var(--main-button-hover-bg-color);
     }
 
     &:disabled {
-        background: var(--main-button-disabled-background-color);
+        background: var(--main-button-disabled-bg-color);
     }
 }

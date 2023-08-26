@@ -1,10 +1,12 @@
 import React from "react";
 import "./Contact.scss";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
+import Title from "../title/Title";
 
 const Contact = () => {
   return (
     <div className="container">
+      <Title title="CONTACT" />
       <div className="contact__content">
         <div className="contact__content--left">
           <div className="contact__content--form">

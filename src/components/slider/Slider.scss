@@ -6,7 +6,7 @@
   height: 2.4rem;
   border-radius: 50%;
   &:hover {
-    background-color: var(--main-button-hover-background-color);
+    background-color: var(--main-button-hover-bg-color);
   }
 }
 .slick-disabled {
@@ -14,13 +14,17 @@
 }
 .slick-next {
   right: 1rem;
-  background-color: var(--main-button-background-color);
+  background-color: var(--main-button-bg-color);
 }
 
 .slick-prev {
   right: 4rem !important;
   left: auto;
-  background-color: var(--main-button-background-color);
+  background-color: var(--main-button-bg-color);
+}
+
+.slick-dots {
+  
 }
 
 .slick-track {
@@ -39,7 +43,7 @@
       button::before {
         width: 100%;
         height: 0.4rem !important;
-        background: var(--main-button-background-color);
+        background: var(--main-button-bg-color);
         content: "" !important;
       }
     }
