@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./MainHeader.scss";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
+import axios from "axios";
 
 const MainHeader = () => {
+  const url = "http://localhost:3000";
+
+  const [mainHeader, setMainHeader] = useState([]);
+
+  const getMainHeader = async () => {
+    await axios.get(`${url}/mainHeader`).then((res) => {
+      setMainHeader(res.data);
+    });
+  };
+
+  useEffect(() => {
+    getMainHeader();
+  }, []);
+
   return (
     <div className="container">
       <div className="main-header">
         <div className="main-header__left">
-          <h1 className="main-header__left--title">
-            THE FURNITURE THAT DEFINES YOU
-          </h1>
+          <h1 className="main-header__left--title">{mainHeader.title}</h1>
           <p className="main-header__left--description">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum
+            {mainHeader.description}
           </p>
           <MainButton>
             <svg
@@ -44,7 +56,7 @@ const MainHeader = () => {
           <div className="main-header__right--image">
             <img
               style={{ borderRadius: "1rem" }}
-              src="https://s3-alpha-sig.figma.com/img/ae4c/9e23/ba8849252aece8c4c38500429ce2f28b?Expires=1693785600&Signature=clfeZNjYv2sdgSjeDmNygDxAAe6KzO8B2nB6977SZSbKdzkx5Qt1zCpg0TUZm8TptcAnMqLiFdyl9YxzNSHWU7HWPr3l6yMLanTD9cc0v6XPouMGvJ3wOotys~6MYAgMVojyiXEpLHdNJ37BUO1l6w7MNolLcyzE6i-c8Mmdc2UZxxFVcS7hjmn6~ysAhkrDCBZkvML~EYimenJfUztFoqtjTCVZ3X3SYruUbmLESC7zwKlg3ZtZwNS4pXJM3kaMbNknDqPbmj4T~d7B2V3n4SoTp3oW14UJJLoUe7sDR-ZYQGABFsWCihFy9gltHZ5KSupeHgtIJyfJsvMhmb3kTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              src={mainHeader.image}
               alt=""
             />
           </div>

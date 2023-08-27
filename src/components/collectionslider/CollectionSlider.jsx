@@ -1,7 +1,6 @@
 import React from "react";
 import "./CollectionSlider.scss";
 import SlickSlider from "../slider/Slider";
-import CategoryCard from "../categorycard/CategoryCard";
 import Title from "../title/Title";
 
 const CollectionSlider = ({ slidesToShow }) => {
@@ -38,18 +37,7 @@ const CollectionSlider = ({ slidesToShow }) => {
       <div className="container">
       <Title title="COLLECTION" />
         <SlickSlider settings={settings}>
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
+
         </SlickSlider>
       </div>
     </section>
