@@ -37,8 +37,9 @@ const CategorySlider = ({ slidesToShow }) => {
   const [categories, setCategories] = useState([]);
 
   const GetCategory = () => {
-    axios.get(`${url}/category`).then((res) => {
+    axios.get(`${url}/categories`).then((res) => {
       setCategories(res.data);
+      console.log(res.data);
     });
   };
 
@@ -50,11 +51,11 @@ const CategorySlider = ({ slidesToShow }) => {
     <section id="Category">
       <div className="container">
         <SlickSlider settings={settings}>
-          {categories.map((item) => {
+          {categories.map((category) => {
             return (
-              <div className="category__slider--item" key={item.id}>
-                <img src={item.image} alt="" />
-                <p className="category__name">{item.name}</p>
+              <div className="category__slider--item" key={category.id}>
+                <img src={category.image} alt="" />
+                <p className="category__name">{category.name}</p>
               </div>
             );
           })}

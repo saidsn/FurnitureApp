@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.scss";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
 import Title from "../title/Title";
+import axios from "axios";
 
 const Contact = () => {
+  
+  const url = "http://localhost:3000";
+
+  const [contact, setContact] = useState("");
+
+  const GetContact = async () => {
+    await axios.get(`${url}/contact`).then((res) => {
+      setContact(res.data);
+      console.log(res.data);
+    });
+  };
+
+  useEffect(() => {
+    GetContact();
+  });
+
   return (
     <div className="container">
       <Title title="CONTACT" />
@@ -25,7 +42,7 @@ const Contact = () => {
         </div>
         <div className="contact__content--right">
           <img
-            src="https://s3-alpha-sig.figma.com/img/1a81/6eed/44a385856238ca77ac82ce311e6ee73e?Expires=1693180800&Signature=ok8xdrDTYhbNJ1EtRzNQEH26mwl8otpMi3kmUgkWPiHpqQn8ooglXsSDzwl3hHoG1JNBf16MedlYhz02zfdjIs0KsAzXS8Rdx0VHkMbxdIe~Y8k2o55TfUj6o5g9zV5tp12v-lSZiiMyegnv2J5909UqT4IKATfb8Gvovax0yyiK~3FCBPDHr6o5CmrMnqg~ErocnCEsC3wtMkzAmZjjw2KoJgrMRL47VJUrB~ilrE1Tou~IxGTHi9POkcA-1ugNAvLMspn7yxJO8ULsD3eKDuv4U5wAz4mytX71oGqffdr9jUWHm7L2h~XQIayIr5Lu~3qjErqesVEpGnI2y0b3WQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            src={contact.image}
             alt="contactimage"
           />
         </div>

@@ -8,7 +8,7 @@ const About = ({ showButton }) => {
 
   const url = "http://localhost:3000";
 
-  const [about, setAbout] = useState([]);
+  const [about, setAbout] = useState("");
 
   const GetAbout = () => {
     axios.get(`${url}/about`).then((res) => {

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CollectionSlider.scss";
 import SlickSlider from "../slider/Slider";
 import Title from "../title/Title";
+import axios from "axios";
 
 const CollectionSlider = ({ slidesToShow }) => {
   const settings = {
@@ -32,12 +33,33 @@ const CollectionSlider = ({ slidesToShow }) => {
     ],
   };
 
+  const url = "http://localhost:3000";
+
+  const [categories, setCategories] = useState([]);
+
+  const GetCategory = () => {
+    axios.get(`${url}/categories`).then((res) => {
+      setCategories(res.data);
+    });
+  };
+
+  useEffect(() => {
+    GetCategory();
+  }, []);
+
   return (
     <section id="collection">
       <div className="container">
       <Title title="COLLECTION" />
         <SlickSlider settings={settings}>
-
+        {categories.map((category) => {
+            return (
+              <div className="category__slider--item" key={category.id}>
+                <img src={category.image} alt="" />
+                <p className="category__name">{category.name}</p>
+              </div>
+            );
+          })}
         </SlickSlider>
       </div>
     </section>

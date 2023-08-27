@@ -1,5 +1,5 @@
 {
-  "category": [
+  "categories": [
     {
       "id": 1,
       "name": "SOFAS",
@@ -33,13 +33,107 @@
   ],
 
   "mainHeader": {
+    "id": 1,
     "title": "THE FURNITURE THAT DEFINES YOU",
     "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum",
     "image": "https://s3-alpha-sig.figma.com/img/ae4c/9e23/ba8849252aece8c4c38500429ce2f28b?Expires=1693785600&Signature=clfeZNjYv2sdgSjeDmNygDxAAe6KzO8B2nB6977SZSbKdzkx5Qt1zCpg0TUZm8TptcAnMqLiFdyl9YxzNSHWU7HWPr3l6yMLanTD9cc0v6XPouMGvJ3wOotys~6MYAgMVojyiXEpLHdNJ37BUO1l6w7MNolLcyzE6i-c8Mmdc2UZxxFVcS7hjmn6~ysAhkrDCBZkvML~EYimenJfUztFoqtjTCVZ3X3SYruUbmLESC7zwKlg3ZtZwNS4pXJM3kaMbNknDqPbmj4T~d7B2V3n4SoTp3oW14UJJLoUe7sDR-ZYQGABFsWCihFy9gltHZ5KSupeHgtIJyfJsvMhmb3kTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
   },
 
   "about": {
+    "id": 1,
     "image": "https://s3-alpha-sig.figma.com/img/754e/f220/6125e68f344e6b26d5b0e7816a0e4381?Expires=1693785600&Signature=hiuIlGrS1hhzBl3lWiBPgvWJPvs4mHAryZ-weEMgH8kt0v19be0bgyQt-hb1P~BYhdRYHxk1-47ngeeGVmn-tQ4EmUUF2MZA785Akb3OgqgG~3UB~e8XYozGdKm9FhXpDDV1qEdUaQm10~9B6Q8OUZ8u4vltYVqVu2ZRL9Pf6K~89PbmcvqcAMYVZaHa6bgrVQ14KSOqMVTAgvRwQPoNY5HzbTNpgU4xM2o6uxckHAT6i-mB6TreyOzcvMR4lq6Jy~I0d77LjKf9ezv4v0C59sNUHNPTHzRrZP5xNoDOXmB89ZzP1HR4z5CFMJoZCLr8~N3JeP~sn-6iSCM070ypDQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
     "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+  },
+
+  "discount": {
+    "id": 1,
+    "title": "20% DISCOUNT",
+    "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo"
+  },
+
+  "products": [
+    {
+      "id": 1,
+      "image": "https://s3-alpha-sig.figma.com/img/ed65/0672/8605e77828c2dca2b6da5d4d87f66186?Expires=1693785600&Signature=FwA-whxqSd3NkL95k1AuUTBjEVFcKiFznWaJIzj2j5gzkOsbKHU3glpMUwbZID2hxJYXKBzogK0dOZwpgXUU~Km-Wrxdx26319bjcm-mpmT1gPM0WC4VqNgzbusANSmztgBK6MTahoTQwzohFqvpIgWz7b6JaJjpHs2DcA051F8-008FwGJK2kWW-rx6uqnxARftyGS~kfbHOTf4zMTUROfmKbPbQ-4GGSzTfzL~oWDaJ0uoTjsTL-PgiQcHV98xdeQkaupziC~ejlibmKFxmppiQqe9k1N9rUdDISWEnyNBu2fOVGIgAmBHRfOxD7inXv0C7EHGW37ag~gHy2IGLA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 2,
+      "image": "https://s3-alpha-sig.figma.com/img/5a97/55b2/be5d65f3963d2bc282606dc6acd7fe2d?Expires=1693785600&Signature=YTIY5hzisEN~xk-qXn~Y2Nq04yoGGY4xHZ0Mk-riCrvV06r3ntER8NBdIApOk7SIKwSUIPufE7KPyWMWLMyy9hVEpttypknih3jUK-2L4iLCbk3jCTV4U2jdFuiA3GiZCAt-zqEuL37lLnAYoWA-jiHbjlppo9m8DMiXMA6urHPlDHgcVnHQnHn8Gb1L3iVxs2oyqwN1jKrNq3DeDML8txydEqSatmBrPE3IoDU3mfWT4lK9NDfGnAhi5txwTct0qXENepLDSDb-NfipSIaVLM8sDBShe2sho9quxJaaPM8AFzw1oQc~nUyKkpWUVMCcB6bL08ESdSCYzLrFSJb15A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 3,
+      "image": "https://s3-alpha-sig.figma.com/img/eafa/bf40/6cb1d294ca686d29b62862c6f7bde43e?Expires=1693785600&Signature=N5zjhgTm028Zbj9Vez80~ej2bolm8ob0ssZY8PKA90YcJ5qrib4I~18wUuCnxCFS1vJqOlGnuohZ0a8Lm~iPWTfETaaKSOFdJu7iJ-gbC8vpjs9v71zerolZ2gNxgCC4lD0l912eE7NuDiGPCY7Oa4BATe5eZxdU4cyE3fYef6vdmEMl1tynmCAtNVYnL11tz-~U1hllrArHzmMFEt~BBLapEPSFq98S5zvmbUmuPyPZSLBvr3FCZsm477NGHJrvtOkdgsaQzVwTdcF2Z02wFgiHlEBb8hAKSp8ZtnG26M8AsCggwwuqAKlTxg7nzN3u0y0eocrzjcCv3eoxq4aSNw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 4,
+      "image": "https://s3-alpha-sig.figma.com/img/dee2/eb13/91d11c1e5ecc902a0c6592f4c16d3abb?Expires=1693785600&Signature=QIBc3byjS8y9jIZpMlix14By1GElKXC3ZYKp14y7Fh4ys9sEwSGR63NjgpOelWISTXyp3TC6qVplgyKOPzFVylk-EP6~0FUhKgP-0krxrBfpjjUAdXsfkdWcqtI1EqVrjs0uj2H-LT6iIkN5uc9PQTtN7V1LNAHSAfWVYlNdPFMdpBPBObfIGdANrmQH6W-L7r46pohmxVHAWUmZLFLjwJZEkazDYk-gImzKo10o7rs0U6x2jLkIPCMY~4EyVnMHLaMSI2Nn8iWoObR4K-d1dPabNdYdqmQLNGCb7k4MYC72bG0lm59yfvCkN59L1W7FTP2wugs3s-U9xduV2yvSdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 5,
+      "image": "https://s3-alpha-sig.figma.com/img/a74d/e1b6/6730f5b5363196a16ffb8a91a269bf7e?Expires=1693785600&Signature=VdPJcOVnO9AFRqWcQ5qzCa~~9wHUmrW9Z8nLxfOO6knt9dXgkgpK1gVRffg4bpolOUqOkrPiMJQpWcAaDsWF-u-q2PUmM0KX0IXW5wOTtb4XOFttKAtFwHGhtjOWieqFAZnSuTQ-PI9oHumKyqW7iSIDQCaaY4y7jC2BoPWsLiwTYjmcY3IMk~M0LoqNubwvyDy2E4EC-GQ8aL3QFwhMKZGW4U5TsfXhWBbMrS1SU-b-8Dj6IubAMEMapb-ZIDMIbpXi3KVLR-JTJ~WoJLsc7s8e9nZqLn-50cWlatSaldI4cFz5oU6tB0wWgpex5EmNisoC-CuDOKyxmEMCBoIYLg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 6,
+      "image": "https://s3-alpha-sig.figma.com/img/4d98/0a2b/4cf40a0ed69c10e4829a9d775c00304d?Expires=1693785600&Signature=hZCeqIacjmWEZ63nS7XswjCWcpwBjorRbdqinZsM9qNClAh7TvbF14TjhTS1-Y2UF3mdCi1jfn8AKJsnSc20YQojwA~ehF4wCG-g9eNMfJVMav0neu99jV6rC19Ug6F2ONNXC5C0YVjONi37LnuiewoSuWLJcrYNZ3x0QkzdAnJw7SOYzGK3IrKWhRqwkODnLPshnPxamZVtrYtv~N8RBv8M07jRs9V7dtJP~ZDvMlsAboN3FkjBv8SAgmsz2e-An9Tb9prD~hbm0VuKl~pqNi9kgO0DWfkXR5~iHb3th~ssbrZ0XDcszOd~WTHTkcxeA2V4lKaZfkSW0P3SCgCdrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 7,
+      "image": "https://s3-alpha-sig.figma.com/img/ae52/fda0/d18440f6574ed4959e1aaf90d8c59dd1?Expires=1693785600&Signature=kgQ3A7fLLmdG4-2X2GWeVvDvtIO8dfIZ~ZXcGXx4aze4U7aYzuRZIMriPM-JmZ61JLdTQhyBKpOt7B3WqBdkYdYThfY4pFEadqMCGPA7NsfMIS1ReQPQe2Spdw4L7vhiHt33EsnknAWLOXPZKxgZsh-a2859h4QH7k1TgopWWXYskc3b99dZ1P5ug-3sROUb~FvrAWd8cVWA-eFs8qds5OpHCnf1jrVtbYy13t8FJO1fVV9Q1kTiga2nA9YoeUih9F0IMcm4uLPeR8x9NdMFzrhQaMX32xwpbj89WhbWPhLeSRciGe9H20awsjpyffP6q~nr7lQ38LfO2guZ7QXN7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 8,
+      "image": "https://s3-alpha-sig.figma.com/img/7bf7/d767/fb3d76499c0312fb96c9600f3c06fc31?Expires=1693785600&Signature=J0v-Me-IwO-lO2Ykxu1Xq6BvAavhnVozvlVX0rxJIJhCOW0lgG614SNICW6bVzRI71zmLNheHxeJagxmMUFfFad314FLgsBYoioXLtArzIek41inTYJgaOJnq0em8b-ClzyF0uKdDLAFSz-5MdgQKxh26LvM1av5qYm0Z9zZz8-JIuQMn4weOru3wPVIxGjAq2wRWX~clkPSAI4ppxmonZC4kpXpX~iPr4yo54VCz9R-Yil8R9R~PWGvduy9pOwor-G40CVU1r-a9GbhM80V8btnCBkGNzZQ7uQb2TwnBCrhPguKxrTkNi91Z8EgQ5B0Fpwj2TmkJR4iUZOkfic4LQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 9,
+      "image": "https://s3-alpha-sig.figma.com/img/305c/2426/af6eb65fdd771b89d2c1700aac7e12e9?Expires=1693785600&Signature=gZufRuoyD9kLCl9dAABGDK5GrdTiDf4Mx~eJqqvXZfPc3INBgc-Wse6WVbd92BkXSdb~neXoQAz3rONh1IQu1ANOubZRVVQy6XoxxGr6Y32bNAn5i5bGwXYUnvkQ9T9Kvun9n-OR0bN3b0UQJp5bVogB2DPR~HmmUvZCNw6ZIJfTShvSJly-6D379d99SlfKkqMn-KmOmgkcPIJ0f6THhHiSln2ubyoXnsYWuyJEcSDlYv8wQh9bn60qK9CzAfeSnkr2e3VJAcIO9M~HyRUMdt0fKV4lVjreqTMJKp5CZlM4xRPmU6WeDSqHDe5EcUPL-vgpZ-6onczd-adWVSu-oQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 10,
+      "image": "https://s3-alpha-sig.figma.com/img/1851/1c19/4acae62ef5c0b9441ca3aaa7b1199e43?Expires=1693785600&Signature=oejE9Td55CTM0YKleGr2hdJCQjJDr2ZPyyAly3FY8crEYkICmRXJCp5acxWGYDeWo~RfuRNTUT2ReVt1AhHh6unBD1fkU5dD1OxAMYXNzH4HItGYG2ALlfjvsXMTySE7baElw9wEasxqpNV3cahEFUwx1Nn0bievigtablVgvdHT2UQwAGb~6XpuDCjWBalTRM62-x6zVksC6ZMbgpL~GqPA2fWi59usMNAhxp6D5w-rbZb5DnKFDiiBsfAX9ZMJClIc7CzO0L4xzuZvrQXTTJAsyPyXkIurrqO7CfIxCfVelmDVXsbMzzLTMtVEHxVBf48aI7gNAAi19AMDXMEtDw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 11,
+      "image": "https://s3-alpha-sig.figma.com/img/3100/68ee/10b908245071a25dcb0201a2777a112b?Expires=1693785600&Signature=ZvX5Wu0ddeUblTrHki20pNKMtVlNRML3loPEDiblqvcKTuKbfGWlTHCF9KpgG6Sbie~8soLhDvzt4mbKTHK5leJnE5voCV7DM40jm0pefXpiSnwqLmXUBHom7jRf9i-0VoKcPvyT-~SpvJtkeZmsDMExKcEfb2V~aejSq9mw396Oh0M940Lx9d7h3vpnLxGnLFpobQ6kplXxoG8yFVRc~jxE13ACcS~yzVnHAicvityCwUyxTn5NuS7i2Vwuce5w15x26BGDBf~e25DintZwwGlQcZR7~nNdg8ajY56CAhLA5S-XcU9ejLnlJd4F~udQ~LYHAtxX8N2MBfigBiDeyg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    },
+    {
+      "id": 12,
+      "image": "https://s3-alpha-sig.figma.com/img/8026/59d9/c0b3b71441e3dcfa8abc9000896d31fd?Expires=1693785600&Signature=E3zRkhaCOSQ1s6GlX4FtEbOlCRtZg3t7NQOM2d0-SAzZYHCiuMaogj-IAyokvkWkfAEiaccKdAgYQXB2IW7NOS0e6XJNNO0GqFLS8LMrzXCnDx~Yvjvq6hynwuJ7XA7WgW2ewrcoUaKpzRwLOzTz~w48llwNbZYHg4GEmnNcmBmQowInUrP1EQuPhALuxcJ1DH4OkRz8D26QMRiFDRJ5KKK6~ibACB2EkJ4pq6jT-KGU4p~Iq3c43Ii0mwXB-0G0Ig1ELFEGZ6EnnSZV5a8tDOgEThodwpzfdVmvn4WRvrf~zbp6rfL2b4zj5m-Hgq5LHX1keDKXXtWQhS4lZAN1mw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "price": "140$"
+    }
+  ],
+
+  "contact": {
+    "image": "https://s3-alpha-sig.figma.com/img/1a81/6eed/44a385856238ca77ac82ce311e6ee73e?Expires=1693785600&Signature=PcY2~5wf6JLz5tU2qUHjbEAWB-vzDm5Rh9QQMKPa~wQyIHl11wihTv7NlyaBg1AO-dmOoW4TAgeiBPBVMnBykjU7-wWNr4aancuCmQQwLrHQwP64rVQMtNyUtqN3OoDrM8fSrU4agJMzjUDvWELudBgRGPSpbBV6PcrCTWqPjD8Dm4-ATOi~5n2VdVm4JGCzhK5OC9OHHzoSl4xwbpTzqlKHBHhnGhpwdFtSgSZySRjV3EZDWB5CllhkJqr~g0~jO60e56UixyacD6BkYe96gE1qBFc3fX~PgD10c7pjTbaiMSoHQhaJbITEzdaxmxTz6OnoKrNJcSlfLOqJQ2uGPw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+
+  "footer": {
+    "id": 1,
+    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui",
+    "phone": "+994 50 555 55 55",
+    "email": "seidvahidli@gmail.com"
   }
 }

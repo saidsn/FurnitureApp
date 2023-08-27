@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Discount.scss";
 import Background from "../../assets/images/discountsectionbackground.png";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
+import axios from "axios";
 
 const Discount = () => {
+
+  const url = "http://localhost:3000";
+
+  const [discount, setDiscount] = useState("");
+
+  const GetDiscount = () => {
+    axios.get(`${url}/discount`).then((res) => {
+      setDiscount(res.data);
+    });
+  };
+
+  useEffect(() => {
+    GetDiscount();
+  })
+
   const sectionBackground = {
     backgroundImage: `url(${Background})`,
     backgroundPosition: "center",
@@ -13,11 +29,8 @@ const Discount = () => {
   return (
     <div className="discount" style={sectionBackground}>
       <div className="discount__content">
-        <h2 className="discount__content--title">20% DISCOUNT</h2>
-        <p className="discount__content--text">
-          Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-          tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
-        </p>
+        <h2 className="discount__content--title">{discount.title}</h2>
+        <p className="discount__content--text">{discount.description}</p>
       </div>
       <MainButton>
         <svg
