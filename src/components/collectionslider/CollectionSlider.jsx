@@ -35,16 +35,16 @@ const CollectionSlider = ({ slidesToShow }) => {
 
   const url = "http://localhost:3000";
 
-  const [categories, setCategories] = useState([]);
+  const [collections, setCollections] = useState([]);
 
-  const GetCategory = () => {
-    axios.get(`${url}/categories`).then((res) => {
-      setCategories(res.data);
+  const GetCollection = () => {
+    axios.get(`${url}/collections`).then((res) => {
+      setCollections(res.data);
     });
   };
 
   useEffect(() => {
-    GetCategory();
+    GetCollection();
   }, []);
 
   return (
@@ -52,11 +52,11 @@ const CollectionSlider = ({ slidesToShow }) => {
       <div className="container">
       <Title title="COLLECTION" />
         <SlickSlider settings={settings}>
-        {categories.map((category) => {
+        {collections.slice(0, 6).map((collection) => {
             return (
-              <div className="category__slider--item" key={category.id}>
-                <img src={category.image} alt="" />
-                <p className="category__name">{category.name}</p>
+              <div className="category__slider--item" key={collection.id}>
+                <img src={collection.image} alt="" />
+                <p className="category__name">{collection.name}</p>
               </div>
             );
           })}

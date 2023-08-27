@@ -22,7 +22,7 @@ const Product = () => {
     <div className="container">
       <Title title="PRODUCTS" />
       <div className="product__content">
-        {products.map((product) => {
+        {products.slice(0, 8).map((product) => {
           return (
             <div className="product__content--item" key={product.id}>
               <div className="product__image">

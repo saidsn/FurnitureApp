@@ -52,7 +52,7 @@ const ProductSlider = ({ slidesToShow }) => {
       <div className="container">
         <Title title="MOST POPULAR" />
         <SlickSlider settings={settings}>
-          {products.map((product) => {
+          {products.slice(0, 6).map((product) => {
             return (
               <div className="product__content--item" key={product.id}>
                 <div className="product__image">
