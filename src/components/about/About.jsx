@@ -20,7 +20,7 @@ const About = ({ showButton }) => {
   });
 
   return (
-    <section id="section">
+    <section id={styles["about"]}>
       <div className="container">
         <Title title="ABOUT US" />
         <div className={styles["about__content"]}>

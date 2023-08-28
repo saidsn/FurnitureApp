@@ -1,17 +1,20 @@
-.collection {
+#collection__slider {
+  margin-bottom: 12.8rem;
   background: var(--second-bg-color);
   padding: 5rem 0 10rem;
-  .collection__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &--action {
-      a {
-        font-weight: 500;
-        line-height: 2rem;
-        text-decoration-line: underline;
-        color: #b8926a;
-      }
+  .title__head{
+    color: var(--main-text-color);
+    font-family: Didot;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+  }
+  .title--action{
+    a{
+      font-weight: 500;
+      line-height: 2rem;
+      text-decoration-line: underline;
+      color: #b8926a;
     }
   }
 

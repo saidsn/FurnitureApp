@@ -48,7 +48,7 @@ const CategorySlider = ({ slidesToShow }) => {
   }, []);
 
   return (
-    <section id="categorySlider">
+    <section id="category__slider">
       <div className="container">
         <SlickSlider settings={settings}>
           {categories.map((category) => {

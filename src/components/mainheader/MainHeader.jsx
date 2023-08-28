@@ -19,7 +19,7 @@ const MainHeader = () => {
   }, []);
 
   return (
-    <section id="mainHeader">
+    <section id="main__header">
       <div className="container">
         <div className="main-header">
           <div className="main-header__left">

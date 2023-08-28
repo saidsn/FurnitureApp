@@ -1,11 +1,13 @@
-.link{
-
-    &.active::before{
-        content: "|";
-        margin: 0 1rem;
+#bred__crumbs {
+  margin-bottom: 5rem;
+  .link {
+    &.active::before {
+      content: "|";
+      margin: 0 1rem;
     }
 
-    &:not(.active){
-        opacity: 0.5;
+    &:not(.active) {
+      opacity: 0.5;
     }
+  }
 }

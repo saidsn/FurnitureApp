@@ -26,7 +26,7 @@ const Discount = () => {
     backgroundRepeat: "no-repeat",
   };
   return (
-    <section id="section">
+    <section id="discount">
       <div className="discount" style={sectionBackground}>
         <div className="discount__content">
           <h2 className="discount__content--title">{discount.title}</h2>

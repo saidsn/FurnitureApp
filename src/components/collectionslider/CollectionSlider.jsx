@@ -49,14 +49,14 @@ const CollectionSlider = ({ slidesToShow }) => {
   }, []);
 
   return (
-    <section id="section" className="collection">
+    <section id="collection__slider">
       <div className="container">
-        <div className="collection__header">
-          <Title title="COLLECTION" />
-          <div className="collection__header--action">
+        <Title>
+          <h3 className="title__head">COLLECTIONS</h3>
+          <div className="title--action">
             <Link to="/about">SEE ALL</Link>
           </div>
-        </div>
+        </Title>
         <SlickSlider settings={settings}>
           {collections.slice(0, 6).map((collection) => {
             return (

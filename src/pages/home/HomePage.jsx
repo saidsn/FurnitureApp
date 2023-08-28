@@ -2,7 +2,7 @@ import React, {useEffect, useState } from "react";
 import MainHeader from "../../components/mainheader/MainHeader";
 import About from "../../components/about/About";
 import Discount from "../../components/discount/Discount";
-import Product from "../../components/product/Product";
+import ProductList from "../../components/productlist/ProductList";
 import Contact from "../../components/contact/Contact";
 import ProductSlider from "../../components/productslider/ProductSlider";
 import CategorySlider from "../../components/categoryslider/CategorySlider";
@@ -16,7 +16,7 @@ const HomePage = () => {
       <CategorySlider slidesToShow={4} />
       <About showButton={true} />
       <Discount />
-      <Product />
+      <ProductList />
       <ProductSlider slidesToShow={4} />
       <CollectionSlider slidesToShow={3} />
       <Contact />
