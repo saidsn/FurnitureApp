@@ -48,7 +48,7 @@ const ProductSlider = ({ slidesToShow }) => {
   });
 
   return (
-    <section id="Product">
+    <section id="section">
       <div className="container">
         <Title title="MOST POPULAR" />
         <SlickSlider settings={settings}>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./CollectionSlider.scss";
 import SlickSlider from "../slider/Slider";
 import Title from "../title/Title";
@@ -48,15 +49,20 @@ const CollectionSlider = ({ slidesToShow }) => {
   }, []);
 
   return (
-    <section id="collection">
+    <section id="section" className="collection">
       <div className="container">
-      <Title title="COLLECTION" />
+        <div className="collection__header">
+          <Title title="COLLECTION" />
+          <div className="collection__header--action">
+            <Link to="/about">SEE ALL</Link>
+          </div>
+        </div>
         <SlickSlider settings={settings}>
-        {collections.slice(0, 6).map((collection) => {
+          {collections.slice(0, 6).map((collection) => {
             return (
-              <div className="category__slider--item" key={collection.id}>
+              <div className="collection__slider--item" key={collection.id}>
                 <img src={collection.image} alt="" />
-                <p className="category__name">{collection.name}</p>
+                <p className="collection__name">{collection.name}</p>
               </div>
             );
           })}
