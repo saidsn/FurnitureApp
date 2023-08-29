@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.scss";
+import ContactService from "../../APIs/services/ContactService";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
 import Title from "../title/Title";
-import axios from "axios";
 
 const Contact = () => {
-  const url = "http://localhost:3000";
-
   const [contact, setContact] = useState("");
 
-  const GetContact = async () => {
-    await axios.get(`${url}/contact`).then((res) => {
-      setContact(res.data);
-      console.log(res.data);
-    });
+  const GetAllContact = async () => {
+    setContact(await ContactService.getAll());
   };
 
   useEffect(() => {
-    GetContact();
-  });
+    GetAllContact();
+  }, []);
 
   return (
     <section id="contact">
@@ -52,3 +47,18 @@ const Contact = () => {
 };
 
 export default Contact;
+
+// const url = "http://localhost:3000";
+
+// const [contact, setContact] = useState("");
+
+// const GetContact = async () => {
+//   await axios.get(`${url}/contact`).then((res) => {
+//     setContact(res.data);
+//     console.log(res.data);
+//   });
+// };
+
+// useEffect(() => {
+//   GetContact();
+// });

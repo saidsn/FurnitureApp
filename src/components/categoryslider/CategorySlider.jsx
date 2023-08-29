@@ -39,7 +39,6 @@ const CategorySlider = ({ slidesToShow }) => {
   const GetCategory = () => {
     axios.get(`${url}/categories`).then((res) => {
       setCategories(res.data);
-      console.log(res.data);
     });
   };
 
