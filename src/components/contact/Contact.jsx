@@ -23,7 +23,9 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container">
-        <Title title="CONTACT" />
+        <Title>
+          <h3 className="title__head">CONTACT</h3>
+        </Title>
         <div className="contact__content">
           <div className="contact__content--left">
             <div className="contact__content--form">

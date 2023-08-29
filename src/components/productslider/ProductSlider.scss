@@ -1,18 +1,5 @@
 #product__slider{
     margin-bottom: 12.8rem;
-    .product__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      &--action {
-        a {
-          font-weight: 500;
-          line-height: 2rem;
-          text-decoration-line: underline;
-          color: #b8926a;
-        }
-      }
-    }
     .product__content {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));

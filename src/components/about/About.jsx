@@ -22,7 +22,9 @@ const About = ({ showButton }) => {
   return (
     <section id={styles["about"]}>
       <div className="container">
-        <Title title="ABOUT US" />
+        <Title>
+          <h3 className="title__head">AOBUT US</h3>
+        </Title>
         <div className={styles["about__content"]}>
           <div className={styles["about__content--left"]}>
             <img src={about.image} alt="aboutimage" />

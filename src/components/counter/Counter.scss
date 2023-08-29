@@ -1,6 +1,6 @@
 .counter {
   width: 100%;
-  padding: 11.7rem 11.7rem 0 11.7rem;
+  padding: 0 11.7rem 12.8rem;
   display: flex;
   flex-wrap: wrap;
   
@@ -20,6 +20,7 @@
     }
   }
 }
+
 @media (max-width: 576px) {
   .counter {
     gap: 5rem;

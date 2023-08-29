@@ -1,21 +1,5 @@
 #product__list{
   margin-bottom: 12.8rem;
-  .title__head{
-    color: var(--main-text-color);
-    font-family: Didot;
-    font-size: 4.8rem;
-    font-weight: 700;
-    line-height: 5.2rem;
-  }
-  .title--action{
-    a{
-      font-weight: 500;
-      line-height: 2rem;
-      text-decoration-line: underline;
-      color: #b8926a;
-    }
-  }
-
   .product__content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));

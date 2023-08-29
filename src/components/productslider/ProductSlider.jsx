@@ -50,7 +50,9 @@ const ProductSlider = ({ slidesToShow }) => {
   return (
     <section id="product__slider">
       <div className="container">
-        <Title title="MOST POPULAR" />
+        <Title>
+          <h3 className="title__head">MOST POPULAR</h3>
+        </Title>
         <SlickSlider settings={settings}>
           {products.slice(0, 6).map((product) => {
             return (
