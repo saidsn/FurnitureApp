@@ -8,7 +8,7 @@ const Contact = () => {
   const [contact, setContact] = useState("");
 
   const GetAllContact = async () => {
-    setContact(await ContactService.getAll());
+    setContact(await ContactService.GetAll());
   };
 
   useEffect(() => {

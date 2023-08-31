@@ -1,22 +1,18 @@
 import React, { useEffect, useState } from "react";
+import AboutService from "../../APIs/services/AboutService";
 import styles from "./About.module.scss";
 import SecondaryButton from "../../utils/buttons/secondarybutton/SecondaryButton";
 import Title from "../title/Title";
-import axios from "axios";
 
 const About = ({ showButton }) => {
-  const url = "http://localhost:3000";
-
   const [about, setAbout] = useState("");
 
-  const GetAbout = () => {
-    axios.get(`${url}/about`).then((res) => {
-      setAbout(res.data);
-    });
+  const GetAllAbout = async () => {
+    setAbout(await AboutService.GetAll());
   };
 
   useEffect(() => {
-    GetAbout();
+    GetAllAbout();
   });
 
   return (
