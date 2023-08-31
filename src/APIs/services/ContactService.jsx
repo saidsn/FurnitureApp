@@ -1,13 +1,11 @@
-import { HttpClient } from "../HttpClient/Index";
+import { HttpClient } from "../HttpClient";
 
 class ContactService extends HttpClient {
   constructor() {
     super("http://localhost:3000");
   }
 
-  GetAll() {
-    return this.get("contact");
-  }
+  GetAll = () => this.get("contacts");
 }
 
 export default new ContactService();

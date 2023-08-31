@@ -1,23 +1,19 @@
 import React, { useEffect, useState } from "react";
+import DiscountService from "../../APIs/services/DiscountService";
 import "./Discount.scss";
 import Background from "../../assets/images/discountsectionbackground.png";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
-import axios from "axios";
 
 const Discount = () => {
-  const url = "http://localhost:3000";
-
   const [discount, setDiscount] = useState("");
 
-  const GetDiscount = () => {
-    axios.get(`${url}/discount`).then((res) => {
-      setDiscount(res.data);
-    });
+  const GetAllDiscount = async () => {
+    setDiscount(await DiscountService.GetAll());
   };
 
   useEffect(() => {
-    GetDiscount();
-  });
+    GetAllDiscount();
+  },"");
 
   const sectionBackground = {
     backgroundImage: `url(${Background})`,
@@ -26,7 +22,7 @@ const Discount = () => {
     backgroundRepeat: "no-repeat",
   };
   return (
-    <section id="discount">
+    <section class="discount section">
       <div className="discount" style={sectionBackground}>
         <div className="discount__content">
           <h2 className="discount__content--title">{discount.title}</h2>

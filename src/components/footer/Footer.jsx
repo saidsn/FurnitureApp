@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from "react";
+import FooterService from "../../APIs/services/FooterService";
 import "./Footer.scss";
-import axios from "axios";
 
 const Footer = () => {
-  const url = "http://localhost:3000";
 
-  const [footer, setFooter] = useState([]);
+  const [footer, setFooter] = useState("");
 
-  const getFooter = async () => {
-    await axios.get(`${url}/footer`).then((res) => {
-      setFooter(res.data);
-    });
+  const GetAllFooter = async () => {
+      setFooter(await FooterService.GetAll());
   };
 
   useEffect(() => {
-    getFooter();
-  });
+    GetAllFooter();
+  },"");
 
   return (
-    <section id="section">
+    <section class="footer__section">
       <div className="container">
         <div className="footer">
           <div className="footer__left">

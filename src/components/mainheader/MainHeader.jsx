@@ -1,22 +1,18 @@
 import React, { useEffect, useState } from "react";
+import MainHeaderService from "../../APIs/services/MainHeaderService";
 import "./MainHeader.scss";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
-import axios from "axios";
 
 const MainHeader = () => {
-  const url = "http://localhost:3000";
-
   const [mainHeader, setMainHeader] = useState([]);
 
-  const getMainHeader = async () => {
-    await axios.get(`${url}/mainHeader`).then((res) => {
-      setMainHeader(res.data);
-    });
+  const GetAllMainHeader = async () => {
+    setMainHeader(await MainHeaderService.GetAll());
   };
 
   useEffect(() => {
-    getMainHeader();
-  }, []);
+    GetAllMainHeader();
+  },[]);
 
   return (
     <section id="main__header">

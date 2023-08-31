@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import CategoryService from "../../APIs/services/CategoryService";
 import "./CategorySlider.scss";
 import SlickSlider from "../slider/Slider";
-import axios from "axios";
+import CategoryCard from "../categorycard/CategoryCard";
 
 const CategorySlider = ({ slidesToShow }) => {
   const settings = {
@@ -32,31 +33,22 @@ const CategorySlider = ({ slidesToShow }) => {
     ],
   };
 
-  const url = "http://localhost:3000";
-
   const [categories, setCategories] = useState([]);
 
-  const GetCategory = () => {
-    axios.get(`${url}/categories`).then((res) => {
-      setCategories(res.data);
-    });
+  const GetAllCategory = async () => {
+    setCategories(await CategoryService.GetAll());
   };
 
   useEffect(() => {
-    GetCategory();
+    GetAllCategory();
   }, []);
 
   return (
-    <section id="category__slider">
+    <section class="category__slider section">
       <div className="container">
         <SlickSlider settings={settings}>
           {categories.map((category) => {
-            return (
-              <div className="category__slider--item" key={category.id}>
-                <img src={category.image} alt="" />
-                <p className="category__name">{category.name}</p>
-              </div>
-            );
+            return <CategoryCard key={category.id}>{category}</CategoryCard>;
           })}
         </SlickSlider>
       </div>

@@ -32,20 +32,20 @@
     }
   ],
 
-  "mainHeader": {
+  "mainheaders": {
     "id": 1,
     "title": "THE FURNITURE THAT DEFINES YOU",
     "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum",
-    "image": "https://s3-alpha-sig.figma.com/img/ae4c/9e23/ba8849252aece8c4c38500429ce2f28b?Expires=1693785600&Signature=clfeZNjYv2sdgSjeDmNygDxAAe6KzO8B2nB6977SZSbKdzkx5Qt1zCpg0TUZm8TptcAnMqLiFdyl9YxzNSHWU7HWPr3l6yMLanTD9cc0v6XPouMGvJ3wOotys~6MYAgMVojyiXEpLHdNJ37BUO1l6w7MNolLcyzE6i-c8Mmdc2UZxxFVcS7hjmn6~ysAhkrDCBZkvML~EYimenJfUztFoqtjTCVZ3X3SYruUbmLESC7zwKlg3ZtZwNS4pXJM3kaMbNknDqPbmj4T~d7B2V3n4SoTp3oW14UJJLoUe7sDR-ZYQGABFsWCihFy9gltHZ5KSupeHgtIJyfJsvMhmb3kTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    "image": "https://s3-alpha-sig.figma.com/img/ae4c/9e23/ba8849252aece8c4c38500429ce2f28b?Expires=1694390400&Signature=gTGJ5qNrXtHQyfnAaafR9veCmmoqxa5wLsW8zJtHWYsmAKdvHZRhn5wvoaZGks2IcoNrn8YFam8g5eJssjzL2mAwAjvJlnBZotqjjdlx6LKe6X2lBD7ORMFAvPyuEmJEya8b1RGz5tGqXsodTi84n3hwbWlS5iKWZ-ZDWnBYMy-X7lkj4YVQ5IyVT7WD-44zwWa~4z9u-6kuhlmVnMmlXOXRzXgscJTlNfwDdjub~K5NtA9NKuwoIOoJpFvux6ZI9elhc~OkJXVcJZni2JxXejO6JgTLBCG0qQ52HdrRThkkgjTb88JKquO5BymnpK~zNHQgJ9-hLWoO~Gq6sLcbpw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
   },
 
-  "about": {
+  "abouts": {
     "id": 1,
     "image": "https://s3-alpha-sig.figma.com/img/754e/f220/6125e68f344e6b26d5b0e7816a0e4381?Expires=1694390400&Signature=b2BZose~EIq9D~kaGUjCgDGy0SLvl2YPZbVzAmDBcZTAowj7hXE-WyqH5VGlTkbMfNdes~qB~OtXcYr7Ib0JGAkaddMriXenz5E5dfoCfzrkw9GUMT8CxxPxJp1jevxVve-6AvXJ9oo5Zi-1dzEIZ~Yuy2TbPFRjY3iePwlxJphNp5NClRdWHpgokF4xiLGTpLlV0s9PTORRpbJJReEKkxBa8jwTbCFpMTE-LBsAN3f1CphDCkAv3IVRsb1bvPlZ-D-VHnQsua98CP3xQPf1s1ev9V93CL7RFCvLR4G5SI8qca22x7~RPoPWo4XbJ-Dw5U4XHnwdoHIeoY698E7TQg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
     "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
   },
 
-  "discount": {
+  "discounts": {
     "id": 1,
     "title": "20% DISCOUNT",
     "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo"
@@ -174,11 +174,11 @@
     }
   ],
 
-  "contact": {
+  "contacts": {
     "image": "https://s3-alpha-sig.figma.com/img/1a81/6eed/44a385856238ca77ac82ce311e6ee73e?Expires=1694390400&Signature=ihvr1QRPoYhsY8M9TgNdVZSD2H7Fkz24ceitzhxxcCHEUXvfPQInxtL9p403i24Dd~8wUFzajOUXhFLVmebWuEoF4HQ5d2DN0TwvyHAbeBLQjr0IFYkWOODoIaWwsOzX39bf9vD7s49EmiTRwjPo-046zVsd1~Vro2kRS38O5yEKsIcK~ZEtqyvlnV0w-UefzEmeE7RGlt3wA5HYWqXjmd6Fcy8QzfeA-lHcROiOjOpWqU6KOd6iMRHpZechUhnYKOmHy8APLJ5~cHCwNmWwDgy18CN8DxI9W52OFEDKNhHvjkCLRrD6p4al0jLHCtDnvL~6GoWzu5Ms3clfWytf6A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
   },
 
-  "footer": {
+  "footers": {
     "id": 1,
     "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui",
     "phone": "+994 70 441 51 91",

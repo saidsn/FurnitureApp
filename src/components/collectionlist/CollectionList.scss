@@ -1,0 +1,11 @@
+.collection__list{
+    .collection__content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+      justify-content: center;
+      gap: 2rem;
+      .card{
+        height: 26.7rem;
+      }
+    }
+  }

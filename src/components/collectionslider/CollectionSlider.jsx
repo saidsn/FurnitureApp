@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import CollectionService from "../../APIs/services/CollectionService";
 import { Link } from "react-router-dom";
 import "./CollectionSlider.scss";
 import SlickSlider from "../slider/Slider";
 import Title from "../title/Title";
-import axios from "axios";
+import CategoryCard from "../categorycard/CategoryCard";
 
 const CollectionSlider = ({ slidesToShow }) => {
   const settings = {
@@ -34,22 +35,18 @@ const CollectionSlider = ({ slidesToShow }) => {
     ],
   };
 
-  const url = "http://localhost:3000";
-
   const [collections, setCollections] = useState([]);
 
-  const GetCollection = () => {
-    axios.get(`${url}/collections`).then((res) => {
-      setCollections(res.data);
-    });
+  const GetAllCollection = async () => {
+    setCollections(await CollectionService.GetAll());
   };
 
   useEffect(() => {
-    GetCollection();
+    GetAllCollection();
   }, []);
 
   return (
-    <section id="collection__slider">
+    <section class="collection__slider section">
       <div className="container">
         <Title>
           <h3 className="title__head">COLLECTIONS</h3>
@@ -59,12 +56,7 @@ const CollectionSlider = ({ slidesToShow }) => {
         </Title>
         <SlickSlider settings={settings}>
           {collections.slice(0, 6).map((collection) => {
-            return (
-              <div className="collection__slider--item" key={collection.id}>
-                <img src={collection.image} alt="" />
-                <p className="collection__name">{collection.name}</p>
-              </div>
-            );
+            return <CategoryCard key={collection.id}>{collection}</CategoryCard>;
           })}
         </SlickSlider>
       </div>
@@ -73,3 +65,5 @@ const CollectionSlider = ({ slidesToShow }) => {
 };
 
 export default CollectionSlider;
+
+

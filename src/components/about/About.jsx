@@ -13,10 +13,10 @@ const About = ({ showButton }) => {
 
   useEffect(() => {
     GetAllAbout();
-  });
+  },"");
 
   return (
-    <section id={styles["about"]}>
+    <section class={`${styles.about} section`}>
       <div className="container">
         <Title>
           <h3 className="title__head">AOBUT US</h3>

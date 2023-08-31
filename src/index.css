@@ -94,6 +94,10 @@ body {
   padding: 0 1rem;
 }
 
+.section{
+  margin-bottom: 12.8rem;
+}
+
 .btn {
   max-width: 33rem;
   width: 100%;
