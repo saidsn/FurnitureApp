@@ -91,7 +91,7 @@ body {
 .container {
   max-width: 138rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  width: 95%;
 }
 
 .section{
@@ -110,6 +110,9 @@ body {
   gap: 2rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+input[type="checkbox"] {
+  appearance: none;
 }
 
 @media (max-width: 576px) {

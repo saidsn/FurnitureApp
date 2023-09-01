@@ -3,6 +3,7 @@ import "./CollectionList.scss";
 import CollectionService from "../../APIs/services/CollectionService";
 import CategoryCard from "../categorycard/CategoryCard";
 
+
 const CollectionList = () => {
   const [collections, setCollections] = useState([]);
 

@@ -40,6 +40,8 @@
 
     &:hover .dropdown-content {
       display: block;
+      position: absolute;
+      z-index: 1;
     }
   }
 }
