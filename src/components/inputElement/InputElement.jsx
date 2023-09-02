@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./InputElement.scss";
 
 const InputElement = ({
   filterType,
@@ -38,10 +39,12 @@ const InputElement = ({
   };
 
   return (
-    <>
+    <div className="filter__area">
+      <p className="filter__area--title">CATEGORIES</p>
       <label
+        className="filter__area--label"
         onClick={() => setFilters([])}
-        style={{ display: "flex", alignItems: "center", gap: "2rem" }}
+        style={{ display: "flex", alignItems: "center"}}
         htmlFor={uniqueAllId}
       >
         <input
@@ -92,8 +95,9 @@ const InputElement = ({
 
       {options?.map(({ title, id }) => (
         <label
+          className="filter__area--label"
           key={title}
-          style={{ display: "flex", alignItems: "center", gap: "2rem" }}
+          style={{ display: "flex", alignItems: "center" }}
           htmlFor={title}
           onClick={(event) => {
             event.target.checked
@@ -147,7 +151,7 @@ const InputElement = ({
           {title}
         </label>
       ))}
-    </>
+    </div>
   );
 };
 

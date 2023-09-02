@@ -8,7 +8,6 @@ const Product = ({ take, products }) => {
   return (
     <section class="product__list section">
       <div className="container">
-
         <div className="product__content">
           {products?.slice(0, take).map((product) => {
             return <ProductCard key={product.id}>{product}</ProductCard>;

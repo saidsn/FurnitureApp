@@ -16,16 +16,27 @@ const ProductsPage = () => {
   const [products, setProducts] = useState([]);
   const [showTitle, setShowTitle] = useState(true);
 
-
   const GetAllProduct = async () => {
     setProducts(await ProductService.GetAll());
   };
 
+  const mainStyle = {
+    display: "flex",
+    flexWrap: "wrap"
+  };
+
+  const asideStyle = {
+    maxWidth: "32rem",
+    width: "100%"
+  }
+  
+
   const options = [
-    { title: "kitchen", id: 1 },
-    { title: "bedroom", id: 2 },
-    { title: "bathroom", id: 3 },
-    { title: "living room", id: 4 },
+    { title: "SOFAS", id: 1 },
+    { title: "BEDS AND HEADBOARDS", id: 2 },
+    { title: "RUGS", id: 3 },
+    { title: "CUSHIONS", id: 4 },
+    { title: "HEADBOARDS", id: 5 }
   ];
   useEffect(() => {
     GetAllProduct();
@@ -49,7 +60,6 @@ const ProductsPage = () => {
     if (collectionsIds.length > 0) {
       setSelectedCollections(collectionsIds);
     }
-
   }, []);
   const onFilterClick = (filterId, filterType) => {
     if (
@@ -158,9 +168,9 @@ const ProductsPage = () => {
           </div>
         </div>
       </Head>
-      <div className="container">
-        <div style={{ display: "flex" }}>
-          <aside style={{ maxWidth: "32rem", width: "100%" }}>
+      <div className="main">
+        <div className="container" style={mainStyle}>
+          <aside style={asideStyle}>
             <InputElement
               filterType="category"
               setFilters={setSelectedCategories}

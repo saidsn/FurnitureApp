@@ -70,6 +70,7 @@ body {
 
 :root {
   --main-text-color: #2d2d2b;
+  --second-text-color: #b8926a;
   --main-bg-color: #eae6df;
   --second-bg-color: #d4c8be;
   --main-text-family: "Raleway", sans-serif;
@@ -91,7 +92,7 @@ body {
 .container {
   max-width: 138rem;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
 
 .section{
@@ -118,5 +119,10 @@ input[type="checkbox"] {
 @media (max-width: 576px) {
   .btn {
     max-width: 100% !important;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 95% !important;
   }
 }
