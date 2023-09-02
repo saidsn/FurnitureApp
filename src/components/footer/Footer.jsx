@@ -4,7 +4,7 @@ import "./Footer.scss";
 
 const Footer = () => {
 
-  const [footer, setFooter] = useState("");
+  const [footer, setFooter] = useState([]);
 
   const GetAllFooter = async () => {
       setFooter(await FooterService.GetAll());
@@ -12,10 +12,10 @@ const Footer = () => {
 
   useEffect(() => {
     GetAllFooter();
-  },"");
+  },[]);
 
   return (
-    <section class="footer__section">
+    <section className="footer__section">
       <div className="container">
         <div className="footer">
           <div className="footer__left">

@@ -1,13 +1,12 @@
 import React from "react";
 import BredCrumbs from "../../components/bredcrumbs/BredCrumbs";
+import Profile from "../../components/profile/Profile";
 
 const ProfilePage = () => {
   return (
     <section className="section">
       <BredCrumbs />
-      <div className="container">
-        <h1>ok</h1>
-      </div>
+      <Profile />
     </section>
   );
 };
