@@ -6,39 +6,68 @@ import Head from "../../components/head/Head";
 import ProductList from "../../components/productlist/ProductList";
 import InputElement from "../../components/inputElement/InputElement";
 import { useNavigate } from "react-router-dom";
+import CategoryService from "../../APIs/services/CategoryService";
+import CollectionService from "../../APIs/services/CollectionService";
+import { useSearchParams } from "react-router-dom";
 
 const ProductsPage = () => {
   const navigate = useNavigate();
+  let [searchParams, setSearchParams] = useSearchParams();
+
+  let collectionId = searchParams.get("collectionsIds");
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedCollections, setSelectedCollections] = useState([]);
   const queryParams = new URLSearchParams(window.location.search);
 
   const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [collections, setCollections] = useState([]);
   const [showTitle, setShowTitle] = useState(true);
+  const [showHead, setShowHead] = useState("Products");
+
+  const collection = collections.find(c=>c.id == collectionId);
+  
+
+  const GetAllCollections = async () => {
+    setCollections(await CollectionService.GetAll());
+  };
 
   const GetAllProduct = async () => {
     setProducts(await ProductService.GetAll());
   };
 
+  let filteredProducts = [...products];
+
+  if (selectedCategories.length > 0 || selectedCollections.length > 0) {
+    filteredProducts = products.filter((product) => {
+      const categoryMatch =
+        selectedCategories.length === 0 ||
+        selectedCategories.includes(product.categoryId);
+      const collectionMatch =
+        selectedCollections.length === 0 ||
+        selectedCollections.includes(product.collectionId);
+
+      return categoryMatch && collectionMatch;
+    });
+  }
+
   const mainStyle = {
     display: "flex",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
   };
 
   const asideStyle = {
     maxWidth: "32rem",
-    width: "100%"
-  }
-  
+    width: "100%",
+  };
 
-  const options = [
-    { title: "SOFAS", id: 1 },
-    { title: "BEDS AND HEADBOARDS", id: 2 },
-    { title: "RUGS", id: 3 },
-    { title: "CUSHIONS", id: 4 },
-    { title: "HEADBOARDS", id: 5 }
-  ];
+  const GetAllCategories = async () => {
+    setCategories(await CategoryService.GetAll());
+  };
+
   useEffect(() => {
+    GetAllCategories();
+    GetAllCollections();
     GetAllProduct();
 
     const categoriesIds = queryParams.getAll("categoriesIds")[0]
@@ -110,12 +139,44 @@ const ProductsPage = () => {
     );
   };
 
+  const HandleSort = (e) => {
+    const value = e.target.getAttribute("data-value");
+    if (value === "popular") {
+      setProducts(
+        filteredProducts.sort((a, b) => {
+          return b.isPopular - a.isPopular;
+        })
+      );
+    } else if (value === "cheapest") {
+      setProducts(
+        filteredProducts.sort((a, b) => {
+          return a.price - b.price;
+        })
+      );
+    } else if (value === "expensive") {
+      setProducts(
+        filteredProducts.sort((a, b) => {
+          return b.price - a.price;
+        })
+      );
+    }
+  };
+
+  useEffect(() => {}, [products]);
+useEffect(()=>{
+  if (collection) {
+    setShowHead(collection.name);
+  }
+  else{
+    setShowHead("Products");
+  }
+})
   return (
     <>
       <BredCrumbs />
       {showTitle ? (
         <Title>
-          <h3 className="title__head container">PRODUCTS</h3>
+          <h3 className="title__head container">{showHead}</h3>
         </Title>
       ) : null}
       <Head>
@@ -162,9 +223,15 @@ const ProductsPage = () => {
             SORT BY
           </button>
           <div class="dropdown-content">
-            <a href="#">POPULAR FIRST</a>
-            <a href="#">CHEAPEST FIRST</a>
-            <a href="#">EXPENSIVE FIRST</a>
+            <a href="#" data-value="popular" onClick={HandleSort}>
+              POPULAR FIRST
+            </a>
+            <a href="#" data-value="cheapest" onClick={HandleSort}>
+              CHEAPEST FIRST
+            </a>
+            <a href="#" data-value="expensive" onClick={HandleSort}>
+              EXPENSIVE FIRST
+            </a>
           </div>
         </div>
       </Head>
@@ -172,15 +239,27 @@ const ProductsPage = () => {
         <div className="container" style={mainStyle}>
           <aside style={asideStyle}>
             <InputElement
+              header="CATEGORIES"
               filterType="category"
               setFilters={setSelectedCategories}
               removeFilterClick={removeFilterClick}
               onFilterClick={onFilterClick}
               filterItems={selectedCategories}
-              options={options}
+              options={categories}
+            />
+            <InputElement
+              header="COLLECTIONS"
+              filterType="collections"
+              setFilters={setSelectedCollections}
+              removeFilterClick={removeFilterClick}
+              onFilterClick={onFilterClick}
+              filterItems={selectedCollections}
+              options={collections}
             />
           </aside>
-          {products && <ProductList showTitle={true} products={products} />}
+          {filteredProducts && (
+            <ProductList showTitle={true} products={filteredProducts} />
+          )}
         </div>
       </div>
     </>

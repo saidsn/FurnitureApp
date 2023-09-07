@@ -19,7 +19,7 @@ const CollectionList = () => {
       <div className="container">
         <div className="collection__content">
           {collections.map((collection) => {
-            return <CategoryCard key={collection.id}>{collection}</CategoryCard>;
+            return <CategoryCard key={collection.id} type = "collections">{collection}</CategoryCard>;
           })}
         </div>
       </div>

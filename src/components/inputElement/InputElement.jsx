@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./InputElement.scss";
 
 const InputElement = ({
+  header,
   filterType,
   setFilters,
   filterItems,
@@ -11,8 +12,8 @@ const InputElement = ({
 }) => {
   const initialCheckBoxesState = {
     all: true,
-    ...options.reduce((options, { title }) => {
-      options[title] = false;
+    ...options.reduce((options, { name }) => {
+      options[name] = false;
       return options;
     }, {}),
   };
@@ -40,7 +41,7 @@ const InputElement = ({
 
   return (
     <div className="filter__area">
-      <p className="filter__area--title">CATEGORIES</p>
+      <p className="filter__area--title">{header}</p>
       <label
         className="filter__area--label"
         onClick={() => setFilters([])}
@@ -93,12 +94,12 @@ const InputElement = ({
         All
       </label>
 
-      {options?.map(({ title, id }) => (
+      {options?.map(({ name, id }) => (
         <label
           className="filter__area--label"
-          key={title}
+          key={name}
           style={{ display: "flex", alignItems: "center" }}
-          htmlFor={title}
+          htmlFor={name}
           onClick={(event) => {
             event.target.checked
               ? onFilterClick(id, filterType)
@@ -106,13 +107,13 @@ const InputElement = ({
           }}
         >
           <input
-            id={title}
-            defaultChecked={checkBoxes[title]}
-            value={checkBoxes[title]}
-            onChange={() => handleCheckBoxChange(title)}
+            id={name}
+            defaultChecked={checkBoxes[name]}
+            value={checkBoxes[name]}
+            onChange={() => handleCheckBoxChange(name)}
             type="checkbox"
           />
-          {checkBoxes[title] || filterItems.includes(id) ? (
+          {checkBoxes[name] || filterItems.includes(id) ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -148,7 +149,7 @@ const InputElement = ({
               />
             </svg>
           )}
-          {title}
+          {name}
         </label>
       ))}
     </div>

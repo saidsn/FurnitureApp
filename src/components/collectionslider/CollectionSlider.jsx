@@ -56,7 +56,7 @@ const CollectionSlider = ({ slidesToShow }) => {
         </Title>
         <SlickSlider settings={settings}>
           {collections.slice(0, 6).map((collection) => {
-            return <CategoryCard key={collection.id}>{collection}</CategoryCard>;
+            return <CategoryCard key={collection.id} type = "collections">{collection}</CategoryCard>;
           })}
         </SlickSlider>
       </div>

@@ -74,13 +74,13 @@ const Profile = () => {
             </li>
           </ul>
         </div>
-        <div className="form">
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <MainButton>SAVE CHANGES</MainButton>
-        </div>
+          <form className="form" action="">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <MainButton>SAVE CHANGES</MainButton>
+          </form>
       </div>
     </div>
   );
