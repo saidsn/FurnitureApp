@@ -1,14 +1,12 @@
-import React from "react";
-import BredCrumbs from "../../components/bredcrumbs/BredCrumbs";
-import Profile from "../../components/profile/Profile";
+import React from 'react';
+import Form from '../../components/form/Form';
 
-const ProfilePage = () => {
+const MyAccount = () => {
   return (
-    <section className="section">
-      <BredCrumbs />
-      <Profile />
-    </section>
-  );
-};
+    <>
+        <Form/>
+    </>
+  )
+}
 
-export default ProfilePage;
+export default MyAccount;

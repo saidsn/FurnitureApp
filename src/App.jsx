@@ -6,6 +6,7 @@ import Products from "./pages/products/ProductsPage";
 import Collections from "./pages/collections/CollectionsPage";
 import Contact from "./pages/contact/ContactPage";
 import Myaccount from './pages/account/MyAccount';
+import AccountLayout from './components/accountlayout/AccountLayout';
 
 const App = () => {
   return (
@@ -17,7 +18,9 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/myaccount" element={<Myaccount />} />
+        </Route>
+        <Route path="myaccount/" element={<AccountLayout/>} >
+          <Route path="info" element={<Myaccount/>} />
         </Route>
       </Routes>
     </Router>

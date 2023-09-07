@@ -1,10 +1,11 @@
 import React from "react";
 import "./Profile.scss";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
-    <div className="container">
+  
       <div className="account">
         <div className="profile">
           <h2 className="profile__title">MY ACCOUNT</h2>
@@ -20,7 +21,7 @@ const Profile = () => {
                 <circle cx="12" cy="6" r="4" fill="#2D2D2B" />
                 <ellipse cx="12" cy="17" rx="7" ry="4" fill="#2D2D2B" />
               </svg>
-              <span>PERSONAL INFORMATION</span>
+              <Link to="/myaccount/info">PERSONAL INFORMATION</Link>
             </li>
             <li className="profile__list--item">
               <svg
@@ -35,7 +36,7 @@ const Profile = () => {
                   fill="#2D2D2B"
                 />
               </svg>
-              <span>WISHLIST</span>
+              <Link to="/myaccount/wishlist">WISHLIST</Link>
             </li>
             <li className="profile__list--item">
               <svg
@@ -70,18 +71,11 @@ const Profile = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span>LOG OUT</span>
+              <Link>LOG OUT</Link>
             </li>
           </ul>
         </div>
-          <form className="form" action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <MainButton>SAVE CHANGES</MainButton>
-          </form>
-      </div>
+
     </div>
   );
 };

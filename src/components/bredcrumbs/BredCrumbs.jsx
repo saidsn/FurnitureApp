@@ -4,7 +4,14 @@ import { NavLink } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 
 const BredCrumbs = () => {
-  const breadcrumbs = useBreadcrumbs();
+  
+  const customBreadcrumbs = [
+    {
+      path: "/myaccount",
+      breadcrumb: "My account",
+    },
+  ]
+  const breadcrumbs = useBreadcrumbs(customBreadcrumbs);
 
   return (
     <section id="bred__crumbs">
