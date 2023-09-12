@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import BredCrumbs from "../../components/bredcrumbs/BredCrumbs";
 import Title from "../../components/title/Title";
 import Head from "../../components/head/Head";
 import CollectionList from "../../components/collectionlist/CollectionList";
@@ -9,7 +8,6 @@ const CollectionsPage = () => {
 
   return (
     <div>
-      <BredCrumbs />
       {showTitle ? (
         <Title>
           <h3 className="title__head container">COLLECTIONS</h3>

@@ -12,6 +12,7 @@ import Title from "../../components/title/Title";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  
   const [products, setProducts] = useState([]);
 
   const GetAllProduct = async () => {

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ProductService from "../../APIs/services/ProductService";
-import BredCrumbs from "../../components/bredcrumbs/BredCrumbs";
 import Title from "../../components/title/Title";
 import Head from "../../components/head/Head";
 import ProductList from "../../components/productlist/ProductList";
@@ -173,7 +172,6 @@ useEffect(()=>{
 })
   return (
     <>
-      <BredCrumbs />
       {showTitle ? (
         <Title>
           <h3 className="title__head container">{showHead}</h3>
