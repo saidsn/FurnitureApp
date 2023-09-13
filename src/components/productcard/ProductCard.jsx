@@ -1,24 +1,35 @@
 import React, { useState } from "react";
 import "./ProductCard.scss";
 
-const ProductCard = ({ props }) => {
-  const [addWishList, setAddWishList] = useState(false);
-  const [wishListItem, setWishListItem] = useState(
-    localStorage.getItem("wishList")
-      ? JSON.parse(localStorage.getItem("wishList"))
-      : []
+const ProductCard = ({props}) => {
+  const { image, title, price } = props;
+
+  const [isWishlist, setIsWishlist] = useState(
+    JSON.parse(localStorage.getItem("wishList"))?.some(
+      (item) => item.id === props.id
+    ) || false
   );
 
-  console.log(wishListItem);
 
-  const addWishListHandler = (id) => {
-    setAddWishList(!addWishList);
-    const wishList = {
+  const addToWishList = (id) => {
+    const wishlistItem = {
       id: id,
-      title: props.title,
-      price: props.price,
+      image: image,
+      title: title,
+      price: price,
     };
-    localStorage.setItem("wishList", JSON.stringify(wishList));
+
+    if (isWishlist) {
+      const getWishlist = JSON.parse(localStorage.getItem("wishList"));
+      const updatedWishlist = getWishlist.filter((item) => item.id !== id);
+      localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
+    } else {
+      const getWishlist = JSON.parse(localStorage.getItem("wishList"));
+      const updatedWishlist = [...getWishlist || [], wishlistItem];
+      localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
+    }
+
+    setIsWishlist(!isWishlist);
   };
 
   return (
@@ -26,9 +37,9 @@ const ProductCard = ({ props }) => {
       <div className="product__image">
         <div
           className="product__wishlist"
-          onClick={() => addWishListHandler(props.id)}
+          onClick={() => addToWishList(props.id)}
         >
-          {addWishList ? (
+          {isWishlist ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -65,3 +76,32 @@ const ProductCard = ({ props }) => {
 };
 
 export default ProductCard;
+// const [isInWishlist, setIsInWishlist] = useState(
+//   JSON.parse(localStorage.getItem("wishList"))?.some(
+//     (item) => item.id === props.id
+//   ) || false
+// );
+
+// const addToWishlist = () => {
+//   const wishlistItem = {
+//     id: props.id,
+//     image: props.image,
+//     title: props.title,
+//     price: props.price,
+//   };
+
+//   if (isInWishlist) {
+//     const updatedWishlist = JSON.parse(
+//       localStorage.getItem("wishList")
+//     ).filter((item) => item.id !== props.id);
+//     localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
+//   } else {
+//     const updatedWishlist = [
+//       ...(JSON.parse(localStorage.getItem("wishList")) || []),
+//       wishlistItem,
+//     ];
+//     localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
+//   }
+
+//   setIsInWishlist(!isInWishlist);
+// };

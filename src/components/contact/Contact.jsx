@@ -13,10 +13,10 @@ const Contact = () => {
 
   useEffect(() => {
     GetAllContact();
-  }, "");
+  }, []);
 
   return (
-    <section class="contact section">
+    <section className="contact section">
       <div className="container">
         <Title>
           <h3 className="title__head">CONTACT</h3>

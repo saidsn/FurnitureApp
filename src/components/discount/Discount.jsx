@@ -13,7 +13,7 @@ const Discount = () => {
 
   useEffect(() => {
     GetAllDiscount();
-  },"");
+  },[]);
 
   const sectionBackground = {
     backgroundImage: `url(${Background})`,
@@ -22,7 +22,7 @@ const Discount = () => {
     backgroundRepeat: "no-repeat",
   };
   return (
-    <section class="discount section">
+    <section className="discount section">
       <div className="discount" style={sectionBackground}>
         <div className="discount__content">
           <h2 className="discount__content--title">{discount.title}</h2>

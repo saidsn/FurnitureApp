@@ -15,7 +15,7 @@ const CollectionList = () => {
     GetAllCollection();
   }, []);
   return (
-    <section class="collection__list section">
+    <section className="collection__list section">
       <div className="container">
         <div className="collection__content">
           {collections.map((collection) => {

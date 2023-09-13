@@ -24,8 +24,7 @@ const ProductsPage = () => {
   const [showTitle, setShowTitle] = useState(true);
   const [showHead, setShowHead] = useState("Products");
 
-  const collection = collections.find(c=>c.id == collectionId);
-  
+  const collection = collections.find((c) => c.id == collectionId);
 
   const GetAllCollections = async () => {
     setCollections(await CollectionService.GetAll());
@@ -162,14 +161,13 @@ const ProductsPage = () => {
   };
 
   useEffect(() => {}, [products]);
-useEffect(()=>{
-  if (collection) {
-    setShowHead(collection.name);
-  }
-  else{
-    setShowHead("Products");
-  }
-})
+  useEffect(() => {
+    if (collection) {
+      setShowHead(collection.name);
+    } else {
+      setShowHead("Products");
+    }
+  });
   return (
     <>
       {showTitle ? (
@@ -183,8 +181,8 @@ useEffect(()=>{
           tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
           minus id quod maxime.
         </p>
-        <div class="dropdown">
-          <button class="dropbtn btn">
+        <div className="dropdown">
+          <button className="dropbtn btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -195,32 +193,32 @@ useEffect(()=>{
               <path
                 d="M4 16L13 16"
                 stroke="#B8926A"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
               <path
                 d="M6 11H13"
                 stroke="#B8926A"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
               <path
                 d="M8 6L13 6"
                 stroke="#B8926A"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
               <path
                 d="M17 4L17 20L20 16"
                 stroke="#B8926A"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             SORT BY
           </button>
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <a href="#" data-value="popular" onClick={HandleSort}>
               POPULAR FIRST
             </a>

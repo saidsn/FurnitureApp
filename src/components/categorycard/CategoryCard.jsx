@@ -2,23 +2,16 @@ import React from "react";
 import "./CategoryCard.scss";
 import { useNavigate } from "react-router-dom";
 
-const CategoryCard = ({children, type}) => {
+const CategoryCard = ({ children, type }) => {
   const navigate = useNavigate();
 
-  const HandleNavigate = ()=>{
-
-    if (type == "category") {
-      navigate(
-        `/products?categoriesIds=${children.id}&collectionsIds=`
-      );
-      
+  const HandleNavigate = () => {
+    if (type === "category") {
+      navigate(`/products?categoriesIds=${children.id}&collectionsIds=`);
+    } else if (type === "collections") {
+      navigate(`/products?categoriesIds=&collectionsIds=${children.id}`);
     }
-    else if (type == "collections") {
-      navigate(
-        `/products?categoriesIds=&collectionsIds=${children.id}`
-      );
-    }
-  }
+  };
 
   return (
     <div className="card" onClick={HandleNavigate}>

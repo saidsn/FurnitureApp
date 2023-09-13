@@ -47,14 +47,14 @@ const ProductSlider = ({ slidesToShow }) => {
   }, []);
 
   return (
-    <section class="product__slider section">
+    <section className="product__slider section">
       <div className="container">
         <Title>
           <h3 className="title__head">MOST POPULAR</h3>
         </Title>
         <SlickSlider settings={settings}>
           {products.slice(0, 6).map((product) => {
-            return <ProductCard key={product.id}>{product}</ProductCard>;
+            return <ProductCard key={product.id} props = {product}/>;
           })}
         </SlickSlider>
       </div>

@@ -46,7 +46,7 @@ const CollectionSlider = ({ slidesToShow }) => {
   }, []);
 
   return (
-    <section class="collection__slider section">
+    <section className="collection__slider section">
       <div className="container">
         <Title>
           <h3 className="title__head">COLLECTIONS</h3>
@@ -56,7 +56,11 @@ const CollectionSlider = ({ slidesToShow }) => {
         </Title>
         <SlickSlider settings={settings}>
           {collections.slice(0, 6).map((collection) => {
-            return <CategoryCard key={collection.id} type = "collections">{collection}</CategoryCard>;
+            return (
+              <CategoryCard key={collection.id} type="collections">
+                {collection}
+              </CategoryCard>
+            );
           })}
         </SlickSlider>
       </div>
@@ -65,5 +69,3 @@ const CollectionSlider = ({ slidesToShow }) => {
 };
 
 export default CollectionSlider;
-
-
