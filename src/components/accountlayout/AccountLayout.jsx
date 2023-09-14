@@ -12,10 +12,9 @@ const AccountLayout = () => {
       <Header />
       <Navbar />
       <BredCrumbs />
-      <div className="container section center"
+      <div className="container section"
         style={{
           display: "flex",
-          alignItems: "center",
           columnGap: "15rem",
           flexWrap: "wrap",
         }}

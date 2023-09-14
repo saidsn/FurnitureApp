@@ -19,8 +19,8 @@ const App = () => {
           <Route path="/collections" element={<Collections />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
-        <Route path="myaccount/" element={<AccountLayout/>} >
-          <Route path="info" element={<Myaccount/>} />
+        <Route path="/myaccount" element={<AccountLayout />}>
+          <Route path="wishlist" element={<Myaccount />} />
         </Route>
       </Routes>
     </Router>

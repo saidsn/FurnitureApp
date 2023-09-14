@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ProductCard.scss";
+import toast from "react-hot-toast";
 
 const ProductCard = ({props}) => {
   const { image, title, price } = props;
@@ -27,6 +28,7 @@ const ProductCard = ({props}) => {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
       const updatedWishlist = [...getWishlist || [], wishlistItem];
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
+      toast.success("added to wishlist");
     }
 
     setIsWishlist(!isWishlist);
