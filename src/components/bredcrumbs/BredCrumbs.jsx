@@ -10,7 +10,7 @@ const BredCrumbs = () => {
       path: "/myaccount",
       breadcrumb: "My account",
     },
-  ]
+  ];
   const breadcrumbs = useBreadcrumbs(customBreadcrumbs);
 
   return (

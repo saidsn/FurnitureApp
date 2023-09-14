@@ -3,6 +3,7 @@
   .wishlist {
     .wishlist__item {
       display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
       margin-bottom: 2rem;
       &__image {
@@ -12,7 +13,7 @@
         overflow: hidden;
       }
       &__content {
-        padding-top: .5rem;
+        padding-top: 0.5rem;
         flex: 1;
         &__title {
           display: flex;
@@ -21,8 +22,10 @@
           font-size: 2rem;
           font-weight: 500;
           margin-bottom: 1rem;
-          p{
-            width: 33rem;
+          p {
+            max-width: 33rem;
+            min-width: 25rem;
+            width: 100%;
           }
         }
         &__price {
@@ -33,6 +36,31 @@
           font-weight: 700;
         }
       }
+
     }
   }
+  .empty {
+    color: var(--second-text-color);
+    text-align: center;
+    margin-top: 12rem;
+  }
 }
+      @media (max-width: 794px) {
+        .wishlist__item {
+          position: relative;
+          &__image{
+            width: 100% !important;
+            height: 23.3rem !important;
+          }
+          &__content{
+            &__title{
+              svg{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+
+              }
+            }
+          }
+        }
+      }

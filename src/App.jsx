@@ -7,6 +7,7 @@ import Collections from "./pages/collections/CollectionsPage";
 import Contact from "./pages/contact/ContactPage";
 import Myaccount from './pages/account/MyAccount';
 import AccountLayout from './components/accountlayout/AccountLayout';
+import WishList from './components/wishlist/WishList';
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Route>
         <Route path="/myaccount" element={<AccountLayout />}>
-          <Route path="wishlist" element={<Myaccount />} />
+          <Route path="wishlist" element={<WishList />} />
+          <Route path="info" element={<Myaccount />} />
         </Route>
       </Routes>
     </Router>

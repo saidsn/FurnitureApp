@@ -9,13 +9,14 @@ const WishList = () => {
 
   const deleteWishlistItem = (id) => {
     let wishlistLocal = JSON.parse(localStorage.getItem("wishList"));
-    const newWishlist = wishlistLocal.filter((wishlistItem, index) => index !== id);
+    const newWishlist = wishlistLocal.filter(
+      (wishlistItem, index) => index !== id
+    );
     localStorage.setItem("wishList", JSON.stringify(newWishlist));
     setWishlist(newWishlist);
     setFilterWishlist(newWishlist);
     toast.success("Wishlist deleted");
   };
-
 
   return (
     <div className="wishlist_area">
@@ -54,9 +55,7 @@ const WishList = () => {
           })}
         </ul>
       ) : (
-        <div className="text-danger">
-          <h3>Wishlist Empty Yet</h3>
-        </div>
+        <h3 className="empty">Wishlist Is Empty...</h3>
       )}
     </div>
   );

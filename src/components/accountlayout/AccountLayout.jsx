@@ -15,7 +15,7 @@ const AccountLayout = () => {
       <div className="container section"
         style={{
           display: "flex",
-          columnGap: "15rem",
+          gap: "15rem",
           flexWrap: "wrap",
         }}
       >
