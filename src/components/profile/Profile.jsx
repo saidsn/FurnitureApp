@@ -12,7 +12,7 @@ const Profile = () => {
       <h2 className="profile__title">MY ACCOUNT</h2>
       <ul className="profile__list">
         <li className="profile__list--item">
-          {location.pathname === "/myaccount/info" ? (
+          {location.pathname === "/account/info" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -46,10 +46,10 @@ const Profile = () => {
             </svg>
           )}
 
-          <Link to="/myaccount/info">PERSONAL INFORMATION</Link>
+          <Link to="/account/info">PERSONAL INFORMATION</Link>
         </li>
         <li className="profile__list--item">
-          {location.pathname === "/myaccount/wishlist" ? (
+          {location.pathname === "/account/wishlist" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -77,7 +77,7 @@ const Profile = () => {
             </svg>
           )}
 
-          <Link to="/myaccount/wishlist">WISHLIST</Link>
+          <Link to="/account/wishlist">WISHLIST</Link>
         </li>
         <li className="profile__list--item">
           <svg

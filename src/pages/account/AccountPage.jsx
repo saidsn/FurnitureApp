@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "../../components/form/Form";
 
-const MyAccount = () => {
+const Account = () => {
   return (
     <>
       <Form />
@@ -9,4 +9,4 @@ const MyAccount = () => {
   );
 };
 
-export default MyAccount;
+export default Account;

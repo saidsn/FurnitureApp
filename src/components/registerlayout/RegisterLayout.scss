@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  .form__area {
+    flex: 1;
+    padding: 3rem;
+    .form__head {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-transform: uppercase;
+      color: var(--second-text-color);
+      margin-bottom: 10rem;
+      .svg{
+        width: 2.5rem;
+        height: 2.5rem;
+        background: var(--second-text-color);
+        border-radius: 50%;
+      }
+    }
+  }
+}
