@@ -78,32 +78,4 @@ const ProductCard = ({props}) => {
 };
 
 export default ProductCard;
-// const [isInWishlist, setIsInWishlist] = useState(
-//   JSON.parse(localStorage.getItem("wishList"))?.some(
-//     (item) => item.id === props.id
-//   ) || false
-// );
 
-// const addToWishlist = () => {
-//   const wishlistItem = {
-//     id: props.id,
-//     image: props.image,
-//     title: props.title,
-//     price: props.price,
-//   };
-
-//   if (isInWishlist) {
-//     const updatedWishlist = JSON.parse(
-//       localStorage.getItem("wishList")
-//     ).filter((item) => item.id !== props.id);
-//     localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
-//   } else {
-//     const updatedWishlist = [
-//       ...(JSON.parse(localStorage.getItem("wishList")) || []),
-//       wishlistItem,
-//     ];
-//     localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
-//   }
-
-//   setIsInWishlist(!isInWishlist);
-// };

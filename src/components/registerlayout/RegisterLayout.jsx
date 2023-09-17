@@ -2,6 +2,7 @@ import React from "react";
 import "./RegisterLayout.scss";
 import AccountImage from "../accountImage/AccountImage";
 import { Outlet } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 const RegisterLayout = () => {
   return (
@@ -27,6 +28,7 @@ const RegisterLayout = () => {
         {<Outlet />}
       </div>
       <AccountImage />
+      <Toaster position="top-left" />
     </main>
   );
 };

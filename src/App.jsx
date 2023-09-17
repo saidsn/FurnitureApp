@@ -10,6 +10,7 @@ import AccountLayout from "./components/accountlayout/AccountLayout";
 import WishList from "./pages/wishlist/WishListPage";
 import RegisterLayout from "./components/registerlayout/RegisterLayout";
 import Register from "./pages/register/RegisterPage";
+import Login from "./pages/login/LoginPage";
 const App = () => {
   return (
     <Router>
@@ -27,6 +28,7 @@ const App = () => {
         </Route>
         <Route path="auth/" element={<RegisterLayout />}>
           <Route path="register" element={<Register />} />
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </Router>

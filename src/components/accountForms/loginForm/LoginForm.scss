@@ -1,4 +1,4 @@
-.register__form {
+.login__form {
   max-width: 44.7rem;
   width: 100%;
   .form {
@@ -20,8 +20,7 @@
         color: var(--main-input-text-color);
       }
     }
-
-    .input__area {
+    .input__area {  
       position: relative;
       .svg {
         position: absolute;
@@ -30,6 +29,12 @@
         transform: translate(-50%, -50%) !important;
       }
     }
+    .forgot {
+      color: var(--second-text-color);
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
     button {
       margin-top: 2rem;
       max-width: 100%;

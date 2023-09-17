@@ -1,44 +1,16 @@
+import "./LoginForm.scss";
 import React, { useState } from "react";
-import "./RegisterForm.scss";
+import "./LoginForm.scss";
 import { Link } from "react-router-dom";
 import MainButton from "../../../utils/buttons/mainbutton/MainButton";
 import AccountTitle from "../../accountTitle/AccountTitle";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-const RegisterForm = () => {
-  const navigate = useNavigate();
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [repeatPassword, setRepeatPassword] = useState("");
-  const [error, setError] = useState("");
+const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(true);
   const [type, setType] = useState("password");
-
-  const user = {
-    name: name,
-    surname: surname,
-    email: email,
-    password: password,
-    repeatPassword: repeatPassword,
-  };
-
-  const register = (e) => {
-    e.preventDefault();
-    if (password !== repeatPassword) {
-      toast.error("Password do not match");
-      return;
-    }
-    try {
-      localStorage.setItem("user", JSON.stringify(user));
-      toast.success("User registered successfully");
-      navigate("/auth/login");
-    } catch (error) {
-      setError("Registration failed. Please try again later.");
-    }
-  };
+  const [password, setPassword] = useState("");
 
   const handleToggle = () => {
     if (type === "password") {
@@ -50,42 +22,29 @@ const RegisterForm = () => {
     }
   };
 
+  const login = () => {};
   return (
-    <div className="register__form">
-      <AccountTitle>Register</AccountTitle>
-      <form className="form" action="" onSubmit={(e) => register(e)}>
-        <input
-          type="text"
-          value={name}
-          name="name"
-          required
-          placeholder="NAME"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          type="text"
-          value={surname}
-          name="surname"
-          required
-          placeholder="SURNAME"
-          onChange={(e) => setSurname(e.target.value)}
-        />
+    <div className="login__form">
+      <AccountTitle>login</AccountTitle>
+      <form className="form" action="" onSubmit={(e) => login(e)}>
         <input
           type="email"
-          value={email}
           name="email"
           required
           placeholder="E-MAIL ADRESS"
-          onChange={(e) => setEmail(e.target.value)}
+          //   value={email}
+          //   onChange={(e) => setEmail(e.target.value)}
         />
         <div className="input__area">
           <input
             type={type}
-            value={password}
             name="password"
             required
             placeholder="PASSWORD"
             onChange={(e) => setPassword(e.target.value)}
+            autoComplete="current-password"
+            //   value={password}
+            //   onChange={(e) => setPassword(e.target.value)}
           />
           {showPassword ? (
             <svg
@@ -127,22 +86,17 @@ const RegisterForm = () => {
             </svg>
           )}
         </div>
-        <input
-          type={type}
-          value={repeatPassword}
-          name="repeatPassword"
-          required
-          placeholder="REPEAT PASSWORD"
-          onChange={(e) => setRepeatPassword(e.target.value)}
-        />
-        <MainButton type="submit">REGISTER</MainButton>
+
+        <Link className="forgot">Forgot Password?</Link>
+
+        <MainButton type="submit">log in</MainButton>
       </form>
       <div className="form__bottom">
-        <span>Already have an account?</span>
-        <Link to="/auth/login">Log in</Link>
+        <span>Don’t have an account?</span>
+        <Link to="/auth/register">Register</Link>
       </div>
     </div>
   );
 };
 
-export default RegisterForm;
+export default LoginForm;
