@@ -5,6 +5,8 @@ import MainButton from "../../../utils/buttons/mainbutton/MainButton";
 import AccountTitle from "../../accountTitle/AccountTitle";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import * as yup from "yup";
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -17,26 +19,57 @@ const RegisterForm = () => {
   const [showPassword, setShowPassword] = useState(true);
   const [type, setType] = useState("password");
 
-  const user = {
-    name: name,
-    surname: surname,
-    email: email,
-    password: password,
-    repeatPassword: repeatPassword,
-  };
+  const schema = yup.object().shape({
+    name: yup
+      .string()
+      .matches(/^[A-Za-z]+$/, "Name must contain only letters."),
+    surname: yup
+      .string()
+      .matches(/^[A-Za-z]+$/, "Name must contain only letters."),
+    email: yup
+      .string()
+      .email("Enter a valid email address.")
+      .required("The email field is required."),
+    password: yup
+      .string()
+      .matches(
+        /^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$/,
+        "The password must contain at least one letter and one number."
+      )
+      .min(4, "Password must be at least 4 characters.")
+      .max(6, "Password must be at most 6 characters.")
+      .required("The password field is required."),
+    repeatPassword: yup
+      .string()
+      .oneOf([yup.ref("password")], "Passwords do not match.")
+      .required("The repeat password field is required."),
+  });
 
-  const register = (e) => {
+  const register = async (e) => {
     e.preventDefault();
-    if (password !== repeatPassword) {
-      toast.error("Password do not match");
-      return;
-    }
+
     try {
-      localStorage.setItem("user", JSON.stringify(user));
+      await schema.validate({
+        name,
+        surname,
+        email,
+        password,
+        repeatPassword,
+      });
+
+      const newUser = {
+        name: name,
+        surname: surname,
+        email: email,
+        password: password,
+        repeatPassword: repeatPassword,
+      };
+      await axios.post("http://localhost:3000/users", newUser);
       toast.success("User registered successfully");
       navigate("/auth/login");
     } catch (error) {
-      setError("Registration failed. Please try again later.");
+      toast.error(error.message);
+      return;
     }
   };
 

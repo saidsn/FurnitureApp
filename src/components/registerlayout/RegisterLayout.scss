@@ -8,14 +8,18 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      text-transform: uppercase;
-      color: var(--second-text-color);
       margin-bottom: 7rem;
+      p{
+        cursor: pointer;
+        text-transform: uppercase;
+        color: var(--second-text-color);
+      }
       .svg{
         width: 2.5rem;
         height: 2.5rem;
         background: var(--second-text-color);
         border-radius: 50%;
+        cursor: pointer;
       }
     }
   }
