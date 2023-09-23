@@ -1,16 +1,37 @@
 import "./LoginForm.scss";
 import React, { useState } from "react";
 import "./LoginForm.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MainButton from "../../../utils/buttons/mainbutton/MainButton";
 import AccountTitle from "../../accountTitle/AccountTitle";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import LoginService from "../../../APIs/services/LoginService";
 
 const LoginForm = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(true);
   const [type, setType] = useState("password");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const login = async (e) => {
+    e.preventDefault();
+    try {
+      const users = await LoginService.GetAll();
+      const foundUser = users.find(
+        (user) => user.email === email && user.password === password
+      );
+      if (foundUser) {
+        toast.success("Login successful");
+        setTimeout(() => {
+          navigate("/");
+        }, 2500);
+      } else toast.error("User not found");
+    } catch (error) {
+      console.error("Something went wrong", error);
+      return null;
+    }
+  };
 
   const handleToggle = () => {
     if (type === "password") {
@@ -22,7 +43,6 @@ const LoginForm = () => {
     }
   };
 
-  const login = () => {};
   return (
     <div className="login__form">
       <AccountTitle>login</AccountTitle>
@@ -32,8 +52,8 @@ const LoginForm = () => {
           name="email"
           required
           placeholder="E-MAIL ADRESS"
-          //   value={email}
-          //   onChange={(e) => setEmail(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <div className="input__area">
           <input
@@ -41,10 +61,9 @@ const LoginForm = () => {
             name="password"
             required
             placeholder="PASSWORD"
-            onChange={(e) => setPassword(e.target.value)}
             autoComplete="current-password"
-            //   value={password}
-            //   onChange={(e) => setPassword(e.target.value)}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           {showPassword ? (
             <svg
@@ -76,12 +95,12 @@ const LoginForm = () => {
               <path
                 d="M3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C4.97196 6.49956 7.81811 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957Z"
                 stroke="#2D2D2B"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
               <path
                 d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
                 stroke="#2D2D2B"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           )}
@@ -100,5 +119,3 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
-

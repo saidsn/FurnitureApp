@@ -212,10 +212,18 @@
     {
       "name": "Seid",
       "surname": "Nuraliyev",
-      "email": "seidvahidli@gmail.com",
-      "password": "1234q",
-      "repeatPassword": "1234q",
+      "email": "saidsn@code.edu.az",
+      "password": "1234a",
+      "repeatPassword": "1234a",
       "id": 1
+    },
+    {
+      "name": "Sadiq",
+      "surname": "Nahmetov",
+      "email": "sadifn@gmail.com",
+      "password": "23456z",
+      "repeatPassword": "23456z",
+      "id": 2
     }
   ]
 }

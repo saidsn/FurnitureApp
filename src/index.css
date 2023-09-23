@@ -69,6 +69,11 @@ body {
   font-family: var(--main-text-family);
 }
 
+::selection{
+  background-color: #b8926a;
+  color: #2d2d2b;
+}
+
 :root {
   --main-text-color: #2d2d2b;
   --second-text-color: #b8926a;
@@ -127,3 +132,17 @@ input[type="checkbox"] {
     width: 95% !important;
   }
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  transition: .8s;
+  background:linear-gradient(var(--second-text-color), rgba(255,255,255)); 
+}
+
