@@ -35,7 +35,7 @@ const ProductCard = ({props}) => {
   };
 
   return (
-    <div className="product">
+    <article className="product">
       <div className="product__image">
         <div
           className="product__wishlist"
@@ -73,7 +73,7 @@ const ProductCard = ({props}) => {
       </div>
       <p className="product__title">{props.title}</p>
       <span className="product__price">{props.price}$</span>
-    </div>
+    </article>
   );
 };
 

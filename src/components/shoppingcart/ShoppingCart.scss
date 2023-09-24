@@ -1,0 +1,35 @@
+.shopping-cart {
+  .shopping-cart__content {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+    }
+    &__right {
+      .summary {
+        max-width: 33rem;
+        width: 100%;
+        height: 32rem;
+        padding: 3rem;
+        border-radius: 1rem;
+        background-color: var(--second-bg-color);
+        .summary__title {
+          font-family: var(--second-text-family);
+          font-size: 3.2rem;
+          font-weight: 700;
+          line-height: 3.2rem;
+          margin-bottom: 5.2rem;
+        }
+        .summary__list {
+          &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.4rem;
+            margin-bottom: 3rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

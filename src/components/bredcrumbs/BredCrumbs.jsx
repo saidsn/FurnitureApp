@@ -10,6 +10,10 @@ const BredCrumbs = () => {
       path: "/account",
       breadcrumb: "My account",
     },
+    {
+      path: "/shoppingcart",
+      breadcrumb: "Shopping cart",
+    },
   ];
   const breadcrumbs = useBreadcrumbs(customBreadcrumbs);
 
