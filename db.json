@@ -215,6 +215,13 @@
       "email": "saidsn@code.edu.az",
       "password": "1234a",
       "id": 1
+    },
+    {
+      "name": "Sadiq",
+      "surname": "Nahmetov",
+      "email": "sadifn@gmail.com",
+      "password": "1212s",
+      "id": 2
     }
   ]
 }
