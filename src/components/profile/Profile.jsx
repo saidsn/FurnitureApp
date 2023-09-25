@@ -7,6 +7,10 @@ const Profile = () => {
 
   let location = useLocation();
 
+  const logout = () => {
+    localStorage.removeItem("user");
+  }
+
   return (
     <div className="profile">
       <h2 className="profile__title">MY ACCOUNT</h2>
@@ -112,7 +116,7 @@ const Profile = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <Link>LOG OUT</Link>
+          <Link to={"/"} onClick={logout}>LOG OUT</Link>
         </li>
       </ul>
     </div>

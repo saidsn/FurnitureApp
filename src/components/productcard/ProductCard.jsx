@@ -1,16 +1,42 @@
 import React, { useState } from "react";
 import "./ProductCard.scss";
+import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 
-const ProductCard = ({props}) => {
-  const { image, title, price } = props;
+const ProductCard = ({ props }) => {
+  const { image, title, price, id } = props;
 
   const [isWishlist, setIsWishlist] = useState(
     JSON.parse(localStorage.getItem("wishList"))?.some(
-      (item) => item.id === props.id
+      (item) => item.id === id
     ) || false
   );
 
+  const [basket, setBasket] = useState(
+    JSON.parse(localStorage.getItem("basket"))?.some(
+      (item) => item.id === id
+    ) || false
+  );
+
+  const addToBasket = (id) => {
+    const basketItem = {
+      id: id,
+      image: image,
+      title: title,
+      price: price,
+    };
+
+    if (basket) {
+      const getBasket = JSON.parse(localStorage.getItem("basket"));
+      const updatedBasket = getBasket.filter((item) => item.id !== id);
+      localStorage.setItem("basket", JSON.stringify(updatedBasket));
+    } else {
+      const getBasket = JSON.parse(localStorage.getItem("basket"));
+      const updatedBasket = [...(getBasket || []), basketItem];
+      localStorage.setItem("basket", JSON.stringify(updatedBasket));
+      toast.success("added to basket");
+    }
+  };
 
   const addToWishList = (id) => {
     const wishlistItem = {
@@ -26,7 +52,7 @@ const ProductCard = ({props}) => {
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
     } else {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
-      const updatedWishlist = [...getWishlist || [], wishlistItem];
+      const updatedWishlist = [...(getWishlist || []), wishlistItem];
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
       toast.success("added to wishlist");
     }
@@ -39,7 +65,7 @@ const ProductCard = ({props}) => {
       <div className="product__image">
         <div
           className="product__wishlist"
-          onClick={() => addToWishList(props.id)}
+          onClick={() => addToWishList(id)}
         >
           {isWishlist ? (
             <svg
@@ -69,13 +95,14 @@ const ProductCard = ({props}) => {
             </svg>
           )}
         </div>
-        <img src={props.image} alt="productimage" />
+        <Link to={`/productdetail/${id}/${title}`}>
+          <img src={image} alt="productimage" />
+        </Link>
       </div>
-      <p className="product__title">{props.title}</p>
-      <span className="product__price">{props.price}$</span>
+      <p className="product__title">{title}</p>
+      <span className="product__price">{price}$</span>
     </article>
   );
 };
 
 export default ProductCard;
-

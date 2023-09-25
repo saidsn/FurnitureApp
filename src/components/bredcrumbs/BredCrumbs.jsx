@@ -1,10 +1,11 @@
 import React from "react";
 import "./BredCrumbs.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 
 const BredCrumbs = () => {
-  
+  const params = useParams();
+
   const customBreadcrumbs = [
     {
       path: "/account",
@@ -14,18 +15,36 @@ const BredCrumbs = () => {
       path: "/shoppingcart",
       breadcrumb: "Shopping cart",
     },
+    {
+      path: "/productdetail",
+      breadcrumb:"products"
+    },
+    {
+      path: "/productdetail/:id",
+      breadcrumb: null
+    },
+    {
+      path: "/productdetail/:id/:title",
+      breadcrumb: params.title,
+    },
   ];
   const breadcrumbs = useBreadcrumbs(customBreadcrumbs);
 
   return (
-    <section id="bred__crumbs">
+    <section id="bread__crumbs">
       <div className="container">
         {breadcrumbs.map(({ match, breadcrumb }) => (
-          <span key={match.pathname}>
-            <NavLink className="link" to={match.pathname}>
+            <NavLink
+              key={match.pathname}
+              className="link"
+              to={
+                match.pathname === "/productdetail"
+                  ? (match.pathname = "/products")
+                  : match.pathname
+              }
+            >
               {breadcrumb}
             </NavLink>
-          </span>
         ))}
       </div>
     </section>

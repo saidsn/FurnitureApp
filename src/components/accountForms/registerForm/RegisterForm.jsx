@@ -62,7 +62,6 @@ const RegisterForm = () => {
         surname: surname,
         email: email,
         password: password,
-        repeatPassword: repeatPassword,
       };
       await axios.post("http://localhost:3000/users", newUser);
       toast.success("User registered successfully");

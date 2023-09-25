@@ -1,0 +1,24 @@
+.product-detail {
+  &__content {
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+    &__left {
+      max-width: 64rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      .bigImage {
+        width: 64rem;
+        height: 40.3rem;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+      .smallImage {
+        width: 19.5rem;
+        height: 10rem;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+    }
+  }
+}

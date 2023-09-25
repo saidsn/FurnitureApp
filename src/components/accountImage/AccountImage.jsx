@@ -5,7 +5,7 @@ const AccountImage = () => {
   return (
     <div className="account__image">
       <img
-        src="https://s3-alpha-sig.figma.com/img/5c26/4b95/4a9d0daa1e978f01a08ad9c346aca146?Expires=1695600000&Signature=X8bsbb8Lls07TWyq2s6hYbiAmydGj1tQA6wngE7PlDCXFTjS4DC~Tx8rFWWdQurefan9lVb2v0Tx7QiGmqnYD8ODDZGfnwqRFisUlPVOXxdSNDIyiQ-h-gdtpxeXzi~I6yxRrOneJZWFsTbYmgGtikVgqpIbVALu4qUjD7vH6CTS2vLXIkpAizBEtzIJ-EwqV4gAv-kvPZ~DRyHoWCun3h3d3L4jELPSMjVDTNsuOKAUEasvJb8lKTDAhErXlHHsROJQrfTqZpmkx98ad9ipKVOVfoh452tfMEumSh3Op0Ysyucx42rh92opxBPiCgyBAzevOpDs4ihKHJTzTWXIIA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        src="https://s3-alpha-sig.figma.com/img/5c26/4b95/4a9d0daa1e978f01a08ad9c346aca146?Expires=1696809600&Signature=COzgmnXj3em-bpSuPG-1YzJgrd2lVcAkYQKp8mx8yp4nJdVlFdsub1EO4aUKpTmGk6cfSXsbF-ApuVOmJB6oPwNwiFUNNIl3T6TTH0fsZemLT9LN7wgIrHdoZysCQ8AkSaeeuJiydExOMNGHYecArGGJ3CdI64TSFeEJNBJk04JVzGyBnY2db7fJfKzVCyMzQy-r25P68aBU2JE7APu7CipxMLCCJDE0ghALQF1PdZ2c9ybAreN-X83r2UFJcdU5zxlZYGBtkq0Cayd1DCyfkmfs7o7SmZmDd60teYeC6GALirHSvPnpIyWIyznJrJf-6y89wJ-cisIl3MQXeUnJFA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         alt=""
       />
     </div>

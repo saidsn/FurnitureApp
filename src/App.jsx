@@ -6,6 +6,7 @@ import Products from "./pages/products/ProductsPage";
 import Collections from "./pages/collections/CollectionsPage";
 import Contact from "./pages/contact/ContactPage";
 import ShoppingCart from "./pages/shoppingcart/ShoppingCartPage";
+import ProductDetail from "./pages/productdetail/ProductDetailPage";
 import Account from "./pages/account/AccountPage";
 import AccountLayout from "./components/accountlayout/AccountLayout";
 import WishList from "./pages/wishlist/WishListPage";
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/collections" element={<Collections />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/shoppingcart" element={<ShoppingCart />} />
+          <Route path="/productdetail/:id/:title" element={<ProductDetail/>}/>
         </Route>
         <Route path="/account" element={<AccountLayout />}>
           <Route path="wishlist" element={<WishList />} />

@@ -1,7 +1,9 @@
-#bred__crumbs {
+#bread__crumbs {
   margin-bottom: 5rem;
   .link {
-    &.active::before {
+    text-transform: capitalize;
+    position: relative;
+    &:not(:first-child)::before {
       content: "|";
       margin: 0 1rem;
     }
