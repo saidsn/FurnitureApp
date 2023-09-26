@@ -7,7 +7,7 @@ const MainHeader = () => {
   const [mainHeader, setMainHeader] = useState([]);
 
   const GetAllMainHeader = async () => {
-    setMainHeader(await MainHeaderService.GetAll());
+    setMainHeader(await MainHeaderService.getAllMainHeader());
   };
 
   useEffect(() => {

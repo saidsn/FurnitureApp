@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainButton.scss";
 
-const MainButton = ({ children }) => {
+const MainButton = ({ children}) => {
   return <button className="main__button btn">{children}</button>;
 };
 

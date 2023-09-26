@@ -15,12 +15,12 @@ const HomePage = () => {
   
   const [products, setProducts] = useState([]);
 
-  const GetAllProduct = async () => {
-    setProducts(await ProductService.GetAll());
+  const GetAllProducts = async () => {
+    setProducts(await ProductService.getAllProduct());
   };
 
   useEffect(() => {
-    GetAllProduct();
+    GetAllProducts();
   }, []);
 
   return (

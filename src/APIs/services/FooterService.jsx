@@ -5,7 +5,7 @@ class FooterService extends HttpClient{
         super("http://localhost:3000");
     }
 
-    GetAll = () => this.get('footers');
+    getAllFooter = () => this.getAll('footers');
 }
 
 export default new FooterService();

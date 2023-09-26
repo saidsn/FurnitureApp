@@ -5,6 +5,6 @@ class AboutService extends HttpClient {
     super("http://localhost:3000");
   }
 
-  GetAll = () => this.get("abouts");
+  getAllAbout = () => this.getAll("abouts");
 }
 export default new AboutService();

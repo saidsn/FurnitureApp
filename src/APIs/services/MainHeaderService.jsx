@@ -5,7 +5,7 @@ class MainHeaderService extends HttpClient {
     super("http://localhost:3000");
   }
 
-  GetAll = () => this.get("mainheaders");
+  getAllMainHeader = () => this.getAll("mainheaders");
 }
 
 export default new MainHeaderService();

@@ -12,31 +12,31 @@ const ProductCard = ({ props }) => {
     ) || false
   );
 
-  const [basket, setBasket] = useState(
-    JSON.parse(localStorage.getItem("basket"))?.some(
-      (item) => item.id === id
-    ) || false
-  );
+  // const [basket, setBasket] = useState(
+  //   JSON.parse(localStorage.getItem("basket"))?.some(
+  //     (item) => item.id === id
+  //   ) || false
+  // );
 
-  const addToBasket = (id) => {
-    const basketItem = {
-      id: id,
-      image: image,
-      title: title,
-      price: price,
-    };
+  // const addToBasket = (id) => {
+  //   const basketItem = {
+  //     id: id,
+  //     image: image,
+  //     title: title,
+  //     price: price,
+  //   };
 
-    if (basket) {
-      const getBasket = JSON.parse(localStorage.getItem("basket"));
-      const updatedBasket = getBasket.filter((item) => item.id !== id);
-      localStorage.setItem("basket", JSON.stringify(updatedBasket));
-    } else {
-      const getBasket = JSON.parse(localStorage.getItem("basket"));
-      const updatedBasket = [...(getBasket || []), basketItem];
-      localStorage.setItem("basket", JSON.stringify(updatedBasket));
-      toast.success("added to basket");
-    }
-  };
+  //   if (basket) {
+  //     const getBasket = JSON.parse(localStorage.getItem("basket"));
+  //     const updatedBasket = getBasket.filter((item) => item.id !== id);
+  //     localStorage.setItem("basket", JSON.stringify(updatedBasket));
+  //   } else {
+  //     const getBasket = JSON.parse(localStorage.getItem("basket"));
+  //     const updatedBasket = [...(getBasket || []), basketItem];
+  //     localStorage.setItem("basket", JSON.stringify(updatedBasket));
+  //     toast.success("added to basket");
+  //   }
+  // };
 
   const addToWishList = (id) => {
     const wishlistItem = {

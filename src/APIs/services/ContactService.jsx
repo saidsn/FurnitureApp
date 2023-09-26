@@ -5,7 +5,7 @@ class ContactService extends HttpClient {
     super("http://localhost:3000");
   }
 
-  GetAll = () => this.get("contacts");
+  getAllContact = () => this.getAll("contacts");
 }
 
 export default new ContactService();

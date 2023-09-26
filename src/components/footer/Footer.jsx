@@ -7,7 +7,7 @@ const Footer = () => {
   const [footer, setFooter] = useState([]);
 
   const GetAllFooter = async () => {
-      setFooter(await FooterService.GetAll());
+      setFooter(await FooterService.getAllFooter());
   };
 
   useEffect(() => {

@@ -11,6 +11,7 @@ import { Formik, Form } from "formik";
 import * as yup from "yup";
 
 const RegisterForm = () => {
+  
   const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = useState(true);

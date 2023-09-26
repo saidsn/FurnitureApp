@@ -5,7 +5,8 @@ class ProductService extends HttpClient {
     super("http://localhost:3000");
   }
 
-  GetAll = () => this.get("products");
+  getAllProduct = () => this.getAll("products");
+  getProduct = (id) => this.getById("products", id);
 }
 
 export default new ProductService();

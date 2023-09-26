@@ -27,7 +27,7 @@ const LoginForm = () => {
 
   const login = async (inputvalue) => {
     try {
-      const users = await LoginService.GetAll();
+      const users = await LoginService.getAllUser();
       const foundUser = users.find(
         (user) =>
           user.email === inputvalue.email &&

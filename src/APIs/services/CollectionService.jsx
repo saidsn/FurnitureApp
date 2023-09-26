@@ -5,7 +5,7 @@ class CollectionService extends HttpClient{
         super('http://localhost:3000');
     }
 
-    GetAll = ()=> this.get('collections');
+    getAllCollection = ()=> this.getAll('collections');
 }
 
 export default new CollectionService();

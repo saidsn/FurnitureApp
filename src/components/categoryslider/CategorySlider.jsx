@@ -36,7 +36,7 @@ const CategorySlider = ({ slidesToShow }) => {
   const [categories, setCategories] = useState([]);
 
   const GetAllCategory = async () => {
-    setCategories(await CategoryService.GetAll());
+    setCategories(await CategoryService.getAllCategory());
   };
 
   useEffect(() => {

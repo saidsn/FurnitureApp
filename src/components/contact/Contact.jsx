@@ -7,12 +7,12 @@ import Title from "../title/Title";
 const Contact = () => {
   const [contact, setContact] = useState("");
 
-  const GetAllContact = async () => {
-    setContact(await ContactService.GetAll());
+  const GetAllContacts = async () => {
+    setContact(await ContactService.getAllContact());
   };
 
   useEffect(() => {
-    GetAllContact();
+    GetAllContacts();
   }, []);
 
   return (

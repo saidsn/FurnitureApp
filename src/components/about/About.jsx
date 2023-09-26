@@ -7,12 +7,12 @@ import Title from "../title/Title";
 const About = ({ showButton }) => {
   const [about, setAbout] = useState("");
 
-  const GetAllAbout = async () => {
-    setAbout(await AboutService.GetAll());
+  const GetAllAbouts = async () => {
+    setAbout(await AboutService.getAllAbout());
   };
 
   useEffect(() => {
-    GetAllAbout();
+    GetAllAbouts();
   },[]);
 
   return (

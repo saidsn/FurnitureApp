@@ -27,11 +27,11 @@ const ProductsPage = () => {
   const collection = collections.find((c) => c.id == collectionId);
 
   const GetAllCollections = async () => {
-    setCollections(await CollectionService.GetAll());
+    setCollections(await CollectionService.getAllCollection());
   };
 
   const GetAllProduct = async () => {
-    setProducts(await ProductService.GetAll());
+    setProducts(await ProductService.getAllProduct());
   };
 
   let filteredProducts = [...products];
@@ -60,7 +60,7 @@ const ProductsPage = () => {
   };
 
   const GetAllCategories = async () => {
-    setCategories(await CategoryService.GetAll());
+    setCategories(await CategoryService.getAllCategory());
   };
 
   useEffect(() => {

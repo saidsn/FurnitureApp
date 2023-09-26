@@ -5,7 +5,7 @@ class DiscountService extends HttpClient {
     super("http://localhost:3000");
   }
 
-  GetAll = () => this.get("discounts");
+  getAllDiscount = () => this.getAll("discounts");
 }
 
 export default new DiscountService();

@@ -5,6 +5,6 @@ class LoginService extends HttpClient {
     super("http://localhost:3000");
   }
 
-  GetAll = () => this.get("users");
+  getAllUser = () => this.getAll("users");
 }
 export default new LoginService();

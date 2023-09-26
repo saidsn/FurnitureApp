@@ -37,12 +37,12 @@ const CollectionSlider = ({ slidesToShow }) => {
 
   const [collections, setCollections] = useState([]);
 
-  const GetAllCollection = async () => {
-    setCollections(await CollectionService.GetAll());
+  const GetAllCollections = async () => {
+    setCollections(await CollectionService.getAllCollection());
   };
 
   useEffect(() => {
-    GetAllCollection();
+    GetAllCollections();
   }, []);
 
   return (

@@ -7,12 +7,12 @@ import MainButton from "../../utils/buttons/mainbutton/MainButton";
 const Discount = () => {
   const [discount, setDiscount] = useState("");
 
-  const GetAllDiscount = async () => {
-    setDiscount(await DiscountService.GetAll());
+  const GetAllDiscounts = async () => {
+    setDiscount(await DiscountService.getAllDiscount());
   };
 
   useEffect(() => {
-    GetAllDiscount();
+    GetAllDiscounts();
   },[]);
 
   const sectionBackground = {
