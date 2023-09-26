@@ -3,10 +3,12 @@ import "./ProductDetail.scss";
 import Slider from "react-slick";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
 import SecondaryButton from "../../utils/buttons/secondarybutton/SecondaryButton";
+import toastr from "react-hot-toast";
 
 const ProductDetail = ({ children, product }) => {
   const [count, setCount] = useState(1);
   const [color, setColor] = useState("");
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   let increaseCount = () => {
     setCount(count + 1);
@@ -41,6 +43,8 @@ let addToBasket = (productToAdd, countToAdd) => {
     updatedBasket.push(newItem);
   }
   localStorage.setItem("basket", JSON.stringify(updatedBasket));
+  setIsButtonDisabled(true);
+  toastr.success("Product added successfully");
 };
 
 
@@ -144,8 +148,13 @@ let addToBasket = (productToAdd, countToAdd) => {
             </div>
             <h3 className="product__price">{product.price}$</h3>
             <div className="button__area">
-              <div style={{flex:"1"}} onClick={()=>addToBasket(product, count)}>
-                <MainButton>
+              <div
+                className="addbasket"
+                style={{ flex: "1" }}
+                onClick={() => addToBasket(product, count)}
+                
+              >
+                <MainButton disabled={isButtonDisabled} >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
