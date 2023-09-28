@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ProductCard.scss";
 import { Link } from "react-router-dom";
-import toast from "react-hot-toast";
+import toastr from "react-hot-toast";
 
 const ProductCard = ({ props }) => {
   const { image, title, price, id } = props;
@@ -11,32 +11,6 @@ const ProductCard = ({ props }) => {
       (item) => item.id === id
     ) || false
   );
-
-  // const [basket, setBasket] = useState(
-  //   JSON.parse(localStorage.getItem("basket"))?.some(
-  //     (item) => item.id === id
-  //   ) || false
-  // );
-
-  // const addToBasket = (id) => {
-  //   const basketItem = {
-  //     id: id,
-  //     image: image,
-  //     title: title,
-  //     price: price,
-  //   };
-
-  //   if (basket) {
-  //     const getBasket = JSON.parse(localStorage.getItem("basket"));
-  //     const updatedBasket = getBasket.filter((item) => item.id !== id);
-  //     localStorage.setItem("basket", JSON.stringify(updatedBasket));
-  //   } else {
-  //     const getBasket = JSON.parse(localStorage.getItem("basket"));
-  //     const updatedBasket = [...(getBasket || []), basketItem];
-  //     localStorage.setItem("basket", JSON.stringify(updatedBasket));
-  //     toast.success("added to basket");
-  //   }
-  // };
 
   const addToWishList = (id) => {
     const wishlistItem = {
@@ -50,11 +24,12 @@ const ProductCard = ({ props }) => {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
       const updatedWishlist = getWishlist.filter((item) => item.id !== id);
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
+      toastr.success("Product deleted from Wishlist");
     } else {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
       const updatedWishlist = [...(getWishlist || []), wishlistItem];
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
-      toast.success("added to wishlist");
+      toastr.success("Product add to Wishlist");
     }
 
     setIsWishlist(!isWishlist);

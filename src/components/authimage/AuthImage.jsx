@@ -1,5 +1,5 @@
-import React from 'react';
-import './AccountImage.scss'
+import React from "react";
+import "./AuthImage.scss";
 
 const AccountImage = () => {
   return (
@@ -10,6 +10,6 @@ const AccountImage = () => {
       />
     </div>
   );
-}
+};
 
 export default AccountImage;

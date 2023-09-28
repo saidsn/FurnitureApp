@@ -1,16 +1,12 @@
-.discount{
+.discount__area{
     .discount {
         height: 35.7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
-    
         .discount__content {
             text-align: center;
-            margin-bottom: 4.2rem;
-    
             &--title {
                 color: #FFF;
                 font-family: Didot;
@@ -26,6 +22,7 @@
                 color: #FFF;
                 font-weight: 400;
                 line-height: 2.4rem;
+                margin-bottom: 4.2rem;
             }
         }
     }

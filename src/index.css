@@ -122,6 +122,10 @@ input[type="checkbox"] {
   appearance: none;
 }
 
+button:disabled{
+  cursor: not-allowed;
+}
+
 @media (max-width: 576px) {
   .btn {
     max-width: 100% !important;

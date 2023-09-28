@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./LoginForm.scss";
 import { Link, useNavigate } from "react-router-dom";
 import MainButton from "../../../utils/buttons/mainbutton/MainButton";
-import AccountTitle from "../../accountTitle/AccountTitle";
+import AccountTitle from "../../authtitle/AccountTitle";
 import toast from "react-hot-toast";
 import LoginService from "../../../APIs/services/LoginService";
 import CustomInput from "../../custominput/CustomInput";

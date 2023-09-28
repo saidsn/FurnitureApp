@@ -3,12 +3,13 @@
     display: flex;
     gap: 6rem;
     flex-wrap: wrap;
+    justify-content: center;
 
     &__left {
       max-width: 66rem;
       border-radius: 1rem;
       overflow: hidden;
-      .bigImage img{
+      .bigImage img {
         width: 64rem;
         height: 40.3rem;
         border-radius: 1rem;
@@ -86,5 +87,12 @@
         gap: 2rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .button__area {
+    display: flex;
+    flex-direction: column;
   }
 }

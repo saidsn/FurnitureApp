@@ -7,7 +7,7 @@ import BredCrumbs from "../components/bredcrumbs/BredCrumbs";
 import { useLocation } from "react-router-dom";
 import  { Toaster } from "react-hot-toast";
 
-const Layout = () => {
+const MainLayout = () => {
   const location = useLocation();
   return (
     <>
@@ -21,4 +21,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default MainLayout;

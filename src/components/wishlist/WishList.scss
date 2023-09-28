@@ -36,7 +36,6 @@
           font-weight: 700;
         }
       }
-
     }
   }
   .empty {
@@ -45,22 +44,21 @@
     margin-top: 12rem;
   }
 }
-      @media (max-width: 794px) {
-        .wishlist__item {
-          position: relative;
-          &__image{
-            width: 100% !important;
-            height: 23.3rem !important;
-          }
-          &__content{
-            &__title{
-              svg{
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-
-              }
-            }
-          }
+@media (max-width: 794px) {
+  .wishlist__item {
+    position: relative;
+    &__image {
+      width: 100% !important;
+      height: 23.3rem !important;
+    }
+    &__content {
+      &__title {
+        svg {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
         }
       }
+    }
+  }
+}

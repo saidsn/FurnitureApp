@@ -1,0 +1,14 @@
+.account__image{
+    max-width: 82.7rem;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .account__image {
+        height: 26.7rem;
+    }
+}
+
+
+    

@@ -1,10 +1,14 @@
 import React from "react";
-import "./RegisterLayout.scss";
-import AccountImage from "../accountImage/AccountImage";
+import "./AuthLayout.scss";
+import AccountImage from "../authimage/AuthImage";
 import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
-const RegisterLayout = () => {
+const AuthLayout = () => {
+
+  const goBack = () => {
+    window.history.back();
+  };
   return (
     <main className="main">
       <div className="form__area">
@@ -24,7 +28,7 @@ const RegisterLayout = () => {
                 />
               </svg>
             </div>
-            <p>back</p>
+            <p onClick={goBack}>back</p>
           </div>
           {<Outlet />}
         </div>
@@ -35,4 +39,4 @@ const RegisterLayout = () => {
   );
 };
 
-export default RegisterLayout;
+export default AuthLayout;

@@ -1,0 +1,12 @@
+.accountlayout {
+  display: flex;
+  gap: 15rem;
+}
+
+@media screen and (max-width: 975px) {
+  .accountlayout {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem !important;
+  }
+}

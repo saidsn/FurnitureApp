@@ -19,5 +19,12 @@
       color: #b8926a;
     }
   }
+
+  @media  screen and (max-width: 576px) {
+    &__head{
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+    }
+  }
 }
 

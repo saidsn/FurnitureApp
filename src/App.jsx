@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./layout/Layout";
+import Layout from "./mainlayout/MainLayout";
 import Home from "./pages/home/HomePage";
 import About from "./pages/about/AboutPage";
 import Products from "./pages/products/ProductsPage";
@@ -10,9 +10,11 @@ import ProductDetail from "./pages/productdetail/ProductDetailPage";
 import Account from "./pages/account/AccountPage";
 import AccountLayout from "./components/accountlayout/AccountLayout";
 import WishList from "./pages/wishlist/WishListPage";
-import RegisterLayout from "./components/registerlayout/RegisterLayout";
-import Register from "./pages/register/RegisterPage";
-import Login from "./pages/login/LoginPage";
+import AuthLayout from "./components/authlayout/AuthLayout";
+import Register from "./pages/auth/register/RegisterPage";
+import Login from "./pages/auth/login/LoginPage";
+
+
 const App = () => {
   return (
     <Router>
@@ -30,7 +32,7 @@ const App = () => {
           <Route path="wishlist" element={<WishList />} />
           <Route path="info" element={<Account />} />
         </Route>
-        <Route path="auth/" element={<RegisterLayout />}>
+        <Route path="auth/" element={<AuthLayout />}>
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
         </Route>

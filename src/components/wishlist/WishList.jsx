@@ -1,28 +1,24 @@
 import React, { useEffect, useState } from "react";
 import "./WishList.scss";
-import toast from "react-hot-toast";
+import toastr from "react-hot-toast";
 
 const WishList = () => {
   let wishlistLocal = JSON.parse(localStorage.getItem("wishList"));
   const [wishlist, setWishlist] = useState(wishlistLocal || []);
-  const [filterWishlist, setFilterWishlist] = useState(wishlist);
 
   const deleteWishlistItem = (id) => {
-    let wishlistLocal = JSON.parse(localStorage.getItem("wishList"));
-    const newWishlist = wishlistLocal.filter(
-      (wishlistItem, index) => index !== id
-    );
+    const newWishlist = [...wishlistLocal];
+    newWishlist.splice(id, 1);
     localStorage.setItem("wishList", JSON.stringify(newWishlist));
     setWishlist(newWishlist);
-    setFilterWishlist(newWishlist);
-    toast.success("Wishlist deleted");
+    toastr.success("Product deleted successfully");
   };
 
   return (
     <div className="wishlist_area">
-      {filterWishlist.length > 0 ? (
+      {wishlist.length > 0 ? (
         <ul className="wishlist">
-          {filterWishlist.map((wishlistItem, id) => {
+          {wishlist.map((wishlistItem, id) => {
             return (
               <li className="wishlist__item" key={id}>
                 <div className="wishlist__item__image">
