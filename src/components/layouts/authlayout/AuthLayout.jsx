@@ -1,6 +1,6 @@
 import React from "react";
 import "./AuthLayout.scss";
-import AccountImage from "../authimage/AuthImage";
+import AccountImage from "../../authimage/AuthImage";
 import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 

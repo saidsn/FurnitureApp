@@ -1,0 +1,13 @@
+  .form__bottom {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    p,
+    a {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+    a {
+      color: var(--second-text-color);
+    }
+  } 

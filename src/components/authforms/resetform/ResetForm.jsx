@@ -1,49 +1,38 @@
-import "./LoginForm.scss";
 import React, { useState } from "react";
-import "./LoginForm.scss";
-import { Link, useNavigate } from "react-router-dom";
+import "./ResetForm.scss";
+import { useNavigate } from "react-router-dom";
 import MainButton from "../../../utils/buttons/mainbutton/MainButton";
 import AccountTitle from "../../authtitle/AccountTitle";
 import toast from "react-hot-toast";
-import LoginService from "../../../APIs/services/LoginService";
 import CustomInput from "../../custominput/CustomInput";
 import { Formik, Form } from "formik";
-import * as Yup from "yup";
+import * as yup from "yup";
 
-const LoginForm = () => {
+const ResetForm = () => {
   const navigate = useNavigate();
-  const [showPassword, setShowPassword] = useState(true);
-  const [type, setType] = useState("password");
 
-  const validationSchema = Yup.object({
-    email: Yup.string()
-      .email("Enter a valid email address.")
-      .required("email is required"),
-    password: Yup.string()
+    const [showPassword, setShowPassword] = useState(true);
+    const [type, setType] = useState("password");
+
+  const validationSchema = yup.object({
+    password: yup
+      .string()
+      .matches(
+        /^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$/,
+        "The password must contain at least one letter and one number."
+      )
       .min(5, "Password must be at least 5 characters.")
       .max(10, "Password must be at most 10 characters.")
-      .required("password is required"),
+      .required("The password field is required."),
+    confirmpassword: yup
+      .string()
+      .oneOf([yup.ref("password")], "Passwords do not match.")
+      .required("The confirmpassword field is required."),
   });
 
-  const login = async (inputvalue) => {
-    try {
-      const users = await LoginService.getAllUser();
-      const foundUser = users.find(
-        (user) =>
-          user.email === inputvalue.email &&
-          user.password === inputvalue.password
-      );
-      if (foundUser) {
-        toast.success("Login successful");
-        localStorage.setItem("user", JSON.stringify(foundUser));
-        setTimeout(() => {
-          navigate("/");
-        }, 2500);
-      } else toast.error("Email or password wrong");
-    } catch (error) {
-      console.error("Something went wrong", error);
-      return null;
-    }
+  const reset = (inputvalue) => {
+    toast.success("send successful");
+    navigate("/auth/login");
   };
 
   const handleToggle = () => {
@@ -57,24 +46,23 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="login__form">
-      <AccountTitle>login</AccountTitle>
+    <div className="reset__form">
+      <AccountTitle>new password</AccountTitle>
       <Formik
         initialValues={{
-          email: "",
           password: "",
+          confirmpassword: "",
         }}
         validationSchema={validationSchema}
-        onSubmit={(inputvalue) => {
-          login(inputvalue);
-        }}
+        onSubmit={(inputvalue) => reset(inputvalue)}
       >
         <Form className="form" action="">
-          <CustomInput type="email" name="email" placeholder="E-MAIL ADRESS" />
-
           <div className="input__area">
-            <CustomInput type={type} name="password" placeholder="PASSWORD" />
-
+            <CustomInput
+              type={type}
+              name="password"
+              placeholder="ENTER NEW PASSWORD"
+            />
             {showPassword ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,20 +95,16 @@ const LoginForm = () => {
               </svg>
             )}
           </div>
-
-          <Link className="forgot" to="/auth/forgotpassword">
-            Forgot Password?
-          </Link>
-
-          <MainButton type="submit">log in</MainButton>
+          <CustomInput
+            type={type}
+            name="confirmpassword"
+            placeholder="CONFIRM PASSWORD"
+          />
+          <MainButton type="submit">submit</MainButton>
         </Form>
       </Formik>
-      <div className="form__bottom">
-        <span>Don’t have an account?</span>
-        <Link to="/auth/register">Register</Link>
-      </div>
     </div>
   );
 };
 
-export default LoginForm;
+export default ResetForm;
