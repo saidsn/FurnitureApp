@@ -1,28 +1,84 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.scss";
+import { useLang } from "../../context/langcontext/LangContext";
+import { useTranslation } from "react-i18next";
+import Hamburger from "../hamburger/Hamburger";
+import { useBasket } from "../../context/basketContext/BasketContext";
 
-const Header = () => {
+const Header = ({ open, setOpen }) => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const { language, changeLanguage } = useLang();
+  const searchRef = useRef(null);
+  const [user, setUser] = useState(null);
+  const { basketCount } = useBasket();
 
-  const localUser = JSON.parse(localStorage.getItem("user"));
+  const langs = [
+    {
+      title: "en",
+    },
+    {
+      title: "az",
+    },
+    {
+      title: "ru",
+    },
+  ];
+
+  const handleSearch = () => {
+    let searchValue = searchRef.current.value;
+    if (searchValue) {
+      const searchparams = new URLSearchParams({ search: searchValue });
+      navigate(`/searchresult?${searchparams.toString()}`);
+    }
+  };
+
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    setUser(storedUser);
+  }, []);
 
   return (
     <div className="container">
       <div className="header">
         <div className="header__left">
-          <div className="header__left--lang">
-            <select className="select">
-              <option value="en">AZ</option>
-              <option value="az">EN</option>
-            </select>
+          <div
+            className={`header__left--lang ${open ? "responsive__lang" : ""}`}
+          >
+            <div className="select" onClick={() => setIsOpen(!isOpen)}>
+              <div className="selected">{language}</div>
+              <div
+                className="options"
+                style={{ display: isOpen ? "block" : "none" }}
+              >
+                {langs.map((lang, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="option"
+                      onClick={() => changeLanguage(lang.title)}
+                    >
+                      {lang.title}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
           <div
             className={`header__left--search container ${
               searchOpen ? "fixed" : ""
             }`}
           >
-            <div onClick={() => setSearchOpen(true)}>
+            <div
+              onClick={() => {
+                setSearchOpen(true);
+                handleSearch();
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -42,7 +98,11 @@ const Header = () => {
               style={{ display: searchOpen ? "flex" : "none" }}
               className={`container searchInput`}
             >
-              <input type="text" placeholder="SEARCH OUR STORE" />
+              <input
+                type="search"
+                placeholder={t("searchinput.placeholder")}
+                ref={searchRef}
+              />
               <div onClick={() => setSearchOpen(false)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +121,16 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="header__center">
-          <p>HomeDecor</p>
-        </div>
+        <Link to="/">
+          <div
+            className="header__center"
+            style={{ display: open ? "none" : "block" }}
+          >
+            HomeDecor
+          </div>
+        </Link>
 
-        <div className="header__right">
+        <div className={`header__right ${open ? "d-block" : ""}`}>
           <div className="header__right--basket">
             <Link to="/shoppingcart">
               <svg
@@ -91,10 +156,11 @@ const Header = () => {
                 />
               </svg>
             </Link>
+            {basketCount > 0 ? <sup>{basketCount}</sup> : <sup></sup>}
           </div>
           <div className="header__right--profile">
-            <Link to={localUser ? "/account/info" : "/auth/login"}>
-              {localUser ? (
+            <Link to={user ? "/account/info" : "/auth/login"}>
+              {user ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -130,6 +196,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
+        <Hamburger open={open} setOpen={setOpen} />
       </div>
     </div>
   );

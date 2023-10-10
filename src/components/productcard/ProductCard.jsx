@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "./ProductCard.scss";
 import { Link } from "react-router-dom";
-import toastr from "react-hot-toast";
+import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
+import { useLang } from "../../context/langcontext/LangContext";
 
 const ProductCard = ({ props }) => {
-  const { image, title, price, id } = props;
+  const { image, title, titleAz, titleRu, price, id } = props;
+  const { language } = useLang();
+  const { t } = useTranslation();
 
   const [isWishlist, setIsWishlist] = useState(
     JSON.parse(localStorage.getItem("wishList"))?.some(
@@ -24,12 +28,12 @@ const ProductCard = ({ props }) => {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
       const updatedWishlist = getWishlist.filter((item) => item.id !== id);
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
-      toastr.success("Product deleted from Wishlist");
+      toast.success(t("toast.removewishlist"));
     } else {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
       const updatedWishlist = [...(getWishlist || []), wishlistItem];
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
-      toastr.success("Product add to Wishlist");
+      toast.success(t("toast.addwishlist"));
     }
 
     setIsWishlist(!isWishlist);
@@ -38,10 +42,7 @@ const ProductCard = ({ props }) => {
   return (
     <article className="product">
       <div className="product__image">
-        <div
-          className="product__wishlist"
-          onClick={() => addToWishList(id)}
-        >
+        <div className="product__wishlist" onClick={() => addToWishList(id)}>
           {isWishlist ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,9 @@ const ProductCard = ({ props }) => {
           <img src={image} alt="productimage" />
         </Link>
       </div>
-      <p className="product__title">{title}</p>
+      <p className="product__title">
+        {language === "az" ? titleAz : language === "ru" ? titleRu : title}
+      </p>
       <span className="product__price">{price}$</span>
     </article>
   );

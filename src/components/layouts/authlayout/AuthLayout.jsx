@@ -1,10 +1,13 @@
 import React from "react";
 import "./AuthLayout.scss";
-import AccountImage from "../../authimage/AuthImage";
+import AuthImage from "../../authimage/AuthImage";
 import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 const AuthLayout = () => {
+
+  const { t } = useTranslation();
 
   const goBack = () => {
     window.history.back();
@@ -28,12 +31,12 @@ const AuthLayout = () => {
                 />
               </svg>
             </div>
-            <p onClick={goBack}>back</p>
+            <p onClick={goBack}>{ t("authforms.back")}</p>
           </div>
           {<Outlet />}
         </div>
       </div>
-      <AccountImage />
+      <AuthImage />
       <Toaster position="top-left" />
     </main>
   );

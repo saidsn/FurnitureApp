@@ -3,44 +3,64 @@
     {
       "id": 1,
       "name": "SOFAS",
-      "image": "https://s3-alpha-sig.figma.com/img/fc4f/78b4/52608fae9d209c21479bbc2e3acdb8da?Expires=1696204800&Signature=ggqXl1sdj-5eN1Nt~y3DfO4sW8W0z9vNw~p6oD0Q0xYDNDXCf8oQFUt0tOJv-UkakdmoVPnEYtpP7xCgQeZYi0pA-2ccWRtUIHbYzTlJIO3jpYqlK1bjhq11fdDP5whwZj0AZxqgJC0fvIU1yd94-cmcpYnkXu6x-QYMpBOtbsPIYGWnDHUGFRvL-gtqoZOjSw3pUFUD-ToQJAb5ENoC8f94xOCNZcUYAsu79ZR50I~55O0X8X1gOIdgny7DXbL1IPiu8uyKAV00UuYFpr3KdrfYD784kEb3ly0XJESA8F2KBzHp2mOzY9D59CFX-QbDNvBpcn0zIQwXaOmEQtK3eg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "Kreslolar",
+      "nameRu": "Кресла",
+      "image": "https://s3-alpha-sig.figma.com/img/fc4f/78b4/52608fae9d209c21479bbc2e3acdb8da?Expires=1697414400&Signature=g5RVmn9vEtCd4QI4lQZ6n1T76sGyiwo0Y8M2y60b2KtGi7WJ5J9OwdgiBaZZ1MV1QjRfpMavxOvPNNANx6lV5msb-tPO8GuBYzhNtGOZbewaXXK07BXs~i-dv6OXpbkP4cfBGjPj~YPpvuE9cMWF~XGpB59tMFDBCHHGnQE2suRbpE6rmD2R-APKLNDXMPPoTJK77EwhFtZGiU42XYcQOVVZ90sDtE9yj5HpNhCA45h6Zh11oCsYJKlWws1QY3u4wx4T0kF50hlTn8xgLTnIyQ4C9jq~C6vHDmQFRi92wTbDIW1azkiuOfu1qmnWPNU9te3Lfnw~mS9l9wClAc9oUw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 2,
       "name": "BEDS AND HEADBOARDS",
-      "image": "https://s3-alpha-sig.figma.com/img/872f/f807/ccb92b737b3915871daaeca675cd8aab?Expires=1696204800&Signature=L~CKVgh6EfdZj~0~4kTODEPZTqBZ2MAHrogMJIH8fLo3408RGVH6gC7GIOjoT6-0W9fL5DE-Osh5Cvvr6jbdt8-EgIEpmxXXYDrQ6Cdq9rdNZ0oc-B1LKqYXWDke-V08aWJR18mW8qjLZNwBn7SnJTdWJ-VcnKyw~3I7XgO9F-iD6C00u--yvd3e-QRCUxTIL9rsC~J25lvz0COXWtZ9AOpv~XbbXzMevfAuOnpc8yJyY25jNowp8WYyI3CUO-fpic9LPj1FWAl8D4HrnpjY-EnaFjUYYy-dH9wb0rdwFMMpEhPumZXxU589~FkiCxIPf5ahY1BYCxvaE6-Ko5r38w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "Yataq dəhlizləri",
+      "nameRu": "Кровати и изголовья",
+      "image": "https://s3-alpha-sig.figma.com/img/872f/f807/ccb92b737b3915871daaeca675cd8aab?Expires=1697414400&Signature=eMZoO4~zrt2xtb~6vrb2bjulAYLIUAJ2DhDkUqbeSHw3Aoj4kC0~xLwU9BT9VTWXAYYx8VaVgRuiLrraTtbfe26NGJVsmjn1hYY~tQ17FC7xJE2y0qROfVRWPdyc5lh4E6JDD4CD-08GR9HQ3xoR~hasMykgALVigYrPUpj8rTZYGBetv21G96tWjk3CxwctJi3i9ERQIzBknusOhMPy41cuxjPMfvkdsikRPtnvPy2IuJn2rED1dna1mqBOelXYIRf4sq9cY9YykLpbxFnBHAMYUO4E9yZJdZNfDDlhu7IOkrDn0RWkXDszbsNO15jPc3cXuV5ytN1dXWErl4l8Ug__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 3,
       "name": "RUGS",
-      "image": "https://s3-alpha-sig.figma.com/img/3360/f18d/48cc860c94299bbd7c2cee006cd392c8?Expires=1696204800&Signature=W6yhlS~ciUnmJD6mCdM4-IZBU8~warhDFSbgN~R6HQR5zqVd0BO4RQSa05tihUBGs2bEwyPZAfZUthENrWRHwZ0NK17nmbbXKVgsGNdjjbfgJIsNkFWWOctQICtX-ucKosDGTMEWWdbYpWEXyv-f4Oe5Lfx3FoHeVtf1NeW9rHP42xmZHPbgqyKtSSwi6gkKBIdMZX3lNAUdvCWyd8cZzgVyruxYOWQGGFDhUdrl5g~ZhpEsP~S5aaBDtGv6MwDumu6MKj8XqZOyukU-cWP5OBitgY99mhGfztRUIvEyYZfdEhmRXP9eLMGh5-ytlv02D3KRws6Sb5~t0AZz~2lK0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "Xalçalar",
+      "nameRu": "Ковры",
+      "image": "https://s3-alpha-sig.figma.com/img/3360/f18d/48cc860c94299bbd7c2cee006cd392c8?Expires=1697414400&Signature=E26LC~0PMCEEgzmccrWehho0umjF4rSejam6dyzod9-b4dUPjO-MO8o3OoSIEXSqd10DZt7rIo7ZKgqnEclRbba-tY6yKP2yoZ4K4iXPHKac~8Qmp3tgMc2lqUMyjH-v3-w51U0y~7zZPnGRjsaja9~5WrgRsmaww7McqL8SL4QH~jUiEOsyMyDOaH9LomSAc3bvSRERZcEYT2wReTRyNDNZtC575A7cQxQJkCE7Uc1l9ezTThhd7h0-KUSzUWtWjcg1eWCDhpqelG090P6Af3FvZMLAowquyh5amG7ox1yOXtFOZyt2fpaCSH6f-GSmeZ-5SxCAjXfAl35tJnNfDQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 4,
       "name": "CUSHIONS",
-      "image": "https://s3-alpha-sig.figma.com/img/5c25/6005/1de18f9d6f23b51045fc7090b7c82a42?Expires=1696204800&Signature=kzBdvyh2dMu7voqsC6HJ-oaphaA3HGPjlmRqa-S7sNVNd5rbcqhdLoP4ZXi6xljcRFUFxOz1-0s1mgd6l7T4z0w8IJX6kapT4odyYwc0pz7EHuuLHP1dF-wcRCCogs8eaEPSeiDsjj2~~fMoNcfgTZh3XwiEjlnLDdEUoLSkifYnzkeQIgrWwTdyIugfa0nieJPgeW-UmQr9KgbYYLTkfVlUDfl4zVcdcJ3b8O11racYbx95g3DrejAGFNdJ~bjuZ~gaQBRITvt2HNekG5lHxCE6pemBe1Vn69DDmMnBvF1BuUKl3S3Iw3LOcNFvZPx4UhCNT~Ejiep4~1OYrMhYsA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "Yastıqlar",
+      "nameRu": "Подушки",
+      "image": "https://s3-alpha-sig.figma.com/img/5c25/6005/1de18f9d6f23b51045fc7090b7c82a42?Expires=1697414400&Signature=P~9ECdm9MYUjhc0zap~NiPQ7dVoYDeEI1P5i5jWdg9oIObODktpked8WIqLf5HS3M25HCyPW9CwFSxqHuxIt-FN4EdYXY0vKZeKFcxQkSxmd8IhMMwGafSHB6WP-rE1zmdi0ApD7rXX8rVv2AooZ2x6cb8ogQdTpLLIUT0SCbLp7nn7ymM5uHOAWCbbovr57wpmfDiEFxm5oLyQPZhjmCfkckpfUhCgyHkS4fLZWcQDaXKBSGNq6ym5YLncNCOYzcVjRy-YTWdtNm0mRFyCXy5cWOHjhBY3-pBxg851lNFWrg-UY9MNdX5xL8zYVqBFn4btFw9uh8-RmPA3i44k20A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 5,
       "name": "HEADBOARDS",
-      "image": "https://s3-alpha-sig.figma.com/img/3360/f18d/48cc860c94299bbd7c2cee006cd392c8?Expires=1696204800&Signature=W6yhlS~ciUnmJD6mCdM4-IZBU8~warhDFSbgN~R6HQR5zqVd0BO4RQSa05tihUBGs2bEwyPZAfZUthENrWRHwZ0NK17nmbbXKVgsGNdjjbfgJIsNkFWWOctQICtX-ucKosDGTMEWWdbYpWEXyv-f4Oe5Lfx3FoHeVtf1NeW9rHP42xmZHPbgqyKtSSwi6gkKBIdMZX3lNAUdvCWyd8cZzgVyruxYOWQGGFDhUdrl5g~ZhpEsP~S5aaBDtGv6MwDumu6MKj8XqZOyukU-cWP5OBitgY99mhGfztRUIvEyYZfdEhmRXP9eLMGh5-ytlv02D3KRws6Sb5~t0AZz~2lK0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "Başlıqlar",
+      "nameRu": "Изголовья",
+      "image": "https://s3-alpha-sig.figma.com/img/3360/f18d/48cc860c94299bbd7c2cee006cd392c8?Expires=1697414400&Signature=E26LC~0PMCEEgzmccrWehho0umjF4rSejam6dyzod9-b4dUPjO-MO8o3OoSIEXSqd10DZt7rIo7ZKgqnEclRbba-tY6yKP2yoZ4K4iXPHKac~8Qmp3tgMc2lqUMyjH-v3-w51U0y~7zZPnGRjsaja9~5WrgRsmaww7McqL8SL4QH~jUiEOsyMyDOaH9LomSAc3bvSRERZcEYT2wReTRyNDNZtC575A7cQxQJkCE7Uc1l9ezTThhd7h0-KUSzUWtWjcg1eWCDhpqelG090P6Af3FvZMLAowquyh5amG7ox1yOXtFOZyt2fpaCSH6f-GSmeZ-5SxCAjXfAl35tJnNfDQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     }
   ],
   "mainheaders": {
     "id": 1,
     "title": "THE FURNITURE THAT DEFINES YOU",
+    "titleAz": "SİZİ TANIMLAYAN MEBEL",
+    "titleRu": "МЕБЕЛЬ, ОПРЕДЕЛЯЮЩАЯ ВАС",
     "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum",
-    "image": "https://s3-alpha-sig.figma.com/img/ae4c/9e23/ba8849252aece8c4c38500429ce2f28b?Expires=1696809600&Signature=mp89jmDOTrDTEX26rrKuDkhpCLMtEtUWIxDmHE6NUOFx9XKDwHmEvwC9XyXOenlIy8gZO-SAC8B4MAgfVA722q4oeHDuCrn8R4eaJIGsllCB5QRt-i~kpgYpu7TjHoaplRfJ9D5cFrUfYlzNymJmN-by9j80tA4gMGwp6cRQo8c0OL65hoZYbigOunpwN3zJjzUyOWHW5S5Fn1Dqj9wblvoXmiz0n8M0EYj1EYIU7Wq8m3zywn2wIpl1kdvQMn4sFFQHada4Uy9U7JHmkZBh74hKtYavBV0SLQupW1jc8vMg~FJJQL~xr0WzhpF8sEamWMwkB-kyC9nrSKY58iAeyQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    "descriptionAz": "Amma əslində indiki həzzlərin yaltaqlığına layiq olanları həm ittiham edirik, həm də ədalətli nifrətlə aparırıq.",
+    "descriptionRu": "Но на самом деле мы обвиняем в сегодняшней низости тех, кто достоин наслаждений.",
+    "image": "https://s3-alpha-sig.figma.com/img/ae4c/9e23/ba8849252aece8c4c38500429ce2f28b?Expires=1698019200&Signature=Dd98tfhcX1JDsRgDev06NYnjY0tD839w~F4MtzTarNmaqHqrIE4HzRFGUgFu4bN2hHRi9OZXfP4wukJ-AbVa3lAM9gXdKzCfAX5z9uRu~yaiJ2tqghWR~zJok5A1ou5L42hsasmws31Cv2RWr7rVPt31fYUt4Q9rDTTVBeVlGpf2-0g334SMabt6EeUFb5qe4RtRZI41KE1l9QvLrTnE4tjzxFabBZ8aGhKtC2vma1au2dFY1bhUUhLFku5TVWSy0s~DPRv1qYOYXdMhDn0R7UnDNt5SSOh6Ooqa5q64twfQ2~0FiO1~bXV65R9~R0PqHGZwkD4FH8dWIQwfeRY19w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
   },
   "abouts": {
     "id": 1,
-    "image": "https://s3-alpha-sig.figma.com/img/754e/f220/6125e68f344e6b26d5b0e7816a0e4381?Expires=1696809600&Signature=bQ-WqFaiqBggQkTkwAO1HAW3yvuzZhMdIaFfU~wsIGl0s8PaluOV36YEbBvavc0sToxbKArIRROYcBIBOOM67MiAZcPYrfrAJkxp4zcgk08WsOjgkjgeieKbejHIS~qX1n-37CMQhMXV4p4fZ43Qq8-gvgA0JZBWawRpoHbsv7gvP6Eg~6oSP1tCUSAxKnftP9OseS44L3y6Vzb9H733CdPE5SuI1aGIJVLwE0NtRyEF4U~k3rZQBzJk2g9EjpIvKNIvuHZFuC6cHMwwkf4EYChT0YjZLpvyVguPQOZPdtW-tosj8RseqB2VVopJ~4ub82Y~fdceuJ-AQo3KzyxBIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-    "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+    "image": "https://s3-alpha-sig.figma.com/img/754e/f220/6125e68f344e6b26d5b0e7816a0e4381?Expires=1698019200&Signature=ICcSPLrECaOk4~RML9VjyAQBfeX1S3FC1fqF~4xmobR5RR2CLT~e0HEqfKQ734g5zqHf0a5rKHdWTJwP5eIBJDwrLcpnACDee5eCix-UsSlmU3Y2p3hhh342BxY4Hv~p7cwJHE8GrAdbv2fH3wMe4u3sImiwhLozGZxbmuYOZlYTiT0gg3hGW-2dRxVxAv9OfJb~e4s6vpjyeGcd4v5KYIpO5K3sPEVoTN1o-b1TFGRlQsvGwLv4KI6-FFy80q8fwpIM1qaiY7HVIujYh5ewz47qqjkngQlxgqOUo8rPG0bTEubKp7QWX9~p9c1-eN-CyVw5fx0hwnc51ZgOEkEnTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    "descriptionAz": "Həqiqətən də bu şeylər arasında fərq asan və məqsədəuyğundur. Çünki boş vaxtlarımızda, seçim etmək imkanımız olduqda və bizi ən çox sevindirən şeyi etməyə heç nə mane olmursa, bütün həzzləri qəbul etmək, bütün ağrıları rədd etmək lazımdır. Amma müəyyən vaxtlarda və ya vəzifə və ya şeylərin zərurətinə görə, çox vaxt olur ki, həm ləzzətlər rədd edilir, həm də bəlalar rədd edilməz. Beləliklə, bu şeylərin seçimi müdrik insanın əlindədir ki, ya daha böyük həzzləri rədd edərək başqalarını əldə etsin, ya da ağrılara dözərək daha şiddətli həzzləri dəf etsin. Beləliklə, bu şeylərin seçimi müdrik insanın əlindədir ki, ya daha böyük həzzləri rədd edərək başqalarını əldə etsin, ya da ağrılara dözərək daha şiddətli həzzləri dəf etsin.",
+    "descriptionRu": "И действительно, различие между этими вещами легко и целесообразно. Ибо в свободное время, когда мы свободны в выборе и ничто не мешает нам делать то, что нам больше всего нравится, необходимо принять на себя все удовольствия, отвергнуть всю боль. Но в известное время, то ли по обязанностям, то ли по вещным потребностям, часто случается, что приходится отвергать и удовольствия, и не следует отвергать неприятности. И поэтому мудрый человек придерживается выбора этих вещей, чтобы, либо отвергая большие удовольствия, он мог получить другие, либо, терпя страдания, он мог оттолкнуть более тяжелые. "
   },
   "discounts": {
     "id": 1,
     "title": "20% DISCOUNT",
-    "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo"
+    "titleAz": "20% ENDİRİM",
+    "titleRu": "СКИДКА 20%",
+    "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo",
+    "descriptionAz": "Həqiqətən də bu şeylər arasında fərq asan və məqsədəuyğundur. Çünki boş vaxtlarımızda, seçim etməkdə azad olduğumuz zaman bunu etməyə heç nə mane olmur",
+    "descriptionRu": "И действительно, различие между этими вещами легко и целесообразно. Ибо в свободное время, когда мы свободны в выборе, нам ничто не мешает это сделать."
   },
   "products": [
     {
@@ -48,9 +68,11 @@
       "categoryId": 1,
       "collectionId": 1,
       "isPopular": false,
-      "image": "https://s3-alpha-sig.figma.com/img/ed65/0672/8605e77828c2dca2b6da5d4d87f66186?Expires=1696204800&Signature=kcn5CUGW7IUS0ELZdIJkGmYIYzEwVar-QvqEvUlf0gv5yxyjAablZ3j~UICxdxHWuONTf-e28~~X2M7fAhr9tgJ2q53XjSk1bBp-YODOqieHFK2Wf83-pwFG4BfteUBzFLo-qkIF7K2pjf5tetH1MHmHa8-NPTrc2DaeupBGBenlAJEYeJmnxPa--lUdrb7SState7xasOQn5X13L6i7evXytYySQkabTGsIUBImx7ypj8a2eV9WR-c3iwcLjO7N0lFsJK2BAtV1QQ49p-SwmduWfUrsnts332M94GcP63t-FGQOkwAuCJe2TqdZe81RrjaPNYc7-maZmDL6FraZ8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/ed65/0672/8605e77828c2dca2b6da5d4d87f66186?Expires=1697414400&Signature=D6T9X3qmKAyqQCXDxG5Ii1RFjfTK7dsxf6UhXhFzcXbp1zdTlid7nYS2P-QlUqG-QRa8~CGW~CXFjna-6wYkJYaPlO7sg2AFq-ArtVSjfsqe1ARF18mMhCANP1RAiq0Y3~X3hFO-IM-TQnU6iDr2LCDWiktzK~6kEvJzqV2hRaajVb5yc5k60wkUBiJNvp-FJgFrFVoNHQpG8RhhwiTMrqXJD~JdIcp2R-zMG3QWFhl1b6Z9QXyLODhfEWGiaThaYIk6sC0StpS1FT1CO-ZYApVY8o1sYJQh4Vhpr7w28RGiyvT5y3~~NHccp8YCvEVPOvkmaKNRreAw8hkTSetZCQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "titleAz": "JM 110 - Jurnal Cədvəli",
+      "titleRu": "JM 110 - Журнальный столик",
+      "title": "JM 110 - Magazine Table",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "120"
     },
     {
@@ -58,9 +80,11 @@
       "categoryId": 2,
       "collectionId": 2,
       "isPopular": true,
-      "image": "https://s3-alpha-sig.figma.com/img/5a97/55b2/be5d65f3963d2bc282606dc6acd7fe2d?Expires=1696204800&Signature=kuA91xVgqwGdYvcGh2Eygds3upB5oizorod0NkcqDv4pj7CcaxDPqan9xFVF9HJ9btk20WoxBC6lEj6Sk1rPG-q75Hmtrr1V1Ed68VzhZT~5~BvqhbRmsDMkJmTonem28MMH-kX16Ji16KnApD2Ax039CiOvKyjXJcdOLjcDw83pYT51uBHlPfX2jViiiA3xTvOjro04OWlMYIBGmYR5F3ZsPNjfhSCb9hSFS1uV2PACO2ssQo10EwOo3CHx5yreSU97K0VqJMfmKuRcZujIzdWWDRuZ5iSpfuQGejyt5ZatS4sIZV5-E-JljBdxIHDkH9-VFdxmquQWMZ4IpkedKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/5a97/55b2/be5d65f3963d2bc282606dc6acd7fe2d?Expires=1697414400&Signature=bwNErzmfrBNk5TBjWN0ZaceUVOh1EN-xoDAit81fPjkv6cvWX97hgpqH5xy1ISGYTFEw5vlyI~xkngCBKeHyANASJ~7zNN3E2fRc-a~Wo900VYCbWKremqjP6D9mxTgCv3HKFD9KBH2ywTj~LlJBG8qEuGsrFQV4C02Ox4ZDP09f8oUNAzIFsF6nZ-1NH3YlQzATAWEOGXDr92tv0Utm9alUj8UwDms7G4EguYSuU6j0PnClOrXt7-emKLgSmLlQHEHyL6POhSJa2yzRg3ya74h1IV2npNAxLJj5rkZtA3wn14Vm8QOI1q4cMMvlk7OJ9n1jPtyjzs5S7pzIsmBoOA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Azelya gray sofa 3 seats",
+      "titleAz": "Azelya boz kreslo 3 yerli",
+      "titleRu": "Azelya серый диван 3 места",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "112"
     },
     {
@@ -68,9 +92,11 @@
       "categoryId": 3,
       "collectionId": 3,
       "isPopular": false,
-      "image": "https://s3-alpha-sig.figma.com/img/eafa/bf40/6cb1d294ca686d29b62862c6f7bde43e?Expires=1696204800&Signature=lRcn4eb1uEx2zY3wda~jS7uHq9tVNb-x2ZWak02AZ~gjj76P-yXrAwUbccz5yxlbxwszI6N1vxuQipPkEXmaWkKdQ~oPvZYRnnHgwAPbEba7IK-z8VBmAkTpySV~dTAOGsU88En79a23UEXmNOqECVwrXhy7drJOHlPcwngTPyOuFAizGl6sB4922B6OH4Vi~Ky11yNpK3GNeohRM9cMX9jbnvtzCpbeW4CuRX0pttKw-2IGBySqyLYTGIctPbc8TE3xBceTNCIgEDeaZQSAbUViybJzFlme61DyJPQqOFoX-td3-8UtIB-qA9CNh-xMEgb2RVJdF0-B95mHKFqJjA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/eafa/bf40/6cb1d294ca686d29b62862c6f7bde43e?Expires=1697414400&Signature=QMc9IvZNcoGsVzMoqBBlj4eVe7w3S-Kf6BLPehNZ-Y0RynxE7Cttb1-pOpJ5xDwm3lCxuayO10lMEFhfBtAcFLfLVD0SPhAiWjMpf0F1k7I8Fq2P9HA2FJq8egNhEoDEMguVELqxR2TLEldODF1Lns1FqemLe-cjjer4olnJ0LWg~kJPbdkiG8kEJxCYd92DwYUyPAzAUOjUXTdcTUpfRU5nkklSynvfhQq2Fo8UUdDvPZaiA2~BwRUQ9KpGDSot-X1GF~k0c2M0KHmrPBX2TmriJmODVxpU2AWVlIEdz3lMhI3fM-zMsE-HJ~~4sQ9YM6SlydPzmt3VdUZliXuMsQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Rosaline 3 seater sofa",
+      "titleAz": "Rosaline 3 yerli kreslo",
+      "titleRu": "Диван Rosaline 3 места",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "135"
     },
     {
@@ -78,9 +104,11 @@
       "categoryId": 4,
       "collectionId": 4,
       "isPopular": true,
-      "image": "https://s3-alpha-sig.figma.com/img/dee2/eb13/91d11c1e5ecc902a0c6592f4c16d3abb?Expires=1696204800&Signature=AW4KJTeXsC7kLa8ZFdlt4GlYVMslzZRdq6ULgUCkcpxcGFzM5jGywq8WHYJm3OBez-opuogwWROr1d0HLfmxawFnPN0cguYVb0sZb4HScNMbbU~m3KlNHEBfCq5RTFhyrTkCvMyTm~xr12CZGAMdAHlPutQ~82baXb7Ew5~US7CnUjjXZUJc-lkMqA1mUr4bEWUK3lj6wPcm0Apx5dPouRQ6sFbCN1FZxtMFJGJmbhW7twRdcrtSblUXJtYTaiG1Saw8Sbggn9LzklmC5MzcxeuuVRTdUvAY1awdqKrn8WBjLqRYTdA-XoVATiNwcrCBHqIVRcUn8DRK8OPJNcTYBA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/dee2/eb13/91d11c1e5ecc902a0c6592f4c16d3abb?Expires=1697414400&Signature=hcuRgU4E0-a4YE2t6dwcfh8o899InAUK48N3r1ebCwNO-kndMGmeDVjAbuemeEwLrEpoFaTj3zDMqrgUkmjaUxComb5YpK5RUm3EM2DxkEdFnHfQcRrkYLOMZ3NQ~sp5p4s2JsLGjaQodNmLxHjJHkaTo722BFOskQzDMXrkQOMFc5Nkv8gJNF~tUd5McgC6GzW6WtGLEOEhWj0prqVPO14El4Ae4mxAIJeEXkY2AEw4b9SDIcSil7n7UqGvMeGD5AUoSPIyOAh75383vUGyCBQSmDUF2zK~kxI4OnWQou2Y1gE2neFoyFQ0q7Bt8ODQNIeEcxnUPxfcPZKGeDMAjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Vivaldi chair",
+      "titleAz": "Vivaldi kreslo",
+      "titleRu": "Кресло Vivaldi",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "150"
     },
     {
@@ -88,9 +116,11 @@
       "categoryId": 5,
       "collectionId": 5,
       "isPopular": false,
-      "image": "https://s3-alpha-sig.figma.com/img/a74d/e1b6/6730f5b5363196a16ffb8a91a269bf7e?Expires=1696204800&Signature=QHpaK96h5vlEwKLDMUMo5syZzwOSxNWdjq7~nph16f9gqSeswGaaOs4by1kO0CfuTUCRyx-xxHgeh0mTEBPn3ebsHXHhy7XGLjxrYMhyinjK1eVitl9IN1aaEB5iDgGabe9Rr4OH6au0eLCa7gTdZs3aVZdbep8JifgoQxtF0lHEwpswceo0nOxY00Ofn58ZlPiR-HMUdgUOJDTXdG00ZoBHWa6xfq9X28UHTnmdPd42lqjQgyCtnRdgEQltLcApqcGHxdjSG6smcB2rT2sSwtglTtuGNCVlwFexfiv9gwPakBNJP4xBaKFfaioh-yGT8crf20qb6ChZJbydaKAe4Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/a74d/e1b6/6730f5b5363196a16ffb8a91a269bf7e?Expires=1697414400&Signature=OBUYgUfZeXrITqUsH9ZCH2gSu1osyDYvIltByQ3DCCVb2qEfvd8fX1znA0LNKmaeFhvLYqLhH~Uv1VOC3oLRIpUHUeXRSpqiFhkz~O4Vq9gOJvk8mZMBmm4BybyK~1MCCfDG1~JgIXyl3LHtIz3nMcx1iIDyMCDqrlxi6jueanp3rJfMQQqvKLoxgzkmcET1GCGNiwF3in~vEM8XHWfVv9pBx3aeuBlDpI2EWUHRIcByg2uZbIHVXex~q3C8VohrGI-JizRfI6DQMpgON6fZJA6-BehC4UgLh9Dr0-b4MJEZMdzgzzJ~4XFbbRDvLoPm7qZ80iIZwp-wvRxKCNgUeg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Garcia chair",
+      "titleAz": "Garcia kreslo",
+      "titleRu": "Кресло Garcia",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "100"
     },
     {
@@ -98,9 +128,11 @@
       "categoryId": 5,
       "collectionId": 6,
       "isPopular": true,
-      "image": "https://s3-alpha-sig.figma.com/img/4d98/0a2b/4cf40a0ed69c10e4829a9d775c00304d?Expires=1696204800&Signature=WzZrKBQh4vhcMIp~nWi0mWZ92b87obJTrl6z~N413kE~q-j3fzc8UFtk-62iyGn1IKYtITZBh1Dl9YA5adPfY2zwbOVs0Ucwv9whzxWpxVTZAe9R7X8c4rtVv7TDivjiNt7sK~EkkP1BwIcS1JUd08PCs1gPPYHfnGAaXwGP1jl42kAntDpZNeN1iLfnQI1DdwWGOrvwSGe2g~1Nw1JYREmIALPj2qmTq3uNNMjRu7pVeKtCE0J1qsVuckDVVzdVf9MTVeylGuJRtvfp-GIDpfvuPMH1JJr7vyNLrL4vcG-zG3fYrW3DH4ktbB2BtP1yXnZ7untsgzQbyomCSrfcQg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/4d98/0a2b/4cf40a0ed69c10e4829a9d775c00304d?Expires=1697414400&Signature=fnRxlaYAi6cW723pV-WtenAMl5FfcG2OtMVxpJqCzpmcVpBHBeYK~2rYU12fJ7qisYSx7ShguoOk~UQNN3PtjIDHOtDvqZsCRQz2nVa2rFGjQa5Xp33TEE9JmUrpMEfDuBRbkCj73eLUSZpttIMjcxJFEDJQ4R89ZQch8vdamlEdyI9DxcG9kk2cn4e712686~MpGZ~g0a~txasZmoKxP9cTZaCzzROY9~4pPh8Gr5cDSCjbnOwtxfVZLwQfHh3rHSFXakGudndDOUpJnIikwwNGXmJv-4VUuqT5qXVNXQYO5KJo5qKrN5eM~AwsthpC8n5SWdDrQH8fYIcvNnw47g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Palmyra chair",
+      "titleAz": "Palmyra kreslo",
+      "titleRu": "Кресло Palmyra",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "90"
     },
     {
@@ -108,9 +140,11 @@
       "categoryId": 4,
       "collectionId": 7,
       "isPopular": false,
-      "image": "https://s3-alpha-sig.figma.com/img/ae52/fda0/d18440f6574ed4959e1aaf90d8c59dd1?Expires=1696204800&Signature=i1FHlp7rMUk6eaAlpNKhT8OLV21pLhyGaIOp3FJ9NS6aCQ3BE~Wilc1c5SyuS6PEyfh9ue-ECvAPCxH8vuGDTpd5USCBjUG6AXXvF5SgNMsFLfek4HMvxbG6hSXGk7f1G4Lvwhu8Djzk~LcCgqJTvTsJOV5U5XivWVKZwA4nA3AsohmlUgQpxiiZ363No6Ghxe2UrNJD8v1Xvn0l2Rkk64JFXrR7jiagpKpZEituc5lIZiC-O2saeTpQajfNqDQCqqnzomlxkwF3UKkcyJoVWCkEv2o~SLFvrsfvmsJz0e~hQebBZf81Sf10WkkaOnqImplQOPHYE5ldTDMBTqtOwg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/ae52/fda0/d18440f6574ed4959e1aaf90d8c59dd1?Expires=1697414400&Signature=dnvZOqEbUP~h-p9AjzC2HKau-q3dYr8Gm5V9q75wX5hODb6kZ3udzelRtYcZ5cAvD1app8OAD0bVm0MtbDxkn~PnwuHlm1k6nYSNj4IYukP9JiSGAa3x-MEXuOVU8vfrnStbXT8y8HnmHbHoW68FaQ5CXc9vmsStGNEdnfrUsjWZhpAjB-t1-eNxg~J4MgBynow1l~pDKQeqierB38kIjMewou2wnaU93t0FK0ZQrEw5vXny9wSJ-MHooeuo04w4NQ7UhSIeS2kFUol2EpaaZs450svkV6pRAgB9OIl4aFuUd1A9iSwbcMRYMw-z3ndatClGw5vyZzM1fYqYQR3bVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Lena chair",
+      "titleAz": "Lena kreslo",
+      "titleRu": "Кресло Lena",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "450"
     },
     {
@@ -118,8 +152,10 @@
       "categoryId": 3,
       "collectionId": 8,
       "isPopular": true,
-      "image": "https://s3-alpha-sig.figma.com/img/7bf7/d767/fb3d76499c0312fb96c9600f3c06fc31?Expires=1696204800&Signature=jhhUt6ladtKM9mHsbGbmI1KIHTFklaJIy9i~HOth7CKdUJrqdhzysX5VyTmy~-BZlbH4tYWz2tOhN-EYUq8obAVT1kKzFJrEBzS8qFxqIlOjrNujSScIUsKCiNko9gt-BY~Q6G01KZtbVrNdVjfjH2MrJ3BkCrk0W1TJ7Rt0iz~5RjF0HJZXhZZeUKTxQJpI-AcvtzPQN9nj6d2nrzIzp90VuOXeHBVgHTcQa9eivVR3hdR1DnrRcUg5YKtlHXH-DzrOvWkX5Bu7tHxOa4v5sgPWj5yRNM6njTV2ZR4MW1WMu0ylquufDwFtNUFdpCCRHdQhBGq-SaWqQS~jh7eF5A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
+      "image": "https://s3-alpha-sig.figma.com/img/7bf7/d767/fb3d76499c0312fb96c9600f3c06fc31?Expires=1697414400&Signature=ZBzR~Bu9a8xhlHBswDVk3IizCgAzPgRRDYePWwa~CAGBSQc9JmYBvdg53CyF8Awo~EyiNK6unATGRs1HLtq49MkQOpjbN3KVMjJLpLmmecpWymKrLgyqix12bfGeKGjgSqDOJmL80E~wHkZuZuOx8v59MCCWbDgMMRLvjg22uRKYZWYVgW8sxcNJklJf53ugNSJ45LGJLpu-a9Hyujnh88tHvZ1TuxMb-szvd87Dg2VgnDGJ1zVSX~o06GdgMMBF3Fb7YeJBUPgFTRIVd392D2B~ZvniZQqUYyp2UdlF9y9WV40PakJTZVMt0tvY19gBmya81Aw2UXWJ-Da6qGzB8w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Novella Cream sofa 3 seater",
+      "titleAz": "Novella Krem divan 3 yerli",
+      "titleRu": "Novella Кремовый диван 3 места",
       "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "330"
     },
@@ -128,9 +164,11 @@
       "categoryId": 2,
       "collectionId": 9,
       "isPopular": false,
-      "image": "https://s3-alpha-sig.figma.com/img/305c/2426/af6eb65fdd771b89d2c1700aac7e12e9?Expires=1696204800&Signature=oW38vSSHZu6m8GcG8RooBHICoKXkhpPh3usEL8EzyY5AgydyDykatxvk8obA5prjwsvKusJSeZeVKNBxWmJvJqo0uZYJXiqlwOrKRWtliOXfG5nldFYpiD5mTABnFqwY8COckcz1PzpRvxsl97DC8pXHqb41N86cFr4mlsXzZbojifnJ-ULa0BAO1kXpsSN9fY9~AP4vrduQ0D~jRt9TkIhDCgdejyaByUzrGmdWPKXBaX7XS4tt~q7bGSXgGoBJis5i3issobNOvJeEFt9qI2a63LzxEF-TmzwEtAqcnnhXH3M3WTG1AYzOkoTa4KqpYjOoUmERW5qbNxHUroXIig__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/305c/2426/af6eb65fdd771b89d2c1700aac7e12e9?Expires=1697414400&Signature=hu739kwsk8d0sZ0mGtVgO10sTmyOB4RmVkmQt5b-Ph8JKx4i1Fp2DnoxAgo8ouErVAZuRl762I-~j-aNEh0sZMBsxm~xNXwHBblyGPEw1wKxX0r-srVKwvDBCKUv6HqYoxE0TMKmJlZGnWuz6hl~3CDzjKQBe8pHnIgC9MYCaGuU3tulbYDVIzCbBYMtzR8RQcHMmWdmnY7FoogW5NaLmLsrhpef86LtXkbG9osuwlU2tynLJlQPg2d2Cs0TKpSWPcH99~uwQ7uXFsTUbFZw0DzCD8na6RFEGdwTB00s9m5UmO8BSYJr3r~ThvD-itcYQ5FPuxZxvoTVvzOkG6M~kA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "ST Moon chair",
+      "titleAz": "ST Moon kreslo",
+      "titleRu": "Кресло ST Moon",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "220"
     },
     {
@@ -138,9 +176,11 @@
       "categoryId": 1,
       "collectionId": 3,
       "isPopular": true,
-      "image": "https://s3-alpha-sig.figma.com/img/1851/1c19/4acae62ef5c0b9441ca3aaa7b1199e43?Expires=1696204800&Signature=qfG9xJVh-KpeUji6OMQ0JKMNX9kDQgazs3wBpt~SJLyDcXLxLle0NeYLcGU3fp1b~lqpAyZVPxPCH-T-EV2rP4NG~SYgm4GdvOGl-ngjtrNvJdGvhLLCshXz4eaPrgcRC2vA4K7KWf~dVoeBjnJluINNjKxZ5EiO~rtwqLthIleX4q14085Uipoo~Z0KFoTSHbmalZm-Jxu8w4h0VP8oQzQor0g7A~FaSM8WAPweGjDqlaZJqH0MHe6oyxje8psvs~y0omPS4YKJzKWcdrycvGx~NDpsAEd6qVj1mgZpKbR92ApE~ahy0LV7O46zg-TmyW9FVpPDoT2isoTXwh95qw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/1851/1c19/4acae62ef5c0b9441ca3aaa7b1199e43?Expires=1697414400&Signature=LMJLBq~JYjBXNq5B8OwvkUMugiyRgd~x1urPsOoJw2SLO4hNTut79npdnTsQmXC0Znj2FGcS8YXMoc7jasu9KwX7zfSVhogZHNoOReKjcpbr2MVuGZHm5YsPuOunwt9HpMGaROAfclKCWTdd9nF4EzEZ8v8oB2vVAmfDSXQ4JHDIMmOMvlyx4ig3LvKscHDKc3DYqwdnQu92vlEW4uo-IPFJ9k7lzAkbMCMyrxhVunmpnC0wetnZDjNEV03Ruok7XiPHooN1-gaa1mU~ylqFDTASpa4NC0EuObCzYVUldvLw5s4Q5MZV7m8G~U2DW71PMKzZe4WT0Y1QoRFaE8mvRQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "Oscar children's computer table",
+      "titleAz": "Oscar uşaq kompüter masası",
+      "titleRu": "Детский компьютерный стол Oscar",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "200"
     },
     {
@@ -148,9 +188,11 @@
       "categoryId": 4,
       "collectionId": 6,
       "isPopular": true,
-      "image": "https://s3-alpha-sig.figma.com/img/3100/68ee/10b908245071a25dcb0201a2777a112b?Expires=1696204800&Signature=Bu31hyCX1jrFii4uQF1rfwWvkjTX8MHwpobNOggGgER6gzcYBps-wHG3~ubW5XSmnsyyUTqE-Q0ZSiBa07stfy1bpR4uzwh6S1Wym~8cx4cXNXpN1nuX4l0tSgmeZ7OVuKJcPL5JhnaRAjMwBw8MQd5dWIqJvoG0-7PMMgpPklzSsFEWTU9comk6p7t11aUe2jR2mHfqD~W8G8p2lUEZhnJV9bn5ZuARWOiIf7qCFENx1AWZKFABrE0Y8Hncirf8trHJZRMnQEUQ55li1yuNV1euF8RY9YWOc1-45Voq-KVKKv2MlBAFv418fAscb6qIVcI8ljMUihTZY2E8bCA-jA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/3100/68ee/10b908245071a25dcb0201a2777a112b?Expires=1697414400&Signature=lCvdQ09TeywjA4CJE1UZ7mePJKtqlJSqgNiVFpQ7Y9I4mUqCbIC2PK6sSJGL0OiSSUGUf4RWTpyPorjS-BVNjdoV6Q2zC13G61gIca7CoYKWHBNtA7SuBdNsKxAwuoUaVetmMo6MEXoe~v7GRd7fP5FwBX81yyFxvbZHRkxPjekID2TSi1sf13SDNC-3JmPJidVEMzOcnN4UcYdqTqNCrO-mmCdTSFrNc6SGNiZCHLZ-jMgQUsyX5YVhKd3sbDPgQBvxZc54jAZRjCM7BbxxzOpca6o5yUmO0RZb0nWFdSmwco92AGaoQnzJOj-NJ3-VAXfpC8d8UySIp3nQ0HuV4g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "JM 230 - Magazine Table",
+      "titleAz": "JM 230 - Jurnal Cədvəli",
+      "titleRu": "JM 230 - Журнальный столик",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "180"
     },
     {
@@ -158,9 +200,11 @@
       "categoryId": 2,
       "collectionId": 9,
       "isPopular": false,
-      "image": "https://s3-alpha-sig.figma.com/img/8026/59d9/c0b3b71441e3dcfa8abc9000896d31fd?Expires=1696204800&Signature=OoXjHle~x-OINdvRZT1t2itqA1h5~-KAa4pM6tXZi-OoMrkq5sLxXpB~bjHvGW8m8VA43L77pt6dlZNtsrE3kXWpPlVEEjr5ZnC6KTkwkEHQhe0JAKXn2i9QYxXW7IAwnrKIdfGtOXaXbcU5p2JxvJZTEgx4pdHpw41PmlVlmMTMp4UrJd6wFq7Ua8dTcCmCq1JlVg4tG-jz601esGgXzBQwetZM1IE0WTEVLFAGMS7ptDZ5xCwKPNqdO-zIMiMvDc~tWzT5txyb-n0I0zmtNEXD7QUJcVRoWWZ7Jxuh~-k1wQiRMtRS6uZb9G6sF6JFtwM8Br5Te-fwKcs-R~N3xA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "title": "Grayson Premium Grey Wash Nest of Tables",
-      "description":"Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "image": "https://s3-alpha-sig.figma.com/img/8026/59d9/c0b3b71441e3dcfa8abc9000896d31fd?Expires=1697414400&Signature=ONMk2mjcE9Ry5OEE1ykcFadbddTzDFdcoE0ADLKQIIiBmPWxz5LAaCGTzLiO9jnl72iWoxVipMzdQGoqccZV7X4zxBTnshZr1HrcMGDJyHQQZzK-HDi2H5NgfcPNBFBr6ZjJi7blClof~m2OBuxCTMbUpTAHA~qe31JmPkC3gonD24y~2vs4Til4QMs9NFxU9PlXpJfvUPhGvbn58UHrH09s7Xbs6neRUsPMCNmo4qDszrF3MQgmhJ4EK~JfPbcF427enqlKetWU1zsn2q88p1p5GV5RBSMrTjXv0r~eOptlZm-6N6ITrDgvlahXk26rQqQWPoaqw~zrEp8p6amzuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "title": "ST Laura chair",
+      "titleAz": "ST Laura kreslo",
+      "titleRu": "Кресло ST Laura",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
       "price": "360"
     }
   ],
@@ -168,55 +212,75 @@
     {
       "id": 1,
       "name": "BEDROOM",
-      "image": "https://s3-alpha-sig.figma.com/img/d9b6/8e11/548ad23561f72bb7ac58ee9002bb63a0?Expires=1696204800&Signature=d5~hAB3iue~Obz35bEeWdr4EL7QCRK95MAjQoVoiUgrbEAPy3kAskmB2zhw1coGSHsibqyDaLjHe-xUSmXajWBpTmxgayA2WSXf6ECwBgnr6zSRjbOGUg4kcBC0ijtHN31X8XibvKwvCNWiyxQc1H11kU~Dd8eyC0ax6l80TdJ-Thozm4N26WnUFp7zMrrpVObULW1oz28RFFdGE9St1aCu6yEWqkTl6ken-vy7oYuVmTC3MnsirrAlC34lu-wpH0hGwtrWNyx76QqeGtmh8tn0HksB~JpMz1wdx36B0HdJGZNWoYKtgx6Px2emt3QGvwdcoeTxCeGYVPVz3f0Bw5g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "YATAQ OTAĞI",
+      "nameRu": "СПАЛЬНЯ",
+      "image": "https://s3-alpha-sig.figma.com/img/d9b6/8e11/548ad23561f72bb7ac58ee9002bb63a0?Expires=1697414400&Signature=VklA1OyQhQ9PP~KfbUUE7eRjWFVphahKPPIO8HQnA6jDNH1xMsHYUlKCMOtzRQKdF36EU6HODr0bDejUXv~OoEBEGtjU3TMRgvT6xGbjsA6x~8XmeHkC54nJhfqc1lQZvldKWa6rClqGuXai0G~rpMwaIP6b5YO1~Da5xmxRHRDOa0rmcd2-3SvxOwFk3Ltifv-yVDQhb81wy9O7~BBRARWL2BTaBqt6yfqFDJREJTK1JraEcL9ETZ4AQ7ISfIu9pO31oQJ5jBWZy5zUGEhuX-W3OCNddH55NL3L5tRpzLjSM5rh~hIIyylREclGJW4HmGFqF3hE6dloBJBbeL6rAQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 2,
       "name": "LIVING ROOM",
-      "image": "https://s3-alpha-sig.figma.com/img/3ba3/1bc7/0c97e2e915a1be341e2c41b5bb3e1d55?Expires=1696204800&Signature=ln3COgvpDK8HOTioBTaSKM~838CgJTL-2wrsSpletlHHJpRV7XZ-Fcv964I3JYfP6toISvPsGsUKw3QAdbWpfHwt3~gUrybbiXTXzliQkV2XlGBRE4AMrU5PuqYnS~~XuQcrOO87zUy4PDWavhRdJBR9SWH62ddwTtNCAfhVXI2Zb~uHw5hAbyG6DFAHP4xYmJneyYN1loYdIbPrLrpUEoKwHCzkipdeXxHT2o1IK68qOeAA7F71C-ZFePBBopqxDTf4babIm4GtOTYRP4yZ3tAXTdzAY-6-AD7Rdu85~6KgG41aDnvdasgLKYf8AwyGj2tpwiV40JAzocBNbCgAcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "YAŞAYIŞ OTAĞI",
+      "nameRu": "ГОСТИНАЯ",
+      "image": "https://s3-alpha-sig.figma.com/img/3ba3/1bc7/0c97e2e915a1be341e2c41b5bb3e1d55?Expires=1697414400&Signature=dRvBNyq5p5dnYCkYVH9LpX6Lj7g1dISWrFz53X1iJ0pS36he~U5X1AbFE2BBJwZANSPX8mG3vKKwKRQR0oGbQgC42jmmOX5Z2hNzYvswfiaqBni~f5WgkBh18S~LpawMnSrdAB3fwIGhxB-O4xotCmP9tB6w8d3cPTw9uTHbM4taFBcn4AJx1YvGpwZA6B74GjzkeTIT8S-MURlSM5aqIHrTSVxtle6ehK0ocMn2ozn6u6pmU4kAWXkWCkoHR2ldUGVrVYpZOp9E34SeOnuAM14wKRBLS2xTUOjiXpsEW8FP0EItxSPD0Wp0d9ukUvi6Pui3wqOOrQnVi5OoejolLg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 3,
       "name": "KITCHEN",
-      "image": "https://s3-alpha-sig.figma.com/img/0e0e/dc15/2dea892ac4e3f99eecb4e8bd39effc60?Expires=1696204800&Signature=YVg5VBruTWlMLr0GrQW9ix~11wMFZAmV3Mvsl~E98swNpdE15CYtW~8hbEtfDWGG0~4YKySAQlApWZ-p~8s2OPmSdfjD8BHY2bxMqSDPVjjyUqR0BX3m3vq9cwi7-XXJ3fKiqeXqVSbt1j4HDnBnR5UEtzNKn8L-XrTarDKP~YOkgW3t-lJVxjBgYjrdurEWVC9CK8b8pPPnSa8DS04Uf2omhcbS~bKRcEkICJ3NQwG0deHLAQfK5j1kNZF59YTQ27bPKhpACO~na2hPhjFAGDNgngSCCgiqcWWKw3daYSzzB0EzJvtOBWUt-S7gWZH8qi-9qvKi6ePQYS5luHfu8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "MƏTBƏX",
+      "nameRu": "КУХНЯ",
+      "image": "https://s3-alpha-sig.figma.com/img/0e0e/dc15/2dea892ac4e3f99eecb4e8bd39effc60?Expires=1697414400&Signature=fgigWfQl8joPgBPzWypqnmihjbNZnwmRoBueHTPBGr4Vs4eHWR2GrsMMGEg7~oS-rhtqh~4z6cwSeJdzFkeJHbeOx0XDUK6FrHVFaLV6lRDFEK62rFkFxxTnJHSFFetsOclqx~wHe1N7yBpp8ZIijofFePfvb50Q8U003xt5FzeKLvgzBAROxVXiI4huKwlfJFU8mQimQ76pRmRTdFDkafxu67-1yVtHC939bgpBuQuzQfBBjUrWzcwJLPHxp8wBJlzqKs8A3bgHWq26YPeUv9TuAiGvmUGRDHL9cg11E5fYdhhZiy~eid77RdB2qxUsA1khgf-SbkcyO7OfhiSmKg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 4,
       "name": "LIBRARY",
-      "image": "https://s3-alpha-sig.figma.com/img/67aa/ba98/663a4ddd65289276a0bf7f802fcd6e9a?Expires=1696204800&Signature=OrAOe4g91eTcyEf8cBLJJYa3gYw4tXMXT64nGYkq27JXNiyb5BGvOXotHIL69cRWjl60P7Gh8T6WK2IDK~7x8YTOv39oobxPkivsQq4brFYyGnYElbCtbYAIp2hTMa0Nn80wcwlosPeBhK~UlgXlU-QD-zxz0F~vLElBg~vvUowPsRsthC6gAt2ABB9Do8i3khDULR0noM~LVuvW1jc8CH0jCplQVziFSYtEoifXkm1h-i4mV-YGrC1y8u71QQz5SEwLYVznv-uJHaMAjsgyse3QdS8Usmq1AobU5RjDnLc75QYnmHgksaTvZzWARoknohmHw6geQV6BUD4E40i8DA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "KİTABXANA",
+      "nameRu": "БИБЛИОТЕКА",
+      "image": "https://s3-alpha-sig.figma.com/img/67aa/ba98/663a4ddd65289276a0bf7f802fcd6e9a?Expires=1697414400&Signature=l8QX6-NX1Xo9-NHYFpJ9cRriS8AEIBTM8OlD-qX4pQqs0Nph1YRTclLcSjd2v2ApDKWFOsNPdnN6uEWGA2oLCQh6oAQrfa1uaKNZnvO6XobueAWzda6Mf43a8qf~BT5ffugRSfXGdBhqobUzZvClxLTunVVXIgLsGyqwl-~m-vUW96pTn7VdiIRarTL0KelcwJ8FR8opgb9zyjP5Pq6UjfJ7dZRyqjiwDtpD9iikMwRK4Q9iW-4HY3QD1rABls-YY-kq9KBZBD-lxwGHG689AeAUcPGOJ6eFlmOEyyYrNU4F~7mXcJY1mTts562wDzZ-Q6ByfeZi4Tr6FbBfy3JuJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 5,
       "name": "OFFICE",
-      "image": "https://s3-alpha-sig.figma.com/img/ae99/2450/c20c2eedb6f1aa6418b80e76ab3d08cc?Expires=1696204800&Signature=XVKdxRTj4iZRb9WRsVOGvyX0ArxwT8z3aXCugImQ~-6r-vHQT~zlPo7gYJhClLuLVODeGCfeYw0O2ZTw~aefRglXIdjUTNLd1ig-0vQnTaCAcKNUFsaa5qNrSfjolwj6wJCxKMeiZ~99~P9CMh20HhX8D0nxsusD0Vkxf~P7ueV4pkoGtqvl1Y5fkvPZJVJCF5X7wES3sSzOjYiHYsZFd7PAlQjhNbKUnQPETwVn2iSUPGMMuCr4NJL1er6h0F50voH1LNptfA14ExwOa04Tl99qL0FkZWkBdyEDI-oL-L9yTcF0YaoOnS3XpfVNltFE1QA8uvbbdtf4Ik~4xnvYLw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "OFİS",
+      "nameRu": "ОФИС",
+      "image": "https://s3-alpha-sig.figma.com/img/ae99/2450/c20c2eedb6f1aa6418b80e76ab3d08cc?Expires=1697414400&Signature=GRG8Ib7EF~gGvY2fz0ic~Rw39x5im-LKDJkeTBKWN1h2OxGjQvFrZ9mbDrT2ktKjeQNaZ1CP0x-KU2HCItAUIEwhkBtPT5JQak72EvPCutoOY2CzYlhP0t7MXFoqhe2xmFllWU12kAw2pY0B6a7PkPn74LxxTNjXCjBgPNMBVacr0~YL2kyYVegl2fA4MsdIIE1sHRqqhgct69Y8oqoJWylojcRdEUJZtfIVqmQoKtE4F23g56fND3RruzJ~m68ED20DbTgnDVaRHLC-eDULjkM1IxNi8eQYlEp~5zTOkT~RMlcJ1x64JcPCR1O~PAnqxUTweCyxALagTOQuaFPp8w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 6,
       "name": "LAUNDRY ROOM",
-      "image": "https://s3-alpha-sig.figma.com/img/ded8/9ed8/15cdf81ef8d45e035ef1af8dd15d77d7?Expires=1696204800&Signature=krxFm3YgpWI9~gYtNYwXzLn-GAPfxCsBcZ-oquj4cCONTs9jdyB2pVly4tuDWawzkqFeAyWAarE5BW13-GEIljVk8BoF0WV8nYRGkdWumdPMCqaATpN~C81V5RmRDmM~HP-xvuyXWuVpAgIqrmh40DsQcKg~8CbRlsMdjc2M6kSxWcdajvX5BVRM8ikUnO2~HUaNhNwExhVVi9hQl3JeUfgPv2p2Q-Mi1Z9Ubz-mkK9XdmwBPYyb9skrKEdDAoR4d9ZFyZrUqHQ5ZWoaxQct1HOCrmGwqNN~bNffKPkKxTrik6mgAZ-hyy3jB4rJSIPva1BxQO~f7giZCDrNXfABYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "QURUDUCU OTAĞI",
+      "nameRu": "ПРАЧЕЧНАЯ",
+      "image": "https://s3-alpha-sig.figma.com/img/ded8/9ed8/15cdf81ef8d45e035ef1af8dd15d77d7?Expires=1697414400&Signature=DOaqCTAgmFzhAwgRQhmDUBtOiZsBD7AB8jaxCqB25hQAEvl7THV4ICP73hH2hUSCkjeIEp9xK6Q0OQDvCeNQY4G~-p~ptkYGKk8IJY1XXCRI8Z8if6UNlTHSP8EELm0WFFf0EgbK1A8jD-LpkWtD1zOVhHqYX5ZyoFt~2zcNDuIQ-y~FS-ei6jqBBnaVkXLn7y0LT7WVOl5-TO0bx1lHM-MNqm9zXnEu2hOBvIrbfh~AOS7JX434JPJ7asmgZHywRpzAz-D7VbiDim6mKrN-B9hbf~rsQgDf1stTMrUJA-x71Invj9LtGfa83VD8RgIC03FEQTiWkeqi4ROBQ8dfIg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 7,
       "name": "GUEST ROOM",
-      "image": "https://s3-alpha-sig.figma.com/img/2fec/f199/3d32458cd54ecbd8d8e6747ae1db96c4?Expires=1696204800&Signature=ZQ6XCHV~yw3erGVfUx00USFPydnB~mX4kYcGD02Ru42lde7f56r9PI0lmJcDZe5dmcFStuFHSWTGh15-GH~zYpJ2-D8HOdkTbS96TDMriKcJ~ZTUaR9zPVIcO3pTLRjII0jFBvCLV6ZVd3DVNl0o4pw0UkreOKNgcQlR7Zc1ADvexAS62uKCmZ9rIZfUpeu0tCvKol7LvSFm~jyswhfpOYZTHt787-jZcNhhDa922DXEjiZwGkiDxSiqEw0yWoS9Sy17zsDgnDsKKNtBzau5haywhd1DgWUyhHNpUwOO8yrQt8QoPiMMjQIArim116o3VM3hwnVePxT5f0KiJiyCzg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "QONAQ OTAĞI",
+      "nameRu": "ГОСТИНАЯ",
+      "image": "https://s3-alpha-sig.figma.com/img/2fec/f199/3d32458cd54ecbd8d8e6747ae1db96c4?Expires=1697414400&Signature=bsmSO1dYpAmFVIDWb32CXxIlbvVPwP7CuGLN1XBoiLERhnRn4sOdBg~U4QEwLsLyIEVDqJn37fRNX9j7nmDoaPol9i6AvrEyGXAgwmLL2gmxHoVx6yJrkHazSFlrbWcWp3bFc~~WrjUHFjBexwJiTXVd2KOfxuW3cIosr38vnvgd2SZlZEgmh2iXv6apNCcsxwrzQByN2M10oDsW0hLCgNVZE1beZ5LjVp4EmdGeTKU4ymAmMtYM2q2XeTioul2X0lRowQJVNAianRHvizs8caZ06a-GiqutJrAb8He5a9q3Jl2rwR4mR8nySvReLq6Q8be1wMqrA~eb8lfn3Mia0A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 8,
       "name": "FAMILY ROOM",
-      "image": "https://s3-alpha-sig.figma.com/img/2625/da33/3ac66c54d2bf5a3481d2e4e0c2bd9158?Expires=1696204800&Signature=kaTGBWDKifkeSP5-nNjjGR3xEjnSVIg1p7K1dHodXgvhXn~kCpiQ9gB-6iPly-78EOUhTEGcCkk~mgSNdBWS~NoRy1zrMAeCMuX0mpfzSEl2r5Jd4JsLwRq855GGfmw1GcVSL-Ue7gWI90x-~IjvCTTMJN~2Yu1hzlmYOzk3U72jEChumLFeJ48~i~P7714wXG~KJa8lnwc4aS~KqWVSkYyMiCkceag8mxerX9yVW5SEmYt--iAh-x~Mz5BbwbOQa-QDGoggaRDhmfIKyGb9NYOMScHVkw6-cFj0g4ecTB~-AQZfEyCle9D3stS1Pxe1wkddgmS-jxJPiEHtqHwmLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "AİLƏ OTAĞI",
+      "nameRu": "СЕМЕЙНАЯ КОМНАТА",
+      "image": "https://s3-alpha-sig.figma.com/img/2625/da33/3ac66c54d2bf5a3481d2e4e0c2bd9158?Expires=1697414400&Signature=AAyjhRV141BK1bhES2Gsq~Entn-04oIeIyokR6o997RuO9y~I9Vd72Iz4g9eVdILzFDq6t5O~AlwiUDL-UZp8t9dpBxSbuI3PPobqzed00eaELIxKX4a0OCFIxydLAfas2BvPT1ZYu0jVQMuaGNLKo~cERGKWbBusFqmYTt43ypW5EcPAXL2ZFcQm-eIPfYbXfkj4-HQ8Sj0p6lYMbLLdRoz5hscDEqG8S02bkyrhqYJuby3XCRDjiNRo3nOEB-jz440ATRby9PxgnO4-a8CfvVRIszb5Vt3kJZrr6t2GLFc~guWAt7E1ypwRuP3s5FskxBNeOExTeLB9aVk1vZz1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
       "id": 9,
       "name": "BATHROOM",
-      "image": "https://s3-alpha-sig.figma.com/img/629a/424a/ccdfc649c7aeee6a63e580d48c745949?Expires=1696204800&Signature=h~5AfQQn2q9iPwdv7CpFbG7RrGWkIL8sy7aepeDHgfHRHWfnUz-Yd3sgVMIS06bfrylCXnv1PWvh-LZKdhkagciLIdy9mtzoW-VuTqYl1FpHgMx9HvgvpTmAb~pq7DQbp0pCcDGPWNjk~CNgXUcCHqO~UPsyYO3EI-Rs6HzF3o0yFQKoks5Z4NGtHkylVbG0qq0XIIWvGhFf0j38ABNLQxjNr6Pft7fKog6giJ34UW-U2knrxAl1IwD7dfCSTj2a7u6GuYZHIDxpQT7z7HRaiH9zbjbTIxqMk5eRDApbAcYNn7hK~naMIjZ8GS9mGne6pq4FXPtMrZ5DQo0rNk8F0A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "nameAz": "VANNA OTAĞI",
+      "nameRu": "ВАННАЯ КОМНАТА",
+      "image": "https://s3-alpha-sig.figma.com/img/629a/424a/ccdfc649c7aeee6a63e580d48c745949?Expires=1697414400&Signature=lglZxSEUhwwCoYSUtRyjzFglOU8u6dz40yR6yNdQBngMMcyVvqQQhsNH5GdpxCLLdAMRND7vDfe70pkc12GmQ4qMh5pAfR6X4XjnH0LWb8Jk8l3xDRecgwSORvIQ6qj-XmTfBuiew~wVW4hnT6plbVYjMXiigRki7ZsRy~DFPC7b4z4vba-Uot0boOtBUba7EjZ10oJtjK~XDhW6OjsXYsKRZRztJf4Dx1rUDFr0L1ZrO74o1eOHam4pQtTBRAmaabEe8wn4xWYFVSF0MhDbg7u7T7fpsfShGlVcxIPE5Ay1GNXBe5mzpdY69dg1YsKjAB2tmuu42ML-YDh2V-erQQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     }
   ],
   "contacts": {
-    "image": "https://s3-alpha-sig.figma.com/img/1a81/6eed/44a385856238ca77ac82ce311e6ee73e?Expires=1696809600&Signature=LNhTt6XPK3afVC6ZGQGhY8MEzZ1WHOnGo-IiY96lQUmK71mUOR~gN7R4uewenSNVY7GqihO-hlbj36cwVVwQPbXExbxRxL7B5CpDSFBPRJETz~nAjZDWgCQdzLr70PBeAKGjGyjD90C0l2fH5LQcdHOgkFruq~NTGBGj9TXEZQNr2rS-wx8QAjj7KNcXR1cxzF18wGNG~a6TAyZmwi~vkzcaH7bifJ6y6P-tm4-xIaLtuMuYQIwja~FSRfq038IHEZFa9MUURyTrUUSnMtrTZLyjhiGCP7S-ynWm7wcyEBGwermTWQSw8efjWfUAMhYRG5e5fBnEZS--nAMEYpjsSQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    "image": "https://s3-alpha-sig.figma.com/img/1a81/6eed/44a385856238ca77ac82ce311e6ee73e?Expires=1698019200&Signature=LAlRi6w-BaCYL-hMXUwp8z5WVGMrpiehKQ020UFk8LaKXZdYX9jPaNRZeMwoRReXFBGBoDknISRUxoOm6gAWDqc0ovkVxfpI6iLln5H6HyS8mL-0h2R0knsKMo-g-rYgxwtwE0Q4ME1gTk2z8818a0ymHKxMSFrba3UpgcI-9igkMfGA96HxZYo8pFJPSJNZjseRBFtriSmyc4jnKCgPnp9J2DLrRiitqZ4NajEgWsasfcva9goHmGtClm1754XtYUoDRZvn~PHMuXCSqb9gIPjFzK62KttdrZg5QqPZrO9KBaiOMW6zo4jvJTPCH1FRfsW2HMSMDchOYg8VIxFfog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
   },
   "footers": {
     "id": 1,
     "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui",
+    "descriptionAz": "Amma əslində biz onları həm ittiham edirik, həm də buna layiq olanlara ədalətli nifrətlə yol veririk",
+    "descriptionRu": "Но на самом деле мы и обвиняем их, и ведем со справедливой ненавистью тех, кто этого заслуживает.",
     "phone": "+994 70 441 51 91",
     "email": "seidvahidli@gmail.com"
   },
@@ -227,6 +291,76 @@
       "email": "saidsn@code.edu.az",
       "password": "1111a",
       "id": 1
+    },
+    {
+      "name": "Seid",
+      "surname": "Nuraliyev",
+      "email": "seidvahidli@gmail.com",
+      "password": "2222a",
+      "id": 2
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "name": "#539991"
+    },
+    {
+      "id": 2,
+      "name": "#555"
+    },
+    {
+      "id": 3,
+      "name": "#B8926A"
+    },
+    {
+      "id": 4,
+      "name": "#576997"
+    },
+    {
+      "id": 5,
+      "name": "#C9770F"
+    },
+    {
+      "id": 6,
+      "name": "#DAD3CD"
+    }
+  ],
+  "productcolors": [
+    {
+      "id": 1,
+      "colorId": 1,
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "colorId": 2,
+      "productId": 1
+    },
+    {
+      "id": 3,
+      "colorId": 3,
+      "productId": 1
+    },
+    {
+      "id": 4,
+      "colorId": 4,
+      "productId": 2
+    },
+    {
+      "id": 5,
+      "colorId": 5,
+      "productId": 2
+    },
+    {
+      "id": 5,
+      "colorId": 5,
+      "productId": 3
+    },
+    {
+      "id": 7,
+      "colorId": 6,
+      "productId": 3
     }
   ]
 }

@@ -9,8 +9,10 @@ import LoginService from "../../../APIs/services/LoginService";
 import CustomInput from "../../custominput/CustomInput";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const LoginForm = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(true);
   const [type, setType] = useState("password");
@@ -58,7 +60,7 @@ const LoginForm = () => {
 
   return (
     <div className="login__form">
-      <AccountTitle>login</AccountTitle>
+      <AccountTitle>{t("authforms.loginform.title")}</AccountTitle>
       <Formik
         initialValues={{
           email: "",
@@ -70,10 +72,18 @@ const LoginForm = () => {
         }}
       >
         <Form className="form" action="">
-          <CustomInput type="email" name="email" placeholder="E-MAIL ADRESS" />
+          <CustomInput
+            type="email"
+            name="email"
+            placeholder={t("authforms.loginform.email")}
+          />
 
           <div className="input__area">
-            <CustomInput type={type} name="password" placeholder="PASSWORD" />
+            <CustomInput
+              type={type}
+              name="password"
+              placeholder={t("authforms.loginform.password")}
+            />
 
             {showPassword ? (
               <svg
@@ -109,15 +119,18 @@ const LoginForm = () => {
           </div>
 
           <Link className="forgot" to="/auth/forgotpassword">
-            Forgot Password?
+            {t("authforms.loginform.forgotpassword")}
           </Link>
 
-          <MainButton type="submit">log in</MainButton>
+          {" "}
+          <MainButton type="submit">{ t("mainbutton.login")}</MainButton>
         </Form>
       </Formik>
       <div className="form__bottom">
-        <span>Don’t have an account?</span>
-        <Link to="/auth/register">Register</Link>
+        <span> {t("authforms.loginform.account")}</span>
+        <Link to="/auth/register">
+          {t("authforms.loginform.register")}
+        </Link>
       </div>
     </div>
   );

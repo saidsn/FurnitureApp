@@ -12,6 +12,7 @@
       .bigImage img {
         width: 64rem;
         height: 40.3rem;
+        margin-bottom: 2yrem;
         border-radius: 1rem;
         overflow: hidden;
       }
@@ -44,6 +45,15 @@
         display: flex;
         gap: 1rem;
         margin-bottom: 2.5rem;
+        .outline{
+          cursor: pointer;
+          border: 1px solid transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: .3rem;
+          border-radius: 50%;
+        }
       }
 
       .product__count {
@@ -79,7 +89,7 @@
         font-size: 4.8rem;
         font-weight: 700;
         line-height: 5.2rem;
-        margin-bottom: 5.7rem;
+        margin-bottom: 7.1rem;
       }
 
       .button__area {

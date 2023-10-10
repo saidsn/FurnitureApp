@@ -2,9 +2,11 @@ import React from "react";
 import "./Profile.scss";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
 
+  const { t } = useTranslation();
   let location = useLocation();
 
   const logout = () => {
@@ -13,7 +15,7 @@ const Profile = () => {
 
   return (
     <div className="profile">
-      <h2 className="profile__title">MY ACCOUNT</h2>
+      <h2 className="profile__title">{t("profile.myaccount")}</h2>
       <ul className="profile__list">
         <li className="profile__list--item">
           {location.pathname === "/account/info" ? (
@@ -50,7 +52,7 @@ const Profile = () => {
             </svg>
           )}
 
-          <Link to="/account/info">PERSONAL INFORMATION</Link>
+          <Link to="/account/info">{t("profile.personalinformation")}</Link>
         </li>
         <li className="profile__list--item">
           {location.pathname === "/account/wishlist" ? (
@@ -81,7 +83,7 @@ const Profile = () => {
             </svg>
           )}
 
-          <Link to="/account/wishlist">WISHLIST</Link>
+          <Link to="/account/wishlist">{t("profile.wishlist")}</Link>
         </li>
         <li className="profile__list--item">
           <svg
@@ -116,7 +118,9 @@ const Profile = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <Link to={"/"} onClick={logout}>LOG OUT</Link>
+          <Link to={"/"} onClick={logout}>
+            {t("profile.logout")}
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,17 +1,40 @@
-import React, { useState, useEffect } from "react";
 import "./ShoppingCart.scss";
-import Title from "../title/Title";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import axios from "axios";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
-import toastr from "react-hot-toast";
+import React, { useEffect, useState } from "react";
+import Title from "../title/Title";
+import toast from "react-hot-toast";
+import { useBasket } from "../../context/basketContext/BasketContext";
 
 const ShoppingCart = () => {
+  const { t } = useTranslation();
+  const { basketCount, setBasketCount } = useBasket();
+  const [colors, setColors] = useState([]);
+  const [userBasket, setUserBasket] = useState([]);
   const [basketProducts, setBasketProducts] = useState([]);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    setUserBasket(
+      basketProducts.filter((basketItem) => basketItem.userId === user?.id)
+    );
+  }, [basketProducts]);
+
+  useEffect(() => {
+    const storedBasket = JSON.parse(localStorage.getItem("basket")) || [];
+    setBasketProducts(storedBasket);
+
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    setUser(storedUser);
+  }, []);
 
   const increaseCount = (index) => {
     const updatedBasket = [...basketProducts];
     updatedBasket[index].count += 1;
     setBasketProducts(updatedBasket);
+    localStorage.setItem("basket", JSON.stringify(updatedBasket));
   };
 
   const decreaseCount = (index) => {
@@ -19,28 +42,38 @@ const ShoppingCart = () => {
     if (updatedBasket[index].count > 1) {
       updatedBasket[index].count -= 1;
       setBasketProducts(updatedBasket);
+      localStorage.setItem("basket", JSON.stringify(updatedBasket));
     }
   };
 
   const deleteBasketItem = (index) => {
     const updatedBasket = [...basketProducts];
     updatedBasket.splice(index, 1);
-    localStorage.setItem('basket', JSON.stringify(updatedBasket));
+    localStorage.setItem("basket", JSON.stringify(updatedBasket));
     setBasketProducts(updatedBasket);
-    toastr.success("Product deleted successfully")
+    toast.success(t("toast.removebasket"));
+  };
+
+  const getProductColor = async (colorId) => {
+    try {
+      await axios
+        .get(`http://localhost:3000/colors`)
+        .then((res) => setColors(res.data));
+    } catch (error) {
+      console.error("Error fetching product colors:", error);
+    }
   };
 
   useEffect(() => {
-    const storedBasket = JSON.parse(localStorage.getItem("basket")) || [];
-    setBasketProducts(storedBasket);
+    getProductColor();
   }, []);
 
-  const itemCount = basketProducts.reduce(
-    (total, item) => total + item.count,
-    0
-  );
+  useEffect(() => {
+    const itemCount = userBasket.reduce((total, item) => total + item.count, 0);
+    setBasketCount(itemCount);
+  }, [userBasket]);
 
-  const totalPrice = basketProducts.reduce(
+  const totalPrice = userBasket.reduce(
     (total, item) => total + item.count * item.product.price,
     0
   );
@@ -49,13 +82,17 @@ const ShoppingCart = () => {
     <section className="shopping-cart section">
       <div className="container">
         <Title>
-          <h3 className="title__head">Shopping Cart </h3>
+          <h3 className="title__head">{t("title.shoppingcart")}</h3>
         </Title>
         <div className="shopping-cart__content">
           <div className="shopping-cart__content__left">
-            {basketProducts.length > 0 ? (
+            {userBasket?.length > 0 ? (
               <ul className="shopping-cart__list">
-                {basketProducts.map((basketItem, index) => {
+                {userBasket?.map((basketItem, index) => {
+                  const color = colors?.find(
+                    (color) => color.id === basketItem.colorId
+                  );
+
                   return (
                     <li className="shopping-cart__list__item" key={index}>
                       <svg
@@ -101,22 +138,22 @@ const ShoppingCart = () => {
                           cy="9.42857"
                           rx="9"
                           ry="9.42857"
-                          fill="#B8926A"
+                          fill={color?.name}
                         />
                       </svg>
                       <div className="count__area">
-                        <span
-                          className="plus"
-                          onClick={() => increaseCount(index)}
-                        >
-                          +
-                        </span>
-                        <span className="count">{basketItem.count}</span>
                         <span
                           className="minus"
                           onClick={() => decreaseCount(index)}
                         >
                           -
+                        </span>
+                        <span className="count">{basketItem.count}</span>
+                        <span
+                          className="plus"
+                          onClick={() => increaseCount(index)}
+                        >
+                          +
                         </span>
                       </div>
                       <span className="price">
@@ -127,19 +164,19 @@ const ShoppingCart = () => {
                 })}
               </ul>
             ) : (
-              <h3 className="empty">Basket is Empty...</h3>
+              <h3 className="empty">{t("shoppingcart.empty")}</h3>
             )}
           </div>
           <div className="shopping-cart__content__right">
             <div className="summary">
-              <h2 className="summary__title">SUMMARY</h2>
+              <h2 className="summary__title">{t("shoppingcart.summary")}</h2>
               <ul className="summary__list">
                 <li className="summary__list__item">
-                  <span>ITEM COUNT</span>
-                  <span className="totalCount">{itemCount}</span>
+                  <span>{t("shoppingcart.itemcount")}</span>
+                  <span className="totalCount">{basketCount}</span>
                 </li>
                 <li className="summary__list__item">
-                  <span>TOTAL PRICE</span>
+                  <span>{t("shoppingcart.totalprice")}</span>
                   <span className="totalPrice">{totalPrice} $</span>
                 </li>
                 <li className="summary__list__item">
@@ -158,12 +195,16 @@ const ShoppingCart = () => {
                   </svg>
                 </li>
               </ul>
-              <MainButton>CHECKOUT</MainButton>
+              {user ? (
+                <MainButton>{t("mainbutton.shoppingcart")}</MainButton>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>
         <Link to="/products">
-          <p className="back">BACK TO SHOPPING</p>
+          <p className="back">{t("shoppingcart.backtoshopping")}</p>
         </Link>
       </div>
     </section>

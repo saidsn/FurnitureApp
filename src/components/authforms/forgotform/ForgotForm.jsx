@@ -7,8 +7,10 @@ import toast from "react-hot-toast";
 import CustomInput from "../../custominput/CustomInput";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const ForgotForm = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const validationSchema = Yup.object({
@@ -18,13 +20,13 @@ const ForgotForm = () => {
   });
 
   const send = (inputvalue) => {
-    toast.success("send successful");
+    toast.success(t("toast.send"));
     navigate("/auth/verification");
   };
 
   return (
     <div className="forgot__form">
-      <AccountTitle>reset password</AccountTitle>
+      <AccountTitle>{t("authforms.gorgotform.title")}</AccountTitle>
       <Formik
         initialValues={{
           email: "",
@@ -33,13 +35,17 @@ const ForgotForm = () => {
         onSubmit={(inputvalue) => send(inputvalue)}
       >
         <Form className="form" action="">
-          <CustomInput type="email" name="email" placeholder="E-MAIL ADRESS" />
-          <MainButton type="submit">send</MainButton>
+          <CustomInput
+            type="email"
+            name="email"
+            placeholder={t("authforms.gorgotform.email")}
+          />
+          <MainButton type="submit">{t("mainbutton.send")}</MainButton>
         </Form>
       </Formik>
       <div className="form__bottom">
-        <span>Don’t have an account?</span>
-        <Link to="/auth/register">Register</Link>
+        <span>{t("authforms.gorgotform.account")}</span>
+        <Link to="/auth/register">{t("authforms.gorgotform.register")}</Link>
       </div>
     </div>
   );

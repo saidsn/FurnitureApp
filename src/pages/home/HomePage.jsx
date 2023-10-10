@@ -10,9 +10,10 @@ import CollectionSlider from "../../components/collectionslider/CollectionSlider
 import ProductService from "../../APIs/services/ProductService";
 import Title from "../../components/title/Title";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
-  
+  const { t } = useTranslation();
   const [products, setProducts] = useState([]);
 
   const GetAllProducts = async () => {
@@ -31,9 +32,9 @@ const HomePage = () => {
       <Discount />
       <div className="container">
         <Title>
-          <h3 className="title__head">PRODUCTS</h3>
+          <h3 className="title__head">{ t("title.products")}</h3>
           <div className="title--action">
-            <Link to="/about">SEE ALL</Link>
+            <Link to="/products">{t("titleaction")}</Link>
           </div>
         </Title>
       </div>

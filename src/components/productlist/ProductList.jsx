@@ -3,9 +3,11 @@ import "./ProductList.scss";
 import ProductCard from "../productcard/ProductCard";
 import { useLocation } from "react-router-dom";
 
+
 const Product = ({ take, products }) => {
 
   const location = useLocation();
+  
   return (
     <section className="product__list section">
       <div className={`${location.pathname == "/" ? "container" : ""}`}>

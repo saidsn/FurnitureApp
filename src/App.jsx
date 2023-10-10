@@ -16,6 +16,7 @@ import Login from "./pages/auth/login/LoginPage";
 import ForgotPassword from "./pages/auth/forgotpassword/ForgotPasswordPage";
 import ResetPassword from "./pages/auth/resetpassword/ResetPasswordPage";
 import VerificationPage from "./pages/auth/verification/VerificationPage";
+import SearchResult from "./pages/search/SearchResultPage";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/shoppingcart" element={<ShoppingCart />} />
           <Route path="/productdetail/:id/:title" element={<ProductDetail />} />
+          <Route path="/searchresult" element={<SearchResult />} />
         </Route>
         <Route path="/account" element={<AccountLayout />}>
           <Route path="wishlist" element={<WishList />} />

@@ -7,8 +7,11 @@ import toastr from "react-hot-toast";
 import CustomInput from "../../custominput/CustomInput";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const VerifyForm = () => {
+
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const validationSchema = Yup.object({
@@ -17,12 +20,12 @@ const VerifyForm = () => {
   });
 
   const send = (inputvalue) => {
-    toastr.success("verification successfull");
+    toastr.success(t("toast.verification"));
     navigate("/auth/resetpassword");
   };
   return (
     <div className="forgot__form">
-      <AccountTitle>verification</AccountTitle>
+      <AccountTitle>{t("authforms.verifyform.title")}</AccountTitle>
       <Formik
         initialValues={{
           number: "",
@@ -31,12 +34,19 @@ const VerifyForm = () => {
         onSubmit={(inputvalue) => send(inputvalue)}
       >
         <Form className="form" action="">
-          <CustomInput name="number" placeholder="ENTER VERIFICATION NUMBER" />
+          <CustomInput
+            name="number"
+            placeholder={t("authforms.verifyform.code")}
+          />
           <div className="form__bottom">
-            <span>Didn’t receive a code?</span>
-            <Link to="/auth/forgotpassword">Resend</Link>
+            <span>{t("authforms.verifyform.recieve")}</span>
+            <Link to="/auth/forgotpassword">
+              {t("authforms.verifyform.resend")}
+            </Link>
           </div>
-          <MainButton type="submit">verify</MainButton>
+          <MainButton type="submit">
+            {t("mainbutton.verify")}
+          </MainButton>
         </Form>
       </Formik>
     </div>

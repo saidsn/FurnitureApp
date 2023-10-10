@@ -7,8 +7,11 @@ import toast from "react-hot-toast";
 import CustomInput from "../../custominput/CustomInput";
 import { Formik, Form } from "formik";
 import * as yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const ResetForm = () => {
+
+    const { t } = useTranslation();
   const navigate = useNavigate();
 
     const [showPassword, setShowPassword] = useState(true);
@@ -31,7 +34,7 @@ const ResetForm = () => {
   });
 
   const reset = (inputvalue) => {
-    toast.success("send successful");
+    toast.success(t("toast.send"));
     navigate("/auth/login");
   };
 
@@ -47,7 +50,7 @@ const ResetForm = () => {
 
   return (
     <div className="reset__form">
-      <AccountTitle>new password</AccountTitle>
+      <AccountTitle>{t("authforms.resetform.title")}</AccountTitle>
       <Formik
         initialValues={{
           password: "",
@@ -61,7 +64,7 @@ const ResetForm = () => {
             <CustomInput
               type={type}
               name="password"
-              placeholder="ENTER NEW PASSWORD"
+              placeholder={t("authforms.resetform.password")}
             />
             {showPassword ? (
               <svg
@@ -98,9 +101,11 @@ const ResetForm = () => {
           <CustomInput
             type={type}
             name="confirmpassword"
-            placeholder="CONFIRM PASSWORD"
+            placeholder={t("authforms.resetform.confirmpassword")}
           />
-          <MainButton type="submit">submit</MainButton>
+          <MainButton type="submit">
+            {t("mainbutton.submit")}
+          </MainButton>
         </Form>
       </Formik>
     </div>

@@ -8,8 +8,11 @@ import { useNavigate } from "react-router-dom";
 import CategoryService from "../../APIs/services/CategoryService";
 import CollectionService from "../../APIs/services/CollectionService";
 import { useSearchParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const ProductsPage = () => {
+
+  const { t } = useTranslation();
   const navigate = useNavigate();
   let [searchParams, setSearchParams] = useSearchParams();
 
@@ -165,7 +168,7 @@ const ProductsPage = () => {
     if (collection) {
       setShowHead(collection.name);
     } else {
-      setShowHead("Products");
+      setShowHead(t("title.products"));
     }
   });
   return (
@@ -177,9 +180,7 @@ const ProductsPage = () => {
       ) : null}
       <Head>
         <p className="header--text">
-          Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-          tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
-          minus id quod maxime.
+          {t("headertext.products")}
         </p>
         <div className="dropdown">
           <button className="dropbtn btn">
@@ -216,17 +217,17 @@ const ProductsPage = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            SORT BY
+            {t("secondbutton.products")}
           </button>
           <div className="dropdown-content">
             <a href="#" data-value="popular" onClick={HandleSort}>
-              POPULAR FIRST
+              {t("secondbutton.popularfirst")}
             </a>
             <a href="#" data-value="cheapest" onClick={HandleSort}>
-              CHEAPEST FIRST
+              {t("secondbutton.cheapestfirst")}
             </a>
             <a href="#" data-value="expensive" onClick={HandleSort}>
-              EXPENSIVE FIRST
+              {t("secondbutton.expensivefirst")}
             </a>
           </div>
         </div>
@@ -235,7 +236,7 @@ const ProductsPage = () => {
         <div className="container" style={mainStyle}>
           <aside style={asideStyle}>
             <InputElement
-              header="CATEGORIES"
+              header={t("asideproduct.categories")}
               filterType="category"
               setFilters={setSelectedCategories}
               removeFilterClick={removeFilterClick}
@@ -244,7 +245,7 @@ const ProductsPage = () => {
               options={categories}
             />
             <InputElement
-              header="COLLECTIONS"
+              header={t("asideproduct.collections")}
               filterType="collections"
               setFilters={setSelectedCollections}
               removeFilterClick={removeFilterClick}

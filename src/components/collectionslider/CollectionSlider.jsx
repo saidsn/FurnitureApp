@@ -5,8 +5,10 @@ import "./CollectionSlider.scss";
 import SlickSlider from "../slider/Slider";
 import Title from "../title/Title";
 import CategoryCard from "../categorycard/CategoryCard";
+import { useTranslation } from "react-i18next";
 
 const CollectionSlider = ({ slidesToShow }) => {
+  
   const settings = {
     slidesToShow: slidesToShow,
     infinite: false,
@@ -35,6 +37,7 @@ const CollectionSlider = ({ slidesToShow }) => {
     ],
   };
 
+  const { t } = useTranslation();
   const [collections, setCollections] = useState([]);
 
   const GetAllCollections = async () => {
@@ -49,9 +52,9 @@ const CollectionSlider = ({ slidesToShow }) => {
     <section className="collection__slider section">
       <div className="container">
         <Title>
-          <h3 className="title__head">COLLECTIONS</h3>
+          <h3 className="title__head">{ t("title.collections")}</h3>
           <div className="title--action">
-            <Link to="/about">SEE ALL</Link>
+            <Link to="/collections">{ t("titleaction")}</Link>
           </div>
         </Title>
         <SlickSlider settings={settings}>

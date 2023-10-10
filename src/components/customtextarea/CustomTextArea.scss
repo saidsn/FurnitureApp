@@ -1,0 +1,14 @@
+.textarea-validation{
+    position: relative;
+    span{
+        color: red;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+    .errorsvg{
+        position: absolute;
+        top: 1.8rem;
+        right: 1rem;
+    }
+
+}

@@ -1,4 +1,5 @@
 .contact {
+  position: relative;
   .contact__content {
     width: 100%;
     display: flex;
@@ -25,6 +26,7 @@
           &::placeholder {
             color: #b0b0b0;
             font-weight: 500;
+            text-transform: uppercase;
           }
 
           &:focus {
@@ -41,6 +43,7 @@
           height: 13.6rem;
           padding-top: 1rem;
           resize: none;
+          margin-bottom: 2rem;
         }
       }
     }

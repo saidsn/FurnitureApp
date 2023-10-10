@@ -1,67 +1,132 @@
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  .header__left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    &--search {
+      cursor: pointer;
+    }
+
+    &--search.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--main-bg-color);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 2.6rem 0;
+      z-index: 999;
+    }
+    &--lang {
+      text-transform: uppercase;
+      .select {
+        position: relative;
+        cursor: pointer;
+      }
+      .selected {
+        display: grid;
+        place-items: center;
+        padding-inline: 0.5rem;
+        height: 30px;
+        background-color: var(--main-bg-color);
+        border: 2px solid var(--main-input-border-color);
+        border-radius: 5px;
+      }
+      .options {
+        border: 2px solid var(--main-input-border-color);
+        padding: 0.5rem;
+        line-height: 2.5rem;
+        border-radius: 5px;
+        background-color: var(--main-bg-color);
+        position: absolute;
+      }
+      &.responsive__lang {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        display: block !important;
+        background-color: var(--main-bg-color);
+        z-index: 999;
+        .selected {
+          display: none;
+        }
+        .options {
+          display: flex !important;
+          bottom: 2rem;
+          gap: 2rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+
+    .searchInput {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        margin-left: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border: none;
+        background-color: var(--main-bg-color);
+      }
+    }
+  }
+
+  .header__center {
+    font-family: var(--second-text-family);
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+
+  .header__right {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
-
-    .header__left {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        &--search{
-            cursor: pointer;
-        }
-
-        &--search.fixed{
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: var(--main-bg-color);
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 2.6rem 0;
-            z-index: 999;
-        }
-        .select {
-            height: 30px;
-            background-color: var(--main-bg-color);
-            border: 2px solid var(--main-input-border-color);
-            border-radius: 5px;
-        }
-
-        .searchInput{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            input{
-                margin-left: 3rem;
-                font-size: 2rem;
-                font-weight: 500;
-                border: none;
-                background-color: var(--main-bg-color);
-            }
-        }
+    gap: 2rem;
+    &--basket,
+    &--profile {
+      cursor: pointer;
     }
 
-    .header__center {
+    &--basket {
+      position: relative;
+      sup {
+        position: absolute;
+        bottom: 20px;
         font-family: var(--second-text-family);
-        font-size: 3.6rem;
-        line-height: 4rem;
+      }
     }
+  }
 
-    .header__right {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 2rem;
-        &--basket,
-        &--profile{
-            cursor: pointer;
-        }
+  @media (max-width: 768px) {
+    .header__left {
+      &--lang {
+        display: none;
+      }
     }
+    .header__center {
+      order: -1;
+    }
+  }
+  @media (max-width: 576px) {
+    .header__left {
+      margin-left: auto;
+      order: 1;
+    }
+    .header__right {
+      order: -1;
+      display: none;
+    }
+  }
 }

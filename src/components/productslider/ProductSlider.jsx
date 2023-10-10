@@ -4,8 +4,7 @@ import ProductService from "../../APIs/services/ProductService";
 import "./ProductSlider.scss";
 import SlickSlider from "../slider/Slider";
 import Title from "../title/Title";
-
-import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 const ProductSlider = ({ slidesToShow }) => {
   const settings = {
@@ -36,6 +35,8 @@ const ProductSlider = ({ slidesToShow }) => {
     ],
   };
 
+  const { t } = useTranslation();
+
   const [products, setProducts] = useState([]);
 
   const GetAllProducts = async () => {
@@ -50,7 +51,7 @@ const ProductSlider = ({ slidesToShow }) => {
     <section className="product__slider section">
       <div className="container">
         <Title>
-          <h3 className="title__head">MOST POPULAR</h3>
+          <h3 className="title__head">{ t("title.mostpopular")}</h3>
         </Title>
         <SlickSlider settings={settings}>
           {products.slice(0, 6).map((product) => {

@@ -1,8 +1,12 @@
 import React,{useState} from "react";
 import "./Form.scss";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
+
+  const { t } = useTranslation();
+
   const [showPassword, setShowPassword] = useState(true);
   const [type, setType] = useState("password");
 
@@ -65,7 +69,7 @@ const Form = () => {
               </svg>
             )}
           </div>
-          <MainButton>SAVE CHANGES</MainButton>
+          <MainButton>{ t("mainbutton.form")}</MainButton>
         </form>
       </div>
     </>

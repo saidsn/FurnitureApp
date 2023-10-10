@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./InputElement.scss";
+import { useTranslation } from "react-i18next";
+import { useLang } from "../../context/langcontext/LangContext";
 
 const InputElement = ({
   header,
@@ -17,6 +19,10 @@ const InputElement = ({
       return options;
     }, {}),
   };
+
+  const { language } = useLang();
+  const { t } = useTranslation();
+
   const [checkBoxes, setCheckBoxes] = useState(initialCheckBoxesState);
   const uniqueAllId = `all-${filterType}`;
 
@@ -91,7 +97,7 @@ const InputElement = ({
             />
           </svg>
         )}
-        All
+        {t("asideproduct.all")}
       </label>
 
       {options?.map(({ name, id }) => (

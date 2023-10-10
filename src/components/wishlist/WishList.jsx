@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./WishList.scss";
-import toastr from "react-hot-toast";
+import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const WishList = () => {
+
+  const { t } = useTranslation();
+  
   let wishlistLocal = JSON.parse(localStorage.getItem("wishList"));
+  
   const [wishlist, setWishlist] = useState(wishlistLocal || []);
 
   const deleteWishlistItem = (id) => {
@@ -11,7 +17,7 @@ const WishList = () => {
     newWishlist.splice(id, 1);
     localStorage.setItem("wishList", JSON.stringify(newWishlist));
     setWishlist(newWishlist);
-    toastr.success("Product deleted successfully");
+    toast.success(t("toast.removewishlist"));
   };
 
   return (
@@ -22,7 +28,9 @@ const WishList = () => {
             return (
               <li className="wishlist__item" key={id}>
                 <div className="wishlist__item__image">
-                  <img src={wishlistItem.image} alt="" />
+                  <Link to={`/productdetail/${wishlistItem.id}/${wishlistItem.title}`}>
+                    <img src={wishlistItem.image} alt="" />
+                  </Link>
                 </div>
                 <div className="wishlist__item__content">
                   <div className="wishlist__item__content__title">
@@ -51,7 +59,7 @@ const WishList = () => {
           })}
         </ul>
       ) : (
-        <h3 className="empty">Wishlist Is Empty...</h3>
+          <h3 className="empty">{ t("profile.empty")}</h3>
       )}
     </div>
   );

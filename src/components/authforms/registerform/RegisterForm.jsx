@@ -9,8 +9,11 @@ import axios from "axios";
 import CustomInput from "../../custominput/CustomInput";
 import { Formik, Form } from "formik";
 import * as yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const RegisterForm = () => {
+
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = useState(true);
@@ -53,7 +56,7 @@ const RegisterForm = () => {
         password: inputvalue.password,
       };
       await axios.post("http://localhost:3000/users", newUser);
-      toast.success("User registered successfully");
+      toast.success(t("toast.register"));
       navigate("/auth/login");
     } catch (error) {
       toast.error(error.message);
@@ -73,7 +76,7 @@ const RegisterForm = () => {
 
   return (
     <div className="register__form">
-      <AccountTitle>Register</AccountTitle>
+      <AccountTitle>{t("authforms.registerform.title")}</AccountTitle>
       <Formik
         initialValues={{
           name: "",
@@ -88,12 +91,28 @@ const RegisterForm = () => {
         }}
       >
         <Form className="form" action="">
-          <CustomInput type="text" name="name" placeholder="NAME" />
-          <CustomInput type="text" name="surname" placeholder="SURNAME" />
-          <CustomInput type="email" name="email" placeholder="E-MAIL ADRESS" />
+          <CustomInput
+            type="text"
+            name="name"
+            placeholder={t("authforms.registerform.name")}
+          />
+          <CustomInput
+            type="text"
+            name="surname"
+            placeholder={t("authforms.registerform.surname")}
+          />
+          <CustomInput
+            type="email"
+            name="email"
+            placeholder={t("authforms.registerform.email")}
+          />
 
           <div className="input__area">
-            <CustomInput type={type} name="password" placeholder="PASSWORD" />
+            <CustomInput
+              type={type}
+              name="password"
+              placeholder={t("authforms.registerform.password")}
+            />
             {showPassword ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,15 +148,17 @@ const RegisterForm = () => {
           <CustomInput
             type={type}
             name="repeatPassword"
-            placeholder="REPEAT PASSWORD"
+            placeholder={t("authforms.registerform.repeatpassword")}
           />
 
-          <MainButton type="submit">REGISTER</MainButton>
+          <MainButton type="submit">
+            {t("mainbutton.register")}
+          </MainButton>
         </Form>
       </Formik>
       <div className="form__bottom">
-        <span>Already have an account?</span>
-        <Link to="/auth/login">Log in</Link>
+        <span>{t("authforms.registerform.account")}</span>
+        <Link to="/auth/login">{t("authforms.registerform.login")}</Link>
       </div>
     </div>
   );

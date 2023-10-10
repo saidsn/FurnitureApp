@@ -3,16 +3,62 @@ import "./ProductDetail.scss";
 import Slider from "react-slick";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
 import SecondaryButton from "../../utils/buttons/secondarybutton/SecondaryButton";
-import toastr from "react-hot-toast";
+import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
+import axios from "axios";
+import { useBasket } from "../../context/basketContext/BasketContext";
 
 const ProductDetail = ({ children, product }) => {
+  const { t } = useTranslation();
+
+  const { setBasketCount } = useBasket();
   const [count, setCount] = useState(1);
-  const [color, setColor] = useState("");
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [colors, setColors] = useState([]);
+  const [colorId, setColorId] = useState();
+  const [chosenColor, setChosenColor] = useState(0);
+  const [productcolors, setProductColors] = useState([]);
   const [isWishlist, setIsWishlist] = useState(
     JSON.parse(localStorage.getItem("wishList"))?.some(
       (item) => item.id === product.id
     ) || false
+  );
+
+  const [userBasket, setUserBasket] = useState([]);
+  const [basketProducts, setBasketProducts] = useState([]);
+  const [user, setUser] = useState(null);
+
+  const getColors = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/colors");
+      setColors(response.data);
+    } catch (error) {
+      console.error("Error fetching colors:", error);
+    }
+  };
+
+  const getProductColors = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/productcolors");
+      const productcolors = response.data.filter(
+        (item) => item.productId === product.id
+      );
+      setProductColors(productcolors);
+      setColorId(productcolors[0]?.id);
+    } catch (error) {
+      console.error("Error fetching product colors:", error);
+    }
+  };
+
+  useEffect(() => {
+    getColors();
+    getProductColors();
+  }, []);
+
+  let productColors = productcolors?.filter(
+    (item) => item.productId === product.id
+  );
+  const filteredColors = colors?.filter((item) =>
+    productColors?.some((productColor) => productColor.colorId === item.id)
   );
 
   let increaseCount = () => {
@@ -24,16 +70,25 @@ const ProductDetail = ({ children, product }) => {
     setCount(count - 1);
   };
 
-  let addToBasket = (productToAdd, countToAdd) => {
+  let addToBasket = (productToAdd, count, colorId) => {
     const currentBasket = JSON.parse(localStorage.getItem("basket")) || [];
-
     const newItem = {
       product: productToAdd,
-      count: countToAdd,
+      count: count,
+      colorId: colorId,
+      userId: user?.id,
     };
 
-    const updatedBasket = currentBasket.map((item) => {
-      if (item?.product?.id === newItem?.product?.id) {
+    let updatedBasket = [...currentBasket];
+
+    let itemExists = false;
+
+    updatedBasket = updatedBasket.map((item) => {
+      if (
+        item?.product?.id === newItem.product.id &&
+        item?.colorId === newItem.colorId
+      ) {
+        itemExists = true;
         return {
           ...item,
           count: item.count + newItem.count,
@@ -43,15 +98,32 @@ const ProductDetail = ({ children, product }) => {
       }
     });
 
-    if (
-      !currentBasket.some((item) => item?.product?.id === newItem?.product?.id)
-    ) {
+    if (!itemExists) {
       updatedBasket.push(newItem);
     }
+
     localStorage.setItem("basket", JSON.stringify(updatedBasket));
-    setIsButtonDisabled(true);
-    toastr.success("Product add to Basket");
+    toast.success(t("toast.addbasket"));
+
+    let itemCount = userBasket.reduce((total, item) => total + item.count, 0);
+    setBasketCount(itemCount);
   };
+
+  useEffect(() => {
+    setUserBasket(
+      basketProducts.filter((basketItem) => basketItem.userId === user?.id)
+    );
+  }, [basketProducts]);
+
+  useEffect(() => {
+    const storedBasket = JSON.parse(localStorage.getItem("basket")) || [];
+    setBasketProducts(storedBasket);
+
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    setUser(storedUser);
+  }, []);
+
+  useEffect(() => {}, [userBasket]);
 
   const addToWishList = (id) => {
     const wishlistItem = {
@@ -65,12 +137,12 @@ const ProductDetail = ({ children, product }) => {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
       const updatedWishlist = getWishlist.filter((item) => item.id !== id);
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
-      toastr.success("Product deleted from wishlist");
+      toast.success(t("toast.removewishlist"));
     } else {
       const getWishlist = JSON.parse(localStorage.getItem("wishList"));
       const updatedWishlist = [...(getWishlist || []), wishlistItem];
       localStorage.setItem("wishList", JSON.stringify(updatedWishlist));
-       toastr.success("Product add to wishlist");
+      toast.success(t("toast.addwishlist"));
     }
 
     setIsWishlist(!isWishlist);
@@ -81,8 +153,6 @@ const ProductDetail = ({ children, product }) => {
 
   const slider1 = useRef(null);
   const slider2 = useRef(null);
-
-  useEffect(() => {}, [count]);
 
   useEffect(() => {
     setNav1(slider1.current);
@@ -115,61 +185,49 @@ const ProductDetail = ({ children, product }) => {
           <div className="product-detail__content__right">
             <h2 className="product__title">{product.title}</h2>
             <p className="product__desc">{product.description}</p>
-            <h4 className="product__color__title">Colors</h4>
+            <h4 className="product__color__title">
+              {t("productdetail.colors")}
+            </h4>
             <div className="product__colors">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-              >
-                <ellipse
-                  cx="9"
-                  cy="9.42857"
-                  rx="9"
-                  ry="9.42857"
-                  fill="#539991"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-              >
-                <ellipse
-                  cx="9"
-                  cy="9.42857"
-                  rx="9"
-                  ry="9.42857"
-                  fill="#555555"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-              >
-                <ellipse
-                  cx="9"
-                  cy="9.42857"
-                  rx="9"
-                  ry="9.42857"
-                  fill="#B8926A"
-                />
-              </svg>
+              {filteredColors &&
+                filteredColors?.map((color, index) => (
+                  <div
+                    className="outline"
+                    key={index}
+                    style={{
+                      borderColor:
+                        chosenColor === index ? color.name : "transparent",
+                    }}
+                    onClick={() => {
+                      setChosenColor(index);
+                      setColorId(color.id);
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="19"
+                      viewBox="0 0 18 19"
+                      fill="none"
+                    >
+                      <ellipse
+                        cx="9"
+                        cy="9.42857"
+                        rx="9"
+                        ry="9.42857"
+                        fill={color.name}
+                      />
+                    </svg>
+                  </div>
+                ))}
             </div>
             <div className="product__count">
-              <span className="plus" onClick={increaseCount}>
-                +
-              </span>
-              <span className="count">{count}</span>
               <span className="minus" onClick={decreaseCount}>
                 -
+              </span>
+              <span className="count">{count}</span>
+              <span className="plus" onClick={increaseCount}>
+                +
               </span>
             </div>
             <h3 className="product__price">{product.price}$</h3>
@@ -177,9 +235,9 @@ const ProductDetail = ({ children, product }) => {
               <div
                 className="addbasket"
                 style={{ flex: "1" }}
-                onClick={() => addToBasket(product, count)}
+                onClick={() => addToBasket(product, count, colorId)}
               >
-                <MainButton disabled={isButtonDisabled}>
+                <MainButton>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -202,7 +260,7 @@ const ProductDetail = ({ children, product }) => {
                       fill="#EAE6DF"
                     />
                   </svg>
-                  Add To Cart
+                  {t("mainbutton.productdetail")}
                 </MainButton>
               </div>
               <div
@@ -240,7 +298,9 @@ const ProductDetail = ({ children, product }) => {
                       />
                     </svg>
                   )}
-                  Add To Wishlist
+                  {isWishlist
+                    ? t("secondbutton.productdetail.remove")
+                    : t("secondbutton.productdetail.add")}
                 </SecondaryButton>
               </div>
             </div>

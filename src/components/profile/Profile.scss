@@ -5,6 +5,8 @@
   padding: 3rem;
   border-radius: 1rem;
   background-color: var(--second-bg-color);
+  text-transform: uppercase;
+
   .profile__title {
     font-family: var(--second-text-family);
     font-size: 3.2rem;
@@ -20,7 +22,7 @@
     font-weight: 600;
   }
   @media screen and (max-width: 576px) {
-    .profile__title{
+    .profile__title {
       font-size: 3rem !important;
     }
   }
