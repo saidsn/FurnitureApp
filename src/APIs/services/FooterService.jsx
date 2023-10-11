@@ -2,7 +2,7 @@ import { HttpClient } from "../HttpClient";
 
 class FooterService extends HttpClient{
     constructor(){
-        super("https://homedecorapp.netlify.app");
+        super("http://localhost:3000");
     }
 
     getAllFooter = () => this.getAll('footers');

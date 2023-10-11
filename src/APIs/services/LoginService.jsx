@@ -2,7 +2,7 @@ import { HttpClient } from "../HttpClient";
 
 class LoginService extends HttpClient {
   constructor() {
-    super("https://homedecorapp.netlify.app");
+    super("http://localhost:3000");
   }
 
   getAllUser = () => this.getAll("users");

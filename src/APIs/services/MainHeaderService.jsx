@@ -2,7 +2,7 @@ import { HttpClient } from "../HttpClient";
 
 class MainHeaderService extends HttpClient {
   constructor() {
-    super("https://homedecorapp.netlify.app");
+    super("http://localhost:3000");
   }
 
   getAllMainHeader = () => this.getAll("mainheaders");

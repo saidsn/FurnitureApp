@@ -2,7 +2,7 @@ import { HttpClient } from "../HttpClient";
 
 class DiscountService extends HttpClient {
   constructor() {
-    super("https://homedecorapp.netlify.app");
+    super("http://localhost:3000");
   }
 
   getAllDiscount = () => this.getAll("discounts");

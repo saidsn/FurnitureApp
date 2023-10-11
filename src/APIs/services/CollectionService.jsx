@@ -2,7 +2,7 @@ import { HttpClient } from "../HttpClient";
 
 class CollectionService extends HttpClient{
     constructor(){
-        super("https://homedecorapp.netlify.app");
+        super('http://localhost:3000');
     }
 
     getAllCollection = ()=> this.getAll('collections');
