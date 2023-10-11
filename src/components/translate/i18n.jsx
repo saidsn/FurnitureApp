@@ -14,7 +14,7 @@ i18n.use(initReactI18next).init({
           register: "Register Successfull",
           send: "Send Successfull",
           verification: "Verification Successfull",
-          error:"Something went wrong!"
+          error: "Something went wrong!",
         },
         searchinput: {
           placeholder: "SEARCH OUR STORE",
@@ -37,7 +37,7 @@ i18n.use(initReactI18next).init({
           wishlist: "WishList",
           shoppingcart: "Shopping cart",
           productdetail: "Products",
-          searchresults: "Search results",
+          searchresults: "search results",
         },
         asideproduct: {
           categories: "CATEGORIES",
@@ -53,7 +53,7 @@ i18n.use(initReactI18next).init({
           shoppingcart: "SHOPPING CART",
           searchresults: "SEARCH RESULTS",
         },
-        copyright: "©2022 All Right Reserved. Developed by Webcoder Agency",
+        copyright: "©2022 All Right Reserved. Developed by Said Nuraliyev",
         mainbutton: {
           mainheader: "Shop Now",
           discount: "Shop Now",
@@ -102,6 +102,7 @@ i18n.use(initReactI18next).init({
           empty: "Basket is Empty...",
           yoursearchresult: "Your search results for",
           notuser: "Please login to see your shopping cart!",
+          notproduct: "The product you were looking for was not found!",
         },
         profile: {
           myaccount: "My Account",
@@ -209,7 +210,7 @@ i18n.use(initReactI18next).init({
           searchresults: "AXTARIŞ NƏTİCƏLƏRİ",
         },
         copyright:
-          "©2022 Bütün Hüquqlar Qorunur. Webcoder Agentliyi Tərəfindən Hazırlanmışdır",
+          "©2022 Bütün Hüquqlar Qorunur. Səid Nuraliyev Tərəfindən Hazırlanmışdır",
         mainbutton: {
           mainheader: "İndİ Al",
           discount: "İndİ Al",
@@ -257,7 +258,7 @@ i18n.use(initReactI18next).init({
           backtoshopping: "ALIŞ-VERİŞƏ GERİ DÖN",
           empty: "Səbət Boşdur...",
           yoursearchresult: "Axtarış Nəticələriniz",
-          notuser: "Səbətinizi görmək üçün sistemə daxil olun!",
+          notproduct: "Axtardığınız məhsul tapılmadı!",
         },
         profile: {
           myaccount: "Hesabım",
@@ -364,7 +365,7 @@ i18n.use(initReactI18next).init({
           shoppingcart: "КОРЗИНА",
           searchresults: "РЕЗУЛЬТАТЫ ПОИСКА",
         },
-        copyright: "©2022 Все права защищены. Разработано Webcoder Agency",
+        copyright: "©2022 Все права защищены. Разработано Саид Нуралиев",
         mainbutton: {
           mainheader: "Купить сейчас",
           discount: "Купить сейчас",
@@ -413,6 +414,7 @@ i18n.use(initReactI18next).init({
           empty: "Корзина пуста...",
           notuser: "Пожалуйста, войдите в систему, чтобы увидеть свою корзину!",
           yoursearchresult: "Ваши результаты поиска для",
+          notproduct: "Товар, который вы искали, не найден!",
         },
         profile: {
           myaccount: "Мой аккаунт",

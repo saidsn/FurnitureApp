@@ -4,13 +4,13 @@ import ContactService from "../../APIs/services/ContactService";
 import MainButton from "../../utils/buttons/mainbutton/MainButton";
 import Title from "../title/Title";
 import { useTranslation } from "react-i18next";
-
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import CustomInput from "../custominput/CustomInput";
 import toast from "react-hot-toast";
 import CustomTextArea from "../customtextarea/CustomTextArea";
 import Alert from "../alert/Alert";
+import Background from "../background/Background";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
@@ -53,6 +53,17 @@ const Contact = () => {
       console.log(error);
       toast.error("send error");
     }
+  };
+
+  const style = {
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "#000",
+    opacity: "0.5",
+    zIndex: "9",
   };
 
   return (
@@ -108,7 +119,7 @@ const Contact = () => {
           {show && <Alert setShow={setShow} />}
         </div>
       </div>
-      <div className={`${show ? "background" : ""}`}></div>
+      {show && <Background style={style} />}
     </section>
   );
 };

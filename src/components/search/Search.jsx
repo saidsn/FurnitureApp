@@ -7,9 +7,7 @@ import { useLocation } from "react-router-dom";
 import Pagination from "react-js-pagination";
 import { useTranslation } from "react-i18next";
 
-
 const Search = ({ products }) => {
-
   const { t } = useTranslation();
 
   const location = useLocation();
@@ -21,7 +19,7 @@ const Search = ({ products }) => {
   );
 
   const [activePage, setActivePage] = useState(1);
-  const itemsPerPage = 4; 
+  const itemsPerPage = 4;
 
   const startIndex = (activePage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -31,30 +29,40 @@ const Search = ({ products }) => {
     setActivePage(pageNumber);
   };
 
-
   return (
     <section className="search section">
       <div className="container">
         <Title>
-          <h3 className="title__head">{ t("title.searchresults")}</h3>
+          <h3 className="title__head">{t("title.searchresults")}</h3>
         </Title>
-        <p className="sarch__title"> { t("shoppingcart.yoursearchresult")} “{searchValue}”.</p>
-        <div className="search__content">
-          {paginatedProducts.map((product) => (
-            <ProductCard key={product.id} props={product} />
-          ))}
-        </div>
-        <div className="paginate">
-          <Pagination
-            activePage={activePage}
-            itemsCountPerPage={itemsPerPage}
-            totalItemsCount={filteredProducts.length}
-            pageRangeDisplayed={3}
-            onChange={handlePageChange}
-            prevPageText=""
-            nextPageText=""
-          />  
-        </div>
+        <p className="sarch__title">
+          {t("shoppingcart.yoursearchresult")} “{searchValue}”.
+        </p>
+
+        {filteredProducts.length > 0 ? (
+          <>
+            <div className="search__content">
+              {paginatedProducts.map((product) => (
+                <ProductCard key={product.id} props={product} />
+              ))}
+            </div>
+            <div className="paginate">
+              <Pagination
+                activePage={activePage}
+                itemsCountPerPage={itemsPerPage}
+                totalItemsCount={filteredProducts.length}
+                pageRangeDisplayed={3}
+                onChange={handlePageChange}
+                prevPageText=""
+                nextPageText=""
+              />
+            </div>
+          </>
+        ) : (
+          <p className="search__content--notfound">
+            {t("shoppingcart.notproduct")}
+          </p>
+        )}
       </div>
     </section>
   );

@@ -8,6 +8,14 @@
     grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
     justify-content: center;
     gap: 2rem;
+    &--notfound {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      font-weight: 500;
+      color: var(--second-text-color);
+    }
   }
   .paginate {
     display: flex;

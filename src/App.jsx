@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import Layout from "./components/layouts/mainlayout/MainLayout";
 import Home from "./pages/home/HomePage";
 import About from "./pages/about/AboutPage";
@@ -20,7 +20,6 @@ import SearchResult from "./pages/search/SearchResultPage";
 
 const App = () => {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -44,7 +43,6 @@ const App = () => {
           <Route path="verification" element={<VerificationPage />} />
         </Route>
       </Routes>
-    </Router>
   );
 };
 
