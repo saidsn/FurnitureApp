@@ -122,7 +122,6 @@ const LoginForm = () => {
             {t("authforms.loginform.forgotpassword")}
           </Link>
 
-          {" "}
           <MainButton type="submit">{ t("mainbutton.login")}</MainButton>
         </Form>
       </Formik>

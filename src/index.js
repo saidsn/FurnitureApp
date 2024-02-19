@@ -25,3 +25,9 @@ root.render(
     </React.StrictMode>
   </I18nextProvider>
 );
+
+
+    // "start": "react-scripts start",
+    // "build": "react-scripts build",
+    // "json-server": "json-server --watch db.json --port 3000",
+    // "dev": "concurrently \"npm start\" \"npm run json-server\""

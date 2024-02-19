@@ -5,7 +5,7 @@ class CategoryService extends HttpClient {
     super("http://localhost:3000");
   }
 
-  getAllCategory = ()=> this.getAll("categories");
+  getAllCategory = () => this.getAll("categories");
 }
 
 export default new CategoryService();

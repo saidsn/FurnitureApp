@@ -8,10 +8,11 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { useBasket } from "../../context/basketContext/BasketContext";
 
+
 const ProductDetail = ({ children, product }) => {
   const { t } = useTranslation();
 
-  const { setBasketCount } = useBasket();
+  const { setBasketCount, setPlaceHolder } = useBasket();
   const [count, setCount] = useState(1);
   const [colors, setColors] = useState([]);
   const [colorId, setColorId] = useState();
@@ -23,9 +24,20 @@ const ProductDetail = ({ children, product }) => {
     ) || false
   );
 
+  const GetList = async() => {
+    var response = await axios.Axios.get(
+      "https://jsonplaceholder.typicode.com/posts"
+    ).the;
+  }
+
+
+
+
+
   const [userBasket, setUserBasket] = useState([]);
   const [basketProducts, setBasketProducts] = useState([]);
   const [user, setUser] = useState(null);
+  
 
   const getColors = async () => {
     try {
